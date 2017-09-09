@@ -1,0 +1,9 @@
+# Build output
+public/
+.cache/
+
+# Logs
+*.log*
+
+# Dependencies
+node_modules

@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "name": "mvk-web",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
+    "format":
+      "prettier-eslint --write \"src/**/*.{js,jsx}\" && yarn lint -- --fix"
+  },
+  "dependencies": {
+    "gatsby": "^1.9.24",
+    "gatsby-link": "^1.6.15",
+    "gatsby-plugin-catch-links": "^1.0.8",
+    "gatsby-plugin-glamor": "^1.6.7",
+    "gatsby-plugin-react-helmet": "^1.0.5",
+    "gatsby-remark-copy-linked-files": "^1.5.7",
+    "gatsby-remark-images": "^1.5.11",
+    "gatsby-remark-responsive-iframe": "^1.4.7",
+    "gatsby-remark-smartypants": "^1.4.7",
+    "gatsby-source-filesystem": "^1.4.12",
+    "gatsby-transformer-remark": "^1.7.7",
+    "gatsby-transformer-sharp": "^1.6.5",
+    "material-ui": "^1.0.0-beta.8",
+    "moment": "^2.18.1",
+    "normalize.css": "^7.0.0",
+    "react-big-calendar": "^0.15.0",
+    "react-icons": "^2.2.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.6.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0",
+    "prettier-eslint": "^7.1.0",
+    "prettier-eslint-cli": "^4.3.0"
+  }
+}

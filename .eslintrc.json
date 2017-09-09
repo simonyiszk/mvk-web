@@ -1,0 +1,14 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "extends": ["airbnb"],
+  "env": {
+    "browser": true
+  },
+  "settings": {
+    "import/core-modules": ["glamor", "prop-types", "react", "react-helmet"]
+  },
+  "globals": {
+    "graphql": true
+  }
+}

@@ -1,0 +1,1 @@
+- bme-building-k.jpg: https://commons.wikimedia.org/wiki/File:Budapesti_M%C5%B1szaki_Egyetem_%C3%A9p%C3%BCletei.jpg
