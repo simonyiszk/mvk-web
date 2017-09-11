@@ -60,7 +60,6 @@ const IndexLayout = ({ children, data, location }) => {
             },
             background: mainBackground,
             display: 'grid',
-            fontFamily: 'Noto Sans, sans-serif',
             minHeight: '100vh',
             overflowX: 'hidden',
           })}
@@ -69,10 +68,7 @@ const IndexLayout = ({ children, data, location }) => {
             defaultTitle={data.site.siteMetadata.title}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
           >
-            <link
-              href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700"
-              rel="stylesheet"
-            />
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
 
             <meta name="viewport" content="width=device-width, initial-scale=1" />
           </Helmet>
