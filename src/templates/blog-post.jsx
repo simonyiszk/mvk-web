@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
 import Container from '../components/container';
-import { headerBackground } from '../utils/presets';
+import { ASPECT_RATIO_21_9_RELATIVE_HEIGHT, headerBackground } from '../utils/presets';
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark;
@@ -20,11 +20,10 @@ const BlogPostTemplate = ({ data }) => {
         />
       </Helmet>
 
-      {/* Enforce 21:9 aspect ratio for cover images */}
       <div
         {...css({
           background: headerBackground,
-          height: '42.86vw',
+          height: `${ASPECT_RATIO_21_9_RELATIVE_HEIGHT}vw`,
           position: 'absolute',
           width: '100%',
         })}

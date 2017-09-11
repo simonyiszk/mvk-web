@@ -6,8 +6,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "lint": "eslint \"src/**/*.{js,jsx}\"",
-    "format":
-      "prettier-eslint --write \"src/**/*.{js,jsx}\" && yarn lint -- --fix"
+    "format": "prettier-eslint --write \"src/**/*.{js,jsx}\" && yarn lint -- --fix"
   },
   "dependencies": {
     "gatsby": "^1.9.24",
