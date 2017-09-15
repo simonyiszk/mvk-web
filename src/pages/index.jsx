@@ -45,14 +45,14 @@ const IndexPage = ({ data }) => {
 
         <Grid container>
           {posts.edges.map(({ node: post }) => (
-            <Grid item xs={4}>
+            <Grid item xs={4} key={post.fields.slug}>
               <Link to={post.fields.slug}>
-                <Card key={post.fields.slug}>
+                <Card>
                   <CardMedia
                     image={
                       post.frontmatter.image &&
                       post.frontmatter.image.childImageSharp.responsiveSizes.src
-                    }
+                    } // TODO: Add support for responsive images
                     {...css({
                       ...ASPECT_RATIO_4_3,
                     })}
