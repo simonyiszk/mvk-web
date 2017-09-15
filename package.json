@@ -6,7 +6,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "lint": "eslint \"src/**/*.{js,jsx}\"",
-    "format": "prettier-eslint --write \"src/**/*.{js,jsx}\" && yarn lint -- --fix"
+    "format": "prettier-eslint --write \"src/**/*.{js,jsx}\" && yarn lint --fix"
   },
   "dependencies": {
     "gatsby": "^1.9.24",
@@ -28,7 +28,7 @@
     "react-icons": "^2.2.5"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
+    "babel-eslint": "^8.0.0",
     "eslint": "^4.6.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-import": "^2.7.0",

@@ -54,7 +54,6 @@ const IndexPage = ({ data }) => {
                       post.frontmatter.image.childImageSharp.responsiveSizes.src
                     }
                     {...css({
-                      backgroundPosition: 'center', // TODO: Remove as soon as https://github.com/callemall/material-ui/pull/8148#event-1244098479 lands
                       ...ASPECT_RATIO_4_3,
                     })}
                   />
