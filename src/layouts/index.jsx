@@ -48,7 +48,7 @@ const IndexLayout = ({ children, data, location }) => {
   const isHomepage = location.pathname === '/';
 
   return (
-    <MuiThemeProvider theme={theme}>
+    <MuiThemeProvider theme={theme} sheetsManager={new Map()}>
       <Typography type="body2">
         <div
           {...css({

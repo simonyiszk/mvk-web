@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-catch-links',
     'gatsby-plugin-glamor',
+    'gatsby-plugin-jss',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
