@@ -1,10 +1,8 @@
-import { css } from 'glamor';
-import Paper from 'material-ui/Paper';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
-import Container from '../components/container';
-import { ASPECT_RATIO_21_9_RELATIVE_HEIGHT, headerBackground } from '../utils/presets';
+import ArticleContainer from '../components/article-container';
+import CoverImage from '../components/cover-image';
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark;
@@ -20,45 +18,12 @@ const BlogPostTemplate = ({ data }) => {
         />
       </Helmet>
 
-      <div
-        {...css({
-          background: headerBackground,
-          height: `${ASPECT_RATIO_21_9_RELATIVE_HEIGHT}vw`,
-          position: 'absolute',
-          width: '100%',
-        })}
-      >
-        {image != null && (
-          <img
-            alt="Featured (TODO)"
-            src={image.src}
-            srcSet={image.srcSet}
-            {...css({
-              height: '100%',
-              objectFit: 'cover',
-              width: '100%',
-            })}
-          />
-        )}
-      </div>
+      <CoverImage {...image} />
 
-      <Container>
-        <article {...css({ marginTop: 'calc(42.86vw - 10rem)', position: 'relative' })}>
-          <h1
-            {...css({
-              color: 'white',
-              margin: '0 0 0.4em 0',
-              textTransform: 'uppercase',
-            })}
-          >
-            {post.frontmatter.title}
-          </h1>
-
-          {/* eslint-disable react/no-danger */}
-          <Paper dangerouslySetInnerHTML={{ __html: post.html }} {...css({ padding: '5rem' })} />
-          {/* eslint-enable react/no-danger */}
-        </article>
-      </Container>
+      <ArticleContainer
+        title={post.frontmatter.title}
+        dangerouslySetInnerHTML={{ __html: post.html }}
+      />
     </div>
   );
 };
