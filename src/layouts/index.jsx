@@ -10,6 +10,7 @@ import { createMuiTheme, MuiThemeProvider } from 'material-ui/styles';
 import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 import 'normalize.css';
+import Headroom from 'react-headroom';
 import Helmet from 'react-helmet';
 import InstagramIcon from 'react-icons/lib/fa/instagram';
 import FacebookIcon from 'react-icons/lib/fa/facebook-official';
@@ -73,17 +74,38 @@ const IndexLayout = ({ children, data, location }) => {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
           </Helmet>
 
-          <header {...css({ '& a': { textDecoration: 'none' } })}>
-            <AppBar
-              classes={{ colorPrimary: css({ backgroundColor: 'transparent !important' }) }}
-              elevation={0}
-            >
+          <Headroom
+            disableInlineStyles
+            {...css({
+              '& #header-logo, header': {
+                transition: 'all 0.4s 0.15s',
+              },
+              '.headroom--pinned.headroom--scrolled': {
+                '& #header-logo': {
+                  opacity: 1,
+                },
+              },
+              '.headroom--unfixed, &.headroom--unpinned': {
+                '& header': {
+                  backgroundColor: 'transparent',
+                  boxShadow: 'none',
+                },
+              },
+              '.headroom--unpinned': {
+                '& header': {
+                  transform: 'translateY(-100%)',
+                },
+              },
+            })}
+          >
+            <AppBar {...css({ '& a': { textDecoration: 'none' } })}>
               <Toolbar>
                 <Typography
+                  id="header-logo"
                   type="title"
                   {...css({
                     flex: 1,
-                    visibility: isHomepage && 'hidden',
+                    opacity: isHomepage && 0,
                   })}
                 >
                   <Link to="/" exact>
@@ -108,7 +130,7 @@ const IndexLayout = ({ children, data, location }) => {
                 </NavLink>
               </Toolbar>
             </AppBar>
-          </header>
+          </Headroom>
 
           <main {...css({ flex: 1 })}>{children()}</main>
 

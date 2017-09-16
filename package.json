@@ -26,6 +26,7 @@
     "moment": "^2.18.1",
     "normalize.css": "^7.0.0",
     "react-big-calendar": "^0.15.0",
+    "react-headroom": "^2.1.6",
     "react-icons": "^2.2.5"
   },
   "devDependencies": {
