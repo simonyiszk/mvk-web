@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => {
           backgroundImage: `${IMAGE_OVERLAY_TINT}, url(${BMEBuildingKImage})`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
-          display: 'grid',
+          display: 'flex',
           height: '100vh',
         })}
       >
@@ -30,11 +30,9 @@ const IndexPage = ({ data }) => {
           alt="MVK logó"
           {...css({
             background: 'white',
-            boxSizing: 'border-box',
-            height: '20vh',
-            margin: '0',
-            maxWidth: '100%',
-            minHeight: '7rem',
+            height: '12.5vh',
+            maxWidth: 'calc(100% - 4rem)',
+            minHeight: '3.5rem',
             padding: '2rem',
           })}
         />

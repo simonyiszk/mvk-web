@@ -59,9 +59,9 @@ const IndexLayout = ({ children, data, location }) => {
               color: mainLinkColor,
             },
             background: mainBackground,
-            display: 'grid',
+            display: 'flex',
+            flexDirection: 'column',
             minHeight: '100vh',
-            overflowX: 'hidden',
           })}
         >
           <Helmet
@@ -110,14 +110,13 @@ const IndexLayout = ({ children, data, location }) => {
             </AppBar>
           </header>
 
-          <main>{children()}</main>
+          <main {...css({ flex: 1 })}>{children()}</main>
 
           <footer
             {...css({
               '& a': {
                 color: 'inherit',
               },
-              alignSelf: 'end',
               background: footerBackgroundLight,
               color: footerTextColor,
             })}
@@ -148,11 +147,11 @@ const IndexLayout = ({ children, data, location }) => {
             <div {...css({ background: footerBackgroundDark })}>
               <Container
                 {...css({
-                  display: 'grid',
+                  '& *': {
+                    margin: '0 1.5rem',
+                  },
                   fontSize: '2rem',
-                  gridAutoFlow: 'column',
-                  gridGap: '3rem',
-                  justifyContent: 'center',
+                  textAlign: 'center',
                 })}
               >
                 <FacebookIcon />
