@@ -8,7 +8,7 @@ import React from 'react';
 import BMEBuildingKImage from '../assets/bme-building-k.jpg';
 import MVKLogoImage from '../assets/mvk-logo.svg';
 import Container from '../components/container';
-import { ASPECT_RATIO_4_3 } from '../utils/presets';
+import { ASPECT_RATIO_4_3, IMAGE_OVERLAY_TINT } from '../utils/presets';
 
 const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark;
@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
       <div
         {...css({
           alignItems: 'center',
-          backgroundImage: `linear-gradient(137.51deg, rgba(39, 170, 225, 0.7), rgba(227, 210, 0, 0.6)), url(${BMEBuildingKImage})`,
+          backgroundImage: `${IMAGE_OVERLAY_TINT}, url(${BMEBuildingKImage})`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           display: 'grid',
@@ -110,7 +110,7 @@ export const query = graphql`
             date(formatString: "YYYY-MM-DD")
             image {
               childImageSharp {
-                responsiveSizes {
+                responsiveSizes(maxWidth: 400) {
                   src
                 }
               }

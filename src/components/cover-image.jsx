@@ -1,30 +1,32 @@
 import { css } from 'glamor';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { ASPECT_RATIO_21_9_RELATIVE_HEIGHT } from '../utils/presets';
+import { ASPECT_RATIO_21_9_RELATIVE_HEIGHT, IMAGE_OVERLAY_TINT } from '../utils/presets';
 
-const CoverImage = ({ src, ...props }) => (
+const CoverImage = ({ alt, sizes, src, srcSet, ...props }) => (
   <div
     {...css({
-      background: 'linear-gradient(137.51deg, rgba(39, 170, 225, 0.7), rgba(227, 210, 0, 0.6))',
+      background: IMAGE_OVERLAY_TINT,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
       height: `${ASPECT_RATIO_21_9_RELATIVE_HEIGHT}vw`,
       marginBottom: '-10rem',
       position: 'relative',
     })}
+    {...props}
   >
     {src != null && (
       <img
-        alt="Borító"
+        alt={alt}
+        sizes={sizes}
         src={src}
+        srcSet={srcSet}
         {...css({
           height: '100%',
           objectFit: 'cover',
           position: 'absolute',
           width: '100%',
         })}
-        {...props}
       />
     )}
 
@@ -39,11 +41,17 @@ const CoverImage = ({ src, ...props }) => (
 );
 
 CoverImage.propTypes = {
+  alt: PropTypes.string,
+  sizes: PropTypes.string,
   src: PropTypes.string,
+  srcSet: PropTypes.string,
 };
 
 CoverImage.defaultProps = {
+  alt: 'Borító',
+  sizes: null,
   src: null,
+  srcSet: null,
 };
 
 export default CoverImage;

@@ -42,7 +42,7 @@ export const query = graphql`
         title
         image {
           childImageSharp {
-            responsiveSizes(maxWidth: 400) {
+            responsiveSizes {
               src
               srcSet
             }
