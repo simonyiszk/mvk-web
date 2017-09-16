@@ -48,8 +48,9 @@ const IndexPage = ({ data }) => {
                 <Card>
                   <CardMedia
                     image={
-                      post.frontmatter.image &&
-                      post.frontmatter.image.childImageSharp.responsiveSizes.src
+                      post.frontmatter.image
+                        ? post.frontmatter.image.childImageSharp.responsiveSizes.src
+                        : `), ${IMAGE_OVERLAY_TINT.slice(0, -1)}` // TODO: Substitute with a non-hacky solution as soon as possible
                     } // TODO: Add support for responsive images
                     {...css({
                       ...ASPECT_RATIO_4_3,
