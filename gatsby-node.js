@@ -3,6 +3,7 @@ const { createFilePath } = require('gatsby-source-filesystem');
 
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators;
+
   if (node.internal.type === 'MarkdownRemark') {
     const slug = createFilePath({ node, getNode, basePath: 'pages' });
     createNodeField({
@@ -15,6 +16,12 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
+
+  createPage({
+    path: '/teams/',
+    component: path.resolve('./src/templates/teams.jsx'),
+  });
+
   return new Promise((resolve) => {
     graphql(`
       {
@@ -28,8 +35,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           }
         }
       }
-    `).then((result) => {
-      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    `).then(({ data }) => {
+      data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
           path: node.fields.slug,
           component: path.resolve('./src/templates/blog-post.jsx'),
@@ -39,6 +46,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           },
         });
       });
+
       resolve();
     });
   });
