@@ -21,12 +21,12 @@ const TeamsTemplate = ({ data }) => {
 
       <ArticleContainer title={title}>
         {data.allTeamsJson.edges.map(({ node: team }) => (
-          <Card>
+          <Card key={team.name}>
             <CardContent>
               <Typography type="headline" component="h2">
                 {team.name}
               </Typography>
-              <Typography component="p">
+              <Typography component="span">
                 <Shiitake lines={5}>{team.description}</Shiitake>
               </Typography>
             </CardContent>

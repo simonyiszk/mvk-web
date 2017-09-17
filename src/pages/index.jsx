@@ -65,7 +65,7 @@ const IndexPage = ({ data }) => {
                     <Typography type="body1" color="secondary">
                       {post.frontmatter.date}
                     </Typography>
-                    <Typography component="p">
+                    <Typography component="span">
                       <Shiitake lines={2}>{post.excerpt}</Shiitake>
                     </Typography>
                   </CardContent>

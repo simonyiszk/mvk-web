@@ -51,141 +51,141 @@ const IndexLayout = ({ children, data, location }) => {
 
   return (
     <MuiThemeProvider theme={theme} sheetsManager={new Map()}>
-      <Typography type="body2">
-        <div
-          {...css({
-            '& a': {
-              ':not(:hover)': {
-                textDecoration: 'none',
-              },
-              color: mainLinkColor,
+      <Typography
+        type="body2"
+        component="div"
+        {...css({
+          '& a': {
+            ':not(:hover)': {
+              textDecoration: 'none',
             },
-            background: mainBackground,
-            display: 'flex',
-            flexDirection: 'column',
-            minHeight: '100vh',
+            color: mainLinkColor,
+          },
+          background: mainBackground,
+          display: 'flex',
+          flexDirection: 'column',
+          minHeight: '100vh',
+        })}
+      >
+        <Helmet
+          defaultTitle={data.site.siteMetadata.title}
+          titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+        >
+          <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+        </Helmet>
+
+        <Headroom
+          disableInlineStyles
+          {...css({
+            '& #header-logo-container, & header': {
+              transition: 'all 0.4s 0.15s',
+            },
+            '&.headroom--pinned.headroom--scrolled': {
+              '& #header-logo-container': {
+                opacity: 1,
+                visibility: 'visible',
+              },
+            },
+            '&.headroom--unfixed, &.headroom--unpinned': {
+              '& header': {
+                backgroundColor: 'transparent',
+                boxShadow: 'none',
+              },
+            },
+            '&.headroom--unpinned': {
+              '& header': {
+                transform: 'translateY(-100%)',
+              },
+            },
           })}
         >
-          <Helmet
-            defaultTitle={data.site.siteMetadata.title}
-            titleTemplate={`%s | ${data.site.siteMetadata.title}`}
-          >
-            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-          </Helmet>
-
-          <Headroom
-            disableInlineStyles
-            {...css({
-              '& #header-logo-container, & header': {
-                transition: 'all 0.4s 0.15s',
-              },
-              '&.headroom--pinned.headroom--scrolled': {
-                '& #header-logo-container': {
-                  opacity: 1,
-                  visibility: 'visible',
-                },
-              },
-              '&.headroom--unfixed, &.headroom--unpinned': {
-                '& header': {
-                  backgroundColor: 'transparent',
-                  boxShadow: 'none',
-                },
-              },
-              '&.headroom--unpinned': {
-                '& header': {
-                  transform: 'translateY(-100%)',
-                },
-              },
-            })}
-          >
-            <AppBar {...css({ '& a': { textDecoration: 'none' } })}>
-              <Toolbar>
-                <Typography
-                  id="header-logo-container"
-                  type="title"
-                  {...css({
-                    flex: 1,
-                    opacity: isHomepage && 0,
-                    visibility: isHomepage && 'hidden',
-                  })}
-                >
-                  <Link to="/" exact>
-                    <MVKLogoWhite {...css({ height: '2rem' })} />
-                  </Link>
-                </Typography>
-
-                <NavLink to="/about">
-                  <Button color="contrast">Bemutatkozás</Button>
-                </NavLink>
-                <NavLink to="/teams">
-                  <Button color="contrast">Csapatok</Button>
-                </NavLink>
-                <NavLink to="/race-calendar">
-                  <Button color="contrast">Versenynaptár</Button>
-                </NavLink>
-                <NavLink to="/workshop">
-                  <Button color="contrast">Műhely</Button>
-                </NavLink>
-                <NavLink to="/contact">
-                  <Button color="contrast">Kapcsolat</Button>
-                </NavLink>
-              </Toolbar>
-            </AppBar>
-          </Headroom>
-
-          <main {...css({ flex: 1 })}>{children()}</main>
-
-          <footer
-            {...css({
-              '& a': {
-                color: 'inherit',
-              },
-              background: footerBackgroundLight,
-              color: footerTextColor,
-            })}
-          >
-            <Container>
-              <Grid container align="center" justify="space-between">
-                <Grid item>
-                  <MVKLogoWhite
-                    {...css({
-                      height: '3rem',
-                      maxWidth: '80vw',
-                    })}
-                  />
-                </Grid>
-
-                <Grid item>
-                  <small>
-                    <address>
-                      1111 Budapest, Műegyetem rakpart 3. (TODO)<br />
-                      Telefon: <a href="tel:+36XXXXXXXXX">+36 XX XXX XXXX</a> (TODO)<br />
-                      E-mail: <a href="mailto:info@mvk.bme.hu">info@mvk.bme.hu</a> (TODO)
-                    </address>
-                  </small>
-                </Grid>
-              </Grid>
-            </Container>
-
-            <div {...css({ background: footerBackgroundDark })}>
-              <Container
+          <AppBar {...css({ '& a': { textDecoration: 'none' } })}>
+            <Toolbar>
+              <Typography
+                id="header-logo-container"
+                type="title"
                 {...css({
-                  '& *': {
-                    margin: '0 1.5rem',
-                  },
-                  fontSize: '2rem',
-                  textAlign: 'center',
+                  flex: 1,
+                  opacity: isHomepage && 0,
+                  visibility: isHomepage && 'hidden',
                 })}
               >
-                <FacebookIcon />
-                <TwitterIcon />
-                <InstagramIcon />
-              </Container>
-            </div>
-          </footer>
-        </div>
+                <Link to="/" exact>
+                  <MVKLogoWhite {...css({ height: '2rem' })} />
+                </Link>
+              </Typography>
+
+              <NavLink to="/about">
+                <Button color="contrast">Bemutatkozás</Button>
+              </NavLink>
+              <NavLink to="/teams">
+                <Button color="contrast">Csapatok</Button>
+              </NavLink>
+              <NavLink to="/race-calendar">
+                <Button color="contrast">Versenynaptár</Button>
+              </NavLink>
+              <NavLink to="/workshop">
+                <Button color="contrast">Műhely</Button>
+              </NavLink>
+              <NavLink to="/contact">
+                <Button color="contrast">Kapcsolat</Button>
+              </NavLink>
+            </Toolbar>
+          </AppBar>
+        </Headroom>
+
+        <main {...css({ flex: 1 })}>{children()}</main>
+
+        <footer
+          {...css({
+            '& a': {
+              color: 'inherit',
+            },
+            background: footerBackgroundLight,
+            color: footerTextColor,
+          })}
+        >
+          <Container>
+            <Grid container align="center" justify="space-between">
+              <Grid item>
+                <MVKLogoWhite
+                  {...css({
+                    height: '3rem',
+                    maxWidth: '80vw',
+                  })}
+                />
+              </Grid>
+
+              <Grid item>
+                <small>
+                  <address>
+                    1111 Budapest, Műegyetem rakpart 3. (TODO)<br />
+                    Telefon: <a href="tel:+36XXXXXXXXX">+36 XX XXX XXXX</a> (TODO)<br />
+                    E-mail: <a href="mailto:info@mvk.bme.hu">info@mvk.bme.hu</a> (TODO)
+                  </address>
+                </small>
+              </Grid>
+            </Grid>
+          </Container>
+
+          <div {...css({ background: footerBackgroundDark })}>
+            <Container
+              {...css({
+                '& *': {
+                  margin: '0 1.5rem',
+                },
+                fontSize: '2rem',
+                textAlign: 'center',
+              })}
+            >
+              <FacebookIcon />
+              <TwitterIcon />
+              <InstagramIcon />
+            </Container>
+          </div>
+        </footer>
       </Typography>
     </MuiThemeProvider>
   );
