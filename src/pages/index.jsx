@@ -34,6 +34,7 @@ const IndexPage = ({ data }) => {
             maxWidth: 'calc(100% - 4rem)',
             minHeight: '3.5rem',
             padding: '2rem',
+            userSelect: 'none',
           })}
         />
       </div>

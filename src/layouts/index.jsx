@@ -40,6 +40,7 @@ const MVKLogoWhite = ({ ...props }) => (
     src={MVKLogoImage}
     {...css({
       filter: 'brightness(0) invert(1)',
+      userSelect: 'none',
     })}
     {...props}
   />
@@ -77,21 +78,22 @@ const IndexLayout = ({ children, data, location }) => {
           <Headroom
             disableInlineStyles
             {...css({
-              '& #header-logo, header': {
+              '& #header-logo-container, & header': {
                 transition: 'all 0.4s 0.15s',
               },
-              '.headroom--pinned.headroom--scrolled': {
-                '& #header-logo': {
+              '&.headroom--pinned.headroom--scrolled': {
+                '& #header-logo-container': {
                   opacity: 1,
+                  visibility: 'visible',
                 },
               },
-              '.headroom--unfixed, &.headroom--unpinned': {
+              '&.headroom--unfixed, &.headroom--unpinned': {
                 '& header': {
                   backgroundColor: 'transparent',
                   boxShadow: 'none',
                 },
               },
-              '.headroom--unpinned': {
+              '&.headroom--unpinned': {
                 '& header': {
                   transform: 'translateY(-100%)',
                 },
@@ -101,11 +103,12 @@ const IndexLayout = ({ children, data, location }) => {
             <AppBar {...css({ '& a': { textDecoration: 'none' } })}>
               <Toolbar>
                 <Typography
-                  id="header-logo"
+                  id="header-logo-container"
                   type="title"
                   {...css({
                     flex: 1,
                     opacity: isHomepage && 0,
+                    visibility: isHomepage && 'hidden',
                   })}
                 >
                   <Link to="/" exact>
