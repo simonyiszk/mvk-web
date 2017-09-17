@@ -28,7 +28,8 @@
     "normalize.css": "^7.0.0",
     "react-big-calendar": "^0.15.0",
     "react-headroom": "^2.1.6",
-    "react-icons": "^2.2.5"
+    "react-icons": "^2.2.5",
+    "shiitake": "^2.1.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.0",

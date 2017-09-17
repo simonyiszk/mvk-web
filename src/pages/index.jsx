@@ -5,6 +5,7 @@ import Grid from 'material-ui/Grid';
 import Typography from 'material-ui/Typography';
 import PropTypes from 'prop-types';
 import React from 'react';
+import Shiitake from 'shiitake';
 import BMEBuildingKImage from '../assets/bme-building-k.jpg';
 import MVKLogoImage from '../assets/mvk-logo.svg';
 import Container from '../components/container';
@@ -44,9 +45,9 @@ const IndexPage = ({ data }) => {
 
         <Grid container>
           {posts.edges.map(({ node: post }) => (
-            <Grid item xs={4} key={post.fields.slug}>
+            <Grid item xs={12} sm={6} md={4} key={post.fields.slug}>
               <Link to={post.fields.slug}>
-                <Card>
+                <Card {...css({ height: '100%' })}>
                   <CardMedia
                     image={
                       post.frontmatter.image
@@ -59,21 +60,13 @@ const IndexPage = ({ data }) => {
                   />
                   <CardContent>
                     <Typography type="headline" component="h2">
-                      {post.frontmatter.title}
+                      <Shiitake lines={2}>{post.frontmatter.title}</Shiitake>
                     </Typography>
                     <Typography type="body1" color="secondary">
                       {post.frontmatter.date}
                     </Typography>
-                    <Typography
-                      component="p"
-                      {...css({
-                        height: '40px', // TODO: Use lineHeight * 2
-                        textOverflow: 'ellipsis',
-                        overflow: 'hidden',
-                        overflowWrap: 'break-word',
-                      })}
-                    >
-                      {post.excerpt}
+                    <Typography component="p">
+                      <Shiitake lines={2}>{post.excerpt}</Shiitake>
                     </Typography>
                   </CardContent>
                 </Card>

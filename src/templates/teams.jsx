@@ -1,9 +1,9 @@
-import { css } from 'glamor';
 import Card, { CardContent } from 'material-ui/Card';
 import Typography from 'material-ui/Typography';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
+import Shiitake from 'shiitake';
 import ArticleContainer from '../components/article-container';
 import CoverImage from '../components/cover-image';
 
@@ -26,16 +26,8 @@ const TeamsTemplate = ({ data }) => {
               <Typography type="headline" component="h2">
                 {team.name}
               </Typography>
-              <Typography
-                component="p"
-                {...css({
-                  height: '100px', // TODO: Use lineHeight * 5
-                  textOverflow: 'ellipsis',
-                  overflow: 'hidden',
-                  overflowWrap: 'break-word',
-                })}
-              >
-                {team.description}
+              <Typography component="p">
+                <Shiitake lines={5}>{team.description}</Shiitake>
               </Typography>
             </CardContent>
           </Card>
