@@ -41,7 +41,9 @@ const IndexPage = ({ data }) => {
       </div>
 
       <Container {...css({ '& a': { textDecoration: 'none' } })}>
-        <h1 {...css({ textAlign: 'center' })}>Hírek</h1>
+        <Typography type="headline" align="center" color="inherit" gutterBottom>
+          Hírek
+        </Typography>
 
         <Grid container>
           {posts.edges.map(({ node: post }) => (
@@ -59,13 +61,11 @@ const IndexPage = ({ data }) => {
                     })}
                   />
                   <CardContent>
-                    <Typography type="headline" component="h2">
+                    <Typography type="title">
                       <Shiitake lines={2}>{post.frontmatter.title}</Shiitake>
                     </Typography>
-                    <Typography type="body1" color="secondary">
-                      {post.frontmatter.date}
-                    </Typography>
-                    <Typography component="span">
+                    <Typography color="secondary">{post.frontmatter.date}</Typography>
+                    <Typography component="div">
                       <Shiitake lines={2}>{post.excerpt}</Shiitake>
                     </Typography>
                   </CardContent>

@@ -1,5 +1,6 @@
 import { css } from 'glamor';
 import Paper from 'material-ui/Paper';
+import Typography from 'material-ui/Typography';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Container from './container';
@@ -7,15 +8,9 @@ import Container from './container';
 const ArticleContainer = ({ title, ...props }) => (
   <Container>
     <article>
-      <h1
-        {...css({
-          color: 'white',
-          margin: '0 0 0.4em 0',
-          textTransform: 'uppercase',
-        })}
-      >
+      <Typography type="headline" gutterBottom>
         {title}
-      </h1>
+      </Typography>
 
       <Paper {...css({ padding: '5rem' })} {...props} />
     </article>

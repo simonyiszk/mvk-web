@@ -30,6 +30,13 @@ const theme = createMuiTheme({
     primary: blue,
     secondary: amber,
   },
+  typography: {
+    headline: {
+      color: 'white',
+      fontWeight: 'bold',
+      textTransform: 'uppercase',
+    },
+  },
 });
 
 const NavLink = ({ ...props }) => <Link activeClassName="active" {...props} />;

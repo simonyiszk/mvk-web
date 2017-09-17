@@ -26,7 +26,7 @@ const TeamsTemplate = ({ data }) => {
               <Typography type="headline" component="h2">
                 {team.name}
               </Typography>
-              <Typography component="span">
+              <Typography component="div">
                 <Shiitake lines={5}>{team.description}</Shiitake>
               </Typography>
             </CardContent>
