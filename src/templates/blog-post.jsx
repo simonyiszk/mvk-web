@@ -1,3 +1,4 @@
+import Paper from 'material-ui/Paper';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
@@ -20,10 +21,9 @@ const BlogPostTemplate = ({ data }) => {
 
       <CoverImage {...image} />
 
-      <ArticleContainer
-        title={post.frontmatter.title}
-        dangerouslySetInnerHTML={{ __html: post.html }}
-      />
+      <ArticleContainer title={post.frontmatter.title}>
+        <Paper dangerouslySetInnerHTML={{ __html: post.html }} />
+      </ArticleContainer>
     </div>
   );
 };

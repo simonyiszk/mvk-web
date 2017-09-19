@@ -1,4 +1,6 @@
 import Card, { CardContent } from 'material-ui/Card';
+import Grid from 'material-ui/Grid';
+import { createMuiTheme, MuiThemeProvider } from 'material-ui/styles';
 import Typography from 'material-ui/Typography';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -6,6 +8,16 @@ import Helmet from 'react-helmet';
 import Shiitake from 'shiitake';
 import ArticleContainer from '../components/article-container';
 import CoverImage from '../components/cover-image';
+
+const theme = createMuiTheme({
+  overrides: {
+    MuiPaper: {
+      root: {
+        padding: '2rem',
+      },
+    },
+  },
+});
 
 const TeamsTemplate = ({ data }) => {
   const title = 'Csapatok';
@@ -20,18 +32,22 @@ const TeamsTemplate = ({ data }) => {
       <CoverImage />
 
       <ArticleContainer title={title}>
-        {data.allTeamsJson.edges.map(({ node: team }) => (
-          <Card key={team.name}>
-            <CardContent>
-              <Typography type="headline" component="h2">
-                {team.name}
-              </Typography>
-              <Typography component="div">
-                <Shiitake lines={5}>{team.description}</Shiitake>
-              </Typography>
-            </CardContent>
-          </Card>
-        ))}
+        <MuiThemeProvider theme={theme} sheetsManager={new Map()}>
+          <Grid container>
+            {data.allTeamsJson.edges.map(({ node: team }) => (
+              <Grid item xs={12} key={team.name}>
+                <Card>
+                  <CardContent>
+                    <Typography type="title">{team.name}</Typography>
+                    <Typography component="div">
+                      <Shiitake lines={5}>{team.description}</Shiitake>
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </MuiThemeProvider>
       </ArticleContainer>
     </div>
   );

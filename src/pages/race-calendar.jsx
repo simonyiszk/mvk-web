@@ -1,3 +1,4 @@
+import Paper from 'material-ui/Paper';
 import moment from 'moment';
 import React from 'react';
 import BigCalendar from 'react-big-calendar';
@@ -20,7 +21,9 @@ const RaceCalendar = () => {
       <CoverImage />
 
       <ArticleContainer title={title}>
-        <BigCalendar events={[]} />
+        <Paper>
+          <BigCalendar events={[]} />
+        </Paper>
       </ArticleContainer>
     </div>
   );

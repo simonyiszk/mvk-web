@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-import React from 'react';
 import Link from 'gatsby-link';
 import { css } from 'glamor';
 import AppBar from 'material-ui/AppBar';
@@ -10,6 +8,8 @@ import { createMuiTheme, MuiThemeProvider } from 'material-ui/styles';
 import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 import 'normalize.css';
+import PropTypes from 'prop-types';
+import React from 'react';
 import Headroom from 'react-headroom';
 import Helmet from 'react-helmet';
 import InstagramIcon from 'react-icons/lib/fa/instagram';
@@ -29,13 +29,6 @@ const theme = createMuiTheme({
   palette: {
     primary: blue,
     secondary: amber,
-  },
-  typography: {
-    headline: {
-      color: 'white',
-      fontWeight: 'bold',
-      textTransform: 'uppercase',
-    },
   },
 });
 
@@ -155,7 +148,7 @@ const IndexLayout = ({ children, data, location }) => {
           })}
         >
           <Container>
-            <Grid container align="center" justify="space-between">
+            <Grid container justify="space-between">
               <Grid item>
                 <MVKLogoWhite
                   {...css({
