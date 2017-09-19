@@ -40,15 +40,15 @@ const IndexPage = ({ data }) => {
         />
       </div>
 
-      <Container {...css({ '& a': { textDecoration: 'none' } })}>
-        <Typography type="headline" align="center" color="inherit" gutterBottom>
+      <Container>
+        <Typography type="headline" align="center" gutterBottom>
           Hírek
         </Typography>
 
         <Grid container>
           {posts.edges.map(({ node: post }) => (
             <Grid item xs={12} sm={6} md={4} key={post.fields.slug}>
-              <Link to={post.fields.slug}>
+              <Link to={post.fields.slug} {...css({ textDecoration: 'none' })}>
                 <Card {...css({ height: '100%' })}>
                   <CardMedia
                     image={

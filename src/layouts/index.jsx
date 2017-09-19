@@ -22,7 +22,6 @@ import {
   footerBackgroundLight,
   footerTextColor,
   mainBackground,
-  mainLinkColor,
 } from '../utils/presets';
 
 const theme = createMuiTheme({
@@ -59,7 +58,6 @@ const IndexLayout = ({ children, data, location }) => {
             ':not(:hover)': {
               textDecoration: 'none',
             },
-            color: mainLinkColor,
           },
           background: mainBackground,
           display: 'flex',
@@ -101,8 +99,8 @@ const IndexLayout = ({ children, data, location }) => {
             },
           })}
         >
-          <AppBar {...css({ '& a': { textDecoration: 'none' } })}>
-            <Toolbar>
+          <AppBar>
+            <Toolbar {...css({ '& a': { textDecoration: 'none' } })}>
               <Typography
                 id="header-logo-container"
                 type="title"
@@ -136,7 +134,16 @@ const IndexLayout = ({ children, data, location }) => {
           </AppBar>
         </Headroom>
 
-        <main {...css({ flex: 1 })}>{children()}</main>
+        <main
+          {...css({
+            '& a': {
+              color: theme.palette.primary[500],
+            },
+            flex: 1,
+          })}
+        >
+          {children()}
+        </main>
 
         <footer
           {...css({
@@ -173,7 +180,7 @@ const IndexLayout = ({ children, data, location }) => {
           <div {...css({ background: footerBackgroundDark })}>
             <Container
               {...css({
-                '& *': {
+                '& > *': {
                   margin: '0 1.5rem',
                 },
                 fontSize: '2rem',
