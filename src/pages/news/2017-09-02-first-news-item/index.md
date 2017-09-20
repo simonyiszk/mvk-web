@@ -1,6 +1,6 @@
 ---
 title: Első hír
-date: 2017-09-02
+date: "2017-09-02"
 draft: false
 author: Kristóf Poduszló
 image: ../../../assets/bme-building-k.jpg

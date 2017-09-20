@@ -3161,8 +3161,8 @@ eslint@^4.5.0:
     text-table "~0.2.0"
 
 eslint@^4.6.0:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.7.0.tgz#d35fc07c472520be3de85b3da11e99c576afd515"
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.7.1.tgz#849804136953ebe366782f9f8611e2cbd1b54681"
   dependencies:
     ajv "^5.2.0"
     babel-code-frame "^6.22.0"
@@ -3876,6 +3876,14 @@ gatsby-plugin-sharp@^1.6.7:
     progress "^1.1.8"
     sharp "^0.17.3"
 
+gatsby-react-router-scroll@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-1.0.1.tgz#2e0132807273e544f05bed016645b6e2dfe08c48"
+  dependencies:
+    babel-runtime "^6.26.0"
+    scroll-behavior "^0.9.1"
+    warning "^3.0.0"
+
 gatsby-remark-copy-linked-files@^1.5.7:
   version "1.5.7"
   resolved "https://registry.yarnpkg.com/gatsby-remark-copy-linked-files/-/gatsby-remark-copy-linked-files-1.5.7.tgz#59817877cb2978a6a72df62f2353033f0f8a6e35"
@@ -3920,8 +3928,8 @@ gatsby-remark-smartypants@^1.4.7:
     unist-util-visit "^1.1.1"
 
 gatsby-source-filesystem@^1.4.12:
-  version "1.4.12"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-1.4.12.tgz#0406da9a2528784cd60b9057af51bd706630e369"
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-1.5.0.tgz#4798590387929d2c39a785eebc00df063dcadf72"
   dependencies:
     babel-cli "^6.26.0"
     babel-runtime "^6.26.0"
@@ -3935,15 +3943,15 @@ gatsby-source-filesystem@^1.4.12:
     slash "^1.0.0"
 
 gatsby-transformer-json@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-json/-/gatsby-transformer-json-1.0.6.tgz#6d32b2243c3e642b21d5ae178ebecfd74dd12413"
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-json/-/gatsby-transformer-json-1.0.7.tgz#c63fcaee4f7880843876a3cfec596141dd44ad5d"
   dependencies:
     babel-runtime "^6.26.0"
     bluebird "^3.5.0"
 
 gatsby-transformer-remark@^1.7.7:
-  version "1.7.7"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-1.7.7.tgz#b911ed25c4fbb7ba7bc1f39cd03f94e7dc800c91"
+  version "1.7.8"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-1.7.8.tgz#bfaee877c746941d92a68afe1de74a545112fb86"
   dependencies:
     babel-runtime "^6.26.0"
     bluebird "^3.5.0"
@@ -3959,8 +3967,8 @@ gatsby-transformer-remark@^1.7.7:
     unist-util-visit "^1.1.1"
 
 gatsby-transformer-sharp@^1.6.5:
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-1.6.5.tgz#dbf1d1c30b12058ddd7f65efc0d01723fe1f82a4"
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-1.6.6.tgz#2ad1e4e6702d6f317fb0277941fdfb8d82f06494"
   dependencies:
     babel-runtime "^6.26.0"
     bluebird "^3.5.0"
@@ -3968,8 +3976,8 @@ gatsby-transformer-sharp@^1.6.5:
     image-size "^0.6.0"
 
 gatsby@^1.9.24:
-  version "1.9.33"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.33.tgz#747d91f73e565a4a66998b1def321464624b79af"
+  version "1.9.39"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.39.tgz#23afd3083e195d7255d615ebe19b4d784b1770b2"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
@@ -4013,6 +4021,7 @@ gatsby@^1.9.24:
     fs-extra "^4.0.1"
     gatsby-1-config-css-modules "^1.0.4"
     gatsby-module-loader "^1.0.5"
+    gatsby-react-router-scroll "^1.0.1"
     glob "^7.1.1"
     graphql "^0.10.3"
     graphql-relay "^0.5.1"
@@ -4056,7 +4065,6 @@ gatsby@^1.9.24:
     react-hot-loader "^3.0.0-beta.6"
     react-router "^4.1.1"
     react-router-dom "^4.1.1"
-    react-router-scroll ytase/react-router-scroll#build
     redux "^3.6.0"
     relay-compiler "^1.1.0"
     remote-redux-devtools "^0.5.7"
@@ -6093,8 +6101,8 @@ markdown-toc@^1.1.0:
     strip-color "^0.1.0"
 
 material-ui@^1.0.0-beta.10:
-  version "1.0.0-beta.10"
-  resolved "https://registry.yarnpkg.com/material-ui/-/material-ui-1.0.0-beta.10.tgz#8aaa5a8cf9cee366f42c31c7fb6d8a2d37039404"
+  version "1.0.0-beta.11"
+  resolved "https://registry.yarnpkg.com/material-ui/-/material-ui-1.0.0-beta.11.tgz#f05c475e0e9a1818f1414c5878e4da110b4e9ef4"
   dependencies:
     babel-runtime "^6.26.0"
     brcast "^3.0.1"
@@ -7700,8 +7708,8 @@ prettier-eslint@^8.0.0:
     typescript-eslint-parser "^7.0.0"
 
 prettier-eslint@^8.1.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/prettier-eslint/-/prettier-eslint-8.1.0.tgz#8b0366e180c0d4ec1f76ccd635bb20e3f47bc156"
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/prettier-eslint/-/prettier-eslint-8.1.1.tgz#826d71d79389c93d59edd56e3f0d58264a6ce36f"
   dependencies:
     common-tags "^1.4.0"
     dlv "^1.1.0"
@@ -8076,13 +8084,6 @@ react-router-dom@^4.1.1:
     loose-envify "^1.3.1"
     prop-types "^15.5.4"
     react-router "^4.2.0"
-    warning "^3.0.0"
-
-react-router-scroll@ytase/react-router-scroll#build:
-  version "0.4.1"
-  resolved "https://codeload.github.com/ytase/react-router-scroll/tar.gz/991ecddb08885e1fb80ec1e9dbf3a35844b7d4cd"
-  dependencies:
-    scroll-behavior "^0.9.1"
     warning "^3.0.0"
 
 react-router@^4.1.1, react-router@^4.2.0:
