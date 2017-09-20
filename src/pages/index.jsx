@@ -5,7 +5,6 @@ import Grid from 'material-ui/Grid';
 import Typography from 'material-ui/Typography';
 import PropTypes from 'prop-types';
 import React from 'react';
-import Shiitake from 'shiitake';
 import BMEBuildingKImage from '../assets/bme-building-k.jpg';
 import MVKLogoImage from '../assets/mvk-logo.svg';
 import Container from '../components/container';
@@ -61,13 +60,9 @@ const IndexPage = ({ data }) => {
                     })}
                   />
                   <CardContent>
-                    <Typography type="title">
-                      <Shiitake lines={2}>{post.frontmatter.title}</Shiitake>
-                    </Typography>
+                    <Typography type="title">{post.frontmatter.title}</Typography>
                     <Typography color="secondary">{post.frontmatter.date}</Typography>
-                    <Typography component="div">
-                      <Shiitake lines={2}>{post.excerpt}</Shiitake>
-                    </Typography>
+                    <Typography>{post.excerpt}</Typography>
                   </CardContent>
                 </Card>
               </Link>
@@ -94,7 +89,7 @@ export const query = graphql`
     ) {
       edges {
         node {
-          excerpt
+          excerpt(pruneLength: 80)
           fields {
             slug
           }

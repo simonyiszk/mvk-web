@@ -8938,12 +8938,6 @@ shelljs@0.7.0:
     interpret "^1.0.0"
     rechoir "^0.6.2"
 
-shiitake@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/shiitake/-/shiitake-2.1.1.tgz#ccba400560de266d678ba5bad321f4a2c4566cec"
-  dependencies:
-    prop-types "^15.5.8"
-
 shortid@^2.2.6:
   version "2.2.8"
   resolved "https://registry.yarnpkg.com/shortid/-/shortid-2.2.8.tgz#033b117d6a2e975804f6f0969dbe7d3d0b355131"

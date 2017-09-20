@@ -5,7 +5,6 @@ import Typography from 'material-ui/Typography';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
-import Shiitake from 'shiitake';
 import ArticleContainer from '../components/article-container';
 import CoverImage from '../components/cover-image';
 
@@ -39,9 +38,7 @@ const TeamsTemplate = ({ data }) => {
                 <Card>
                   <CardContent>
                     <Typography type="title">{team.name}</Typography>
-                    <Typography component="div">
-                      <Shiitake lines={5}>{team.description}</Shiitake>
-                    </Typography>
+                    <Typography>{team.description}</Typography>
                   </CardContent>
                 </Card>
               </Grid>
