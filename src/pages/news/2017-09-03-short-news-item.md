@@ -1,6 +1,6 @@
 ---
 title: Rövid hír
-date: "2017-09-03"
+date: 2017-09-03
 draft: false
 ---
 

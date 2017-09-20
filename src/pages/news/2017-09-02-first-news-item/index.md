@@ -1,6 +1,6 @@
 ---
 title: Első hír
-date: "2017-09-02"
+date: 2017-09-02
 draft: false
 image: ../../../assets/bme-building-k.jpg
 ---
