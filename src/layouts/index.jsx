@@ -127,8 +127,8 @@ const IndexLayout = ({ children, data, location }) => {
               <NavLink to="/teams">
                 <Button color="contrast">Csapatok</Button>
               </NavLink>
-              <NavLink to="/race-calendar">
-                <Button color="contrast">Versenynaptár</Button>
+              <NavLink to="/events">
+                <Button color="contrast">Eseménynaptár</Button>
               </NavLink>
               <NavLink to="/workshop">
                 <Button color="contrast">Műhely</Button>

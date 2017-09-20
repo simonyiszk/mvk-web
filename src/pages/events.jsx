@@ -9,8 +9,8 @@ import CoverImage from '../components/cover-image';
 
 BigCalendar.momentLocalizer(moment);
 
-const RaceCalendar = () => {
-  const title = 'Versenynaptár';
+const Events = () => {
+  const title = 'Eseménynaptár';
 
   return (
     <div>
@@ -29,4 +29,4 @@ const RaceCalendar = () => {
   );
 };
 
-export default RaceCalendar;
+export default Events;
