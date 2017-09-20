@@ -2,7 +2,6 @@
 title: RobonAUT 2016
 date: "2017-09-08"
 draft: false
-author: Kristóf Poduszló
 ---
 
 A RobonAUT 2016 versenyről készült videó.
