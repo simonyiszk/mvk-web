@@ -29,6 +29,12 @@ const theme = createMuiTheme({
     primary: blue,
     secondary: amber,
   },
+  typography: {
+    headline: {
+      fontWeight: 'bold',
+      textTransform: 'uppercase',
+    },
+  },
 });
 
 const NavLink = ({ ...props }) => <Link activeClassName="active" {...props} />;
@@ -60,7 +66,7 @@ const IndexLayout = ({ children, data, location }) => {
             },
           },
           background: mainBackground,
-          display: 'flex',
+          display: 'flex !important',
           flexDirection: 'column',
           minHeight: '100vh',
         })}
