@@ -1,3 +1,4 @@
+import { css } from 'glamor';
 import Paper from 'material-ui/Paper';
 import moment from 'moment';
 import React from 'react';
@@ -21,8 +22,21 @@ const Events = () => {
       <CoverImage />
 
       <ArticleContainer title={title}>
-        <Paper>
-          <BigCalendar events={[]} />
+        <Paper
+          {...css({
+            height: '60vh',
+          })}
+        >
+          <BigCalendar
+            culture="hu"
+            events={[
+              {
+                title: 'III. MVK Versenycsapat Konferencia',
+                start: new Date(2017, 10, 9, 14),
+                end: new Date(2017, 10, 9, 18),
+              },
+            ]}
+          />
         </Paper>
       </ArticleContainer>
     </div>

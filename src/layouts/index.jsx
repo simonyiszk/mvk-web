@@ -161,7 +161,7 @@ const IndexLayout = ({ children, data, location }) => {
           })}
         >
           <Container>
-            <Grid container justify="space-between">
+            <Grid container align="center" justify="space-between">
               <Grid item>
                 <MVKLogoWhite
                   {...css({
@@ -174,9 +174,12 @@ const IndexLayout = ({ children, data, location }) => {
               <Grid item>
                 <small>
                   <address>
-                    1111 Budapest, Műegyetem rakpart 3. (TODO)<br />
+                    <a href="//goo.gl/maps/BrBoFEiUsen" target="_blank" rel="noopener noreferrer">
+                      1111 Bp., Műegyetem rkp. 3. K. ép. I.61.
+                    </a>
+                    <br />
                     Telefon: <a href="tel:+36XXXXXXXXX">+36 XX XXX XXXX</a> (TODO)<br />
-                    E-mail: <a href="mailto:info@mvk.bme.hu">info@mvk.bme.hu</a> (TODO)
+                    E-mail: <a href="mailto:mvk@bmeehk.hu">mvk@bmeehk.hu</a>
                   </address>
                 </small>
               </Grid>
