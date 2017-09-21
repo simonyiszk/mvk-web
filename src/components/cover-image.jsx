@@ -11,32 +11,33 @@ const CoverImage = ({ alt, sizes, src, srcSet, ...props }) => (
       backgroundSize: 'cover',
       height: `${ASPECT_RATIO_21_9_RELATIVE_HEIGHT}vw`,
       marginBottom: '-10rem',
-      position: 'relative',
     })}
     {...props}
   >
     {src != null && (
-      <img
-        alt={alt}
-        sizes={sizes}
-        src={src}
-        srcSet={srcSet}
-        {...css({
-          height: '100%',
-          objectFit: 'cover',
-          position: 'absolute',
-          width: '100%',
-        })}
-      />
-    )}
+      <div {...css({ height: '100%', position: 'relative' })}>
+        <img
+          alt={alt}
+          sizes={sizes}
+          src={src}
+          srcSet={srcSet}
+          {...css({
+            height: '100%',
+            objectFit: 'cover',
+            position: 'absolute',
+            width: '100%',
+          })}
+        />
 
-    <div
-      {...css({
-        background: 'linear-gradient(transparent 62%, rgba(0, 0, 0, 0.62))',
-        height: '100%',
-        position: 'relative',
-      })}
-    />
+        <div
+          {...css({
+            background: 'linear-gradient(transparent 62%, rgba(0, 0, 0, 0.62))',
+            height: '100%',
+            position: 'relative',
+          })}
+        />
+      </div>
+    )}
   </div>
 );
 
