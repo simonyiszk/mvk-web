@@ -133,9 +133,6 @@ const IndexLayout = ({ children, data, location }) => {
               <NavLink to="/workshop">
                 <Button color="contrast">Műhely</Button>
               </NavLink>
-              <NavLink to="/contact">
-                <Button color="contrast">Kapcsolat</Button>
-              </NavLink>
             </Toolbar>
           </AppBar>
         </Headroom>
