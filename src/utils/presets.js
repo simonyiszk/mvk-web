@@ -1,5 +1,7 @@
 import { blueGrey, grey } from 'material-ui/colors';
 
+export const ASPECT_RATIO_1_1 = { paddingBottom: '100%' };
+
 export const ASPECT_RATIO_4_3 = { paddingBottom: '75%' };
 
 export const ASPECT_RATIO_21_9_RELATIVE_HEIGHT = 42.86;
