@@ -6,8 +6,8 @@ import Typography from 'material-ui/Typography';
 import PropTypes from 'prop-types';
 import React from 'react';
 import BMEBuildingKImage from '../assets/bme-building-k.jpg';
-import MVKLogoImage from '../assets/mvk-logo.svg';
 import Container from '../components/container';
+import MVKLogo from '../components/mvk-logo';
 import { ASPECT_RATIO_4_3, IMAGE_OVERLAY_TINT } from '../utils/presets';
 
 const IndexPage = ({ data }) => {
@@ -25,16 +25,13 @@ const IndexPage = ({ data }) => {
           height: '100vh',
         })}
       >
-        <img
-          src={MVKLogoImage}
-          alt="MVK logó"
+        <MVKLogo
           {...css({
             background: 'white',
             height: '12.5vh',
             maxWidth: 'calc(100% - 4rem)',
             minHeight: '3.5rem',
             padding: '2rem',
-            userSelect: 'none',
           })}
         />
       </div>

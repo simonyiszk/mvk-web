@@ -1,22 +1,18 @@
-import Link from 'gatsby-link';
 import { css } from 'glamor';
-import AppBar from 'material-ui/AppBar';
-import Button from 'material-ui/Button';
 import { amber, blue } from 'material-ui/colors';
 import Grid from 'material-ui/Grid';
 import { createMuiTheme, MuiThemeProvider } from 'material-ui/styles';
-import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 import 'normalize.css';
 import PropTypes from 'prop-types';
 import React from 'react';
-import Headroom from 'react-headroom';
 import Helmet from 'react-helmet';
 import InstagramIcon from 'react-icons/lib/fa/instagram';
 import FacebookIcon from 'react-icons/lib/fa/facebook-official';
 import TwitterIcon from 'react-icons/lib/fa/twitter';
-import MVKLogoImage from '../assets/mvk-logo.svg';
 import Container from '../components/container';
+import MVKLogo from '../components/mvk-logo';
+import ResponsiveAppBar from '../components/responsive-app-bar';
 import {
   footerBackgroundDark,
   footerBackgroundLight,
@@ -36,20 +32,6 @@ const theme = createMuiTheme({
     },
   },
 });
-
-const NavLink = ({ ...props }) => <Link activeClassName="active" {...props} />;
-
-const MVKLogoWhite = ({ ...props }) => (
-  <img
-    alt="MVK logó"
-    src={MVKLogoImage}
-    {...css({
-      filter: 'brightness(0) invert(1)',
-      userSelect: 'none',
-    })}
-    {...props}
-  />
-);
 
 const IndexLayout = ({ children, data, location }) => {
   const isHomepage = location.pathname === '/';
@@ -80,62 +62,7 @@ const IndexLayout = ({ children, data, location }) => {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Helmet>
 
-        <Headroom
-          disableInlineStyles
-          {...css({
-            '& #header-logo-container, & header': {
-              transition: 'all 0.4s 0.15s',
-            },
-            '&.headroom--pinned.headroom--scrolled': {
-              '& #header-logo-container': {
-                opacity: 1,
-                visibility: 'visible',
-              },
-            },
-            '&.headroom--unfixed, &.headroom--unpinned': {
-              '& header': {
-                backgroundColor: 'transparent',
-                boxShadow: 'none',
-              },
-            },
-            '&.headroom--unpinned': {
-              '& header': {
-                transform: 'translateY(-100%)',
-              },
-            },
-          })}
-        >
-          <AppBar>
-            <Toolbar {...css({ '& a': { textDecoration: 'none' } })}>
-              <Typography
-                id="header-logo-container"
-                type="title"
-                {...css({
-                  flex: 1,
-                  opacity: isHomepage && 0,
-                  visibility: isHomepage && 'hidden',
-                })}
-              >
-                <Link to="/" exact>
-                  <MVKLogoWhite {...css({ height: '2rem' })} />
-                </Link>
-              </Typography>
-
-              <NavLink to="/about">
-                <Button color="contrast">Bemutatkozás</Button>
-              </NavLink>
-              <NavLink to="/teams">
-                <Button color="contrast">Csapatok</Button>
-              </NavLink>
-              <NavLink to="/events">
-                <Button color="contrast">Eseménynaptár</Button>
-              </NavLink>
-              <NavLink to="/workshop">
-                <Button color="contrast">Műhely</Button>
-              </NavLink>
-            </Toolbar>
-          </AppBar>
-        </Headroom>
+        <ResponsiveAppBar hideLogoWhenUnfixed={isHomepage} />
 
         <main
           {...css({
@@ -160,7 +87,8 @@ const IndexLayout = ({ children, data, location }) => {
           <Container>
             <Grid container align="center" justify="space-between">
               <Grid item>
-                <MVKLogoWhite
+                <MVKLogo
+                  white
                   {...css({
                     height: '3rem',
                     maxWidth: '80vw',
