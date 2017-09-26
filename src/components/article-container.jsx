@@ -11,7 +11,10 @@ const theme = outerTheme =>
     overrides: {
       MuiPaper: {
         root: {
-          padding: '5rem',
+          padding: '2rem',
+          [outerTheme.breakpoints.up('md')]: {
+            padding: '5rem',
+          },
         },
       },
     },

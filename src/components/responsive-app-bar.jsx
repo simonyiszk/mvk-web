@@ -4,6 +4,7 @@ import AppBar from 'material-ui/AppBar';
 import Button from 'material-ui/Button';
 import Divider from 'material-ui/Divider';
 import Drawer from 'material-ui/Drawer';
+import Hidden from 'material-ui/Hidden';
 import IconButton from 'material-ui/IconButton';
 import List, { ListItem, ListItemText } from 'material-ui/List';
 import { withTheme } from 'material-ui/styles';
@@ -75,14 +76,23 @@ class ResponsiveAppBar extends React.Component {
         >
           <AppBar>
             <Toolbar {...css({ '& a': { textDecoration: 'none' } })}>
-              <IconButton color="contrast" aria-label="open drawer" onClick={this.handleDrawerOpen}>
-                <BarsIcon />
-              </IconButton>
+              <Hidden mdUp implementation="css">
+                <IconButton
+                  color="contrast"
+                  aria-label="open drawer"
+                  onClick={this.handleDrawerOpen}
+                >
+                  <BarsIcon />
+                </IconButton>
+              </Hidden>
 
               <Typography
                 id="header-logo-container"
                 type="title"
                 {...css({
+                  [theme.breakpoints.down('md')]: {
+                    textAlign: 'center',
+                  },
                   flex: 1,
                   opacity: hideLogoWhenUnfixed && 0,
                   visibility: hideLogoWhenUnfixed && 'hidden',
@@ -93,18 +103,20 @@ class ResponsiveAppBar extends React.Component {
                 </Link>
               </Typography>
 
-              <NavLink to="/about">
-                <Button color="contrast">Bemutatkozás</Button>
-              </NavLink>
-              <NavLink to="/teams">
-                <Button color="contrast">Csapatok</Button>
-              </NavLink>
-              <NavLink to="/events">
-                <Button color="contrast">Eseménynaptár</Button>
-              </NavLink>
-              <NavLink to="/workshop">
-                <Button color="contrast">Műhely</Button>
-              </NavLink>
+              <Hidden mdDown implementation="css">
+                <NavLink to="/about">
+                  <Button color="contrast">Bemutatkozás</Button>
+                </NavLink>
+                <NavLink to="/teams">
+                  <Button color="contrast">Csapatok</Button>
+                </NavLink>
+                <NavLink to="/events">
+                  <Button color="contrast">Eseménynaptár</Button>
+                </NavLink>
+                <NavLink to="/workshop">
+                  <Button color="contrast">Műhely</Button>
+                </NavLink>
+              </Hidden>
             </Toolbar>
           </AppBar>
         </Headroom>
