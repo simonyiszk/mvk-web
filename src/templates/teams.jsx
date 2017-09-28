@@ -45,18 +45,26 @@ const TeamsTemplate = ({ data }) => {
                 >
                   <article>
                     <Grid container align="center" spacing={24}>
-                      <Grid item xs={4}>
-                        <div {...css({ margin: '1rem 0' })}>
-                          <CardMedia
-                            image={BMEBuildingKImage} // TODO: Add support for responsive images
-                            {...css({
-                              borderRadius: '50%',
+                      <Grid item xs={12} md={4}>
+                        <CardMedia
+                          image={BMEBuildingKImage} // TODO: Add support for responsive images
+                          {...css({
+                            [theme.breakpoints.down('md')]: {
+                              height: '14rem',
+                              marginBottom: 0,
+                              marginLeft: 'auto',
+                              marginRight: 'auto',
+                              width: '14rem',
+                            },
+                            [theme.breakpoints.up('md')]: {
                               ...ASPECT_RATIO_1_1,
-                            })}
-                          />
-                        </div>
+                            },
+                            borderRadius: '50%',
+                            margin: '1rem 0',
+                          })}
+                        />
                       </Grid>
-                      <Grid item xs={8}>
+                      <Grid item xs={12} md={8}>
                         <CardContent>
                           <Typography type="headline" component="h2" gutterBottom>
                             {team.name}
