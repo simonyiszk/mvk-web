@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/mvk-web',
   siteMetadata: {
     title: 'Műegyetemi Versenycsapat Közösség',
     // TODO: Description and social media handles
