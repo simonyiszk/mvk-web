@@ -23,7 +23,6 @@ const NavLink = ({ ...props }) => <Link activeClassName="active" {...props} />;
 
 class ResponsiveAppBar extends React.Component {
   static propTypes = {
-    classes: PropTypes.shape({}).isRequired,
     hideLogoWhenUnfixed: PropTypes.bool,
     theme: PropTypes.shape({}).isRequired,
   };
@@ -125,7 +124,7 @@ class ResponsiveAppBar extends React.Component {
           open={this.state.isDrawerOpen}
           onRequestClose={this.handleDrawerClose}
           classes={{
-            paper: css({ width: drawerWidth }),
+            paper: `${css({ width: drawerWidth })}`,
           }}
           {...css({ '& a': { color: 'inherit', textDecoration: 'none' } })}
         >
