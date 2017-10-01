@@ -6,7 +6,7 @@ import Typography from 'material-ui/Typography';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
-import BMEBuildingKImage from '../assets/bme-building-k.jpg';
+import ConferenceImage from '../assets/conference.jpg';
 import ArticleContainer from '../components/article-container';
 import CoverImage from '../components/cover-image';
 import { ASPECT_RATIO_1_1 } from '../utils/presets';
@@ -47,7 +47,7 @@ const TeamsTemplate = ({ data }) => {
                     <Grid container align="center" spacing={24}>
                       <Grid item xs={12} md={4}>
                         <CardMedia
-                          image={BMEBuildingKImage} // TODO: Add support for responsive images
+                          image={ConferenceImage} // TODO: Add support for responsive images
                           {...css({
                             [theme.breakpoints.down('md')]: {
                               height: '14rem',
