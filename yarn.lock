@@ -2596,8 +2596,8 @@ deep-is@~0.1.3:
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
 
 deepmerge@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-1.5.1.tgz#c053bf06fd7276f1994f70c09a0760cb61a56237"
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-1.5.2.tgz#10499d868844cdad4fee0842df8c7f6f0c95a753"
 
 define-properties@^1.1.2:
   version "1.1.2"
@@ -3161,8 +3161,8 @@ eslint@^4.5.0:
     text-table "~0.2.0"
 
 eslint@^4.6.0:
-  version "4.7.2"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.7.2.tgz#ff6f5f5193848a27ee9b627be3e73fb9cb5e662e"
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.8.0.tgz#229ef0e354e0e61d837c7a80fdfba825e199815e"
   dependencies:
     ajv "^5.2.0"
     babel-code-frame "^6.22.0"
@@ -3966,8 +3966,8 @@ gatsby-transformer-remark@^1.7.7:
     unist-util-visit "^1.1.1"
 
 gatsby-transformer-sharp@^1.6.5:
-  version "1.6.6"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-1.6.6.tgz#2ad1e4e6702d6f317fb0277941fdfb8d82f06494"
+  version "1.6.7"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-1.6.7.tgz#350a564ea6c4bbb17f60c524687df2790eb12e9b"
   dependencies:
     babel-runtime "^6.26.0"
     bluebird "^3.5.0"
@@ -3975,8 +3975,8 @@ gatsby-transformer-sharp@^1.6.5:
     image-size "^0.6.0"
 
 gatsby@^1.9.24:
-  version "1.9.49"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.49.tgz#ff934a985493e731ada7e81ec77b17dd474e3e61"
+  version "1.9.50"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.50.tgz#a875f294dd68695e9197178dfa57d02bdec09b93"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
@@ -6099,7 +6099,7 @@ markdown-toc@^1.1.0:
     repeat-string "^1.6.1"
     strip-color "^0.1.0"
 
-material-ui@^1.0.0-beta.10:
+material-ui@1.0.0-beta.12:
   version "1.0.0-beta.12"
   resolved "https://registry.yarnpkg.com/material-ui/-/material-ui-1.0.0-beta.12.tgz#41fe1c317df9835cc690d60102026214c8a8494e"
   dependencies:
@@ -7145,7 +7145,7 @@ pngquant-bin@^3.0.0:
     bin-wrapper "^3.0.0"
     logalot "^2.0.0"
 
-popper.js@^1.10.8:
+popper.js@^1.12.5:
   version "1.12.5"
   resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.12.5.tgz#229e4dea01629e1f1a1e26991ffade5024220fa6"
 
@@ -7948,9 +7948,9 @@ rc@^1.1.2, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-big-calendar@^0.15.0:
-  version "0.15.0"
-  resolved "https://registry.yarnpkg.com/react-big-calendar/-/react-big-calendar-0.15.0.tgz#c0167d3aa2a39329028ab7e548437bfe11f0fa3c"
+react-big-calendar@^0.16.1:
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/react-big-calendar/-/react-big-calendar-0.16.1.tgz#40731ebd469a6fe546f9ca97a7f8094c4c447563"
   dependencies:
     classnames "^2.1.3"
     date-arithmetic "^3.0.0"
@@ -8025,9 +8025,19 @@ react-icons@^2.2.5:
   dependencies:
     react-icon-base "2.0.7"
 
-react-jss@^7.0.2, react-jss@^7.1.0:
+react-jss@^7.0.2:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/react-jss/-/react-jss-7.1.0.tgz#de9430cbe01a82f3b2dcf87a03b798130868ff93"
+  dependencies:
+    hoist-non-react-statics "^1.2.0"
+    jss "^8.1.0"
+    jss-preset-default "^3.0.0"
+    prop-types "^15.5.8"
+    theming "^1.1.0"
+
+react-jss@^7.1.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/react-jss/-/react-jss-7.2.0.tgz#30a5ed51d8388a33767c6d19790b222c1f33f48f"
   dependencies:
     hoist-non-react-statics "^1.2.0"
     jss "^8.1.0"
@@ -8046,11 +8056,10 @@ react-overlays@^0.7.0:
     warning "^3.0.0"
 
 react-popper@^0.7.2:
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/react-popper/-/react-popper-0.7.2.tgz#5daa821eadc6f2ca802176d7be271d0f03f25f58"
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/react-popper/-/react-popper-0.7.3.tgz#fa2809a80fbe7ec516e9bac01d81bc47a8b5cd3b"
   dependencies:
-    is-equal-shallow "^0.1.3"
-    popper.js "^1.10.8"
+    popper.js "^1.12.5"
     prop-types "^15.5.10"
 
 react-prop-types@^0.4.0:
@@ -8104,8 +8113,8 @@ react-side-effect@^1.1.0:
     shallowequal "^1.0.1"
 
 react-transition-group@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.2.0.tgz#793bf8cb15bfe91b3101b24bce1c1d2891659575"
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.2.1.tgz#e9fb677b79e6455fd391b03823afe84849df4a10"
   dependencies:
     chain-function "^1.0.0"
     classnames "^2.2.5"
