@@ -6,10 +6,9 @@ import Typography from 'material-ui/Typography';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
-import ConferenceImage from '../assets/conference.jpg';
 import ArticleContainer from '../components/article-container';
 import CoverImage from '../components/cover-image';
-import { ASPECT_RATIO_1_1 } from '../utils/presets';
+import { ASPECT_RATIO_1_1, IMAGE_OVERLAY_TINT } from '../utils/presets';
 
 const theme = createMuiTheme({
   overrides: {
@@ -47,7 +46,11 @@ const TeamsTemplate = ({ data }) => {
                     <Grid container align="center" spacing={24}>
                       <Grid item xs={12} md={4}>
                         <CardMedia
-                          image={ConferenceImage} // TODO: Add support for responsive images
+                          image={
+                            team.image
+                              ? team.image.childImageSharp.responsiveResolution.src
+                              : `), ${IMAGE_OVERLAY_TINT.slice(0, -1)}` // TODO: Substitute with a non-hacky solution as soon as possible
+                          } // TODO: Add support for responsive images
                           {...css({
                             [theme.breakpoints.down('md')]: {
                               height: '14rem',
@@ -104,6 +107,13 @@ export const query = graphql`
           description
           email
           color
+          image {
+            childImageSharp {
+              responsiveResolution(width: 240, height: 240) {
+                src
+              }
+            }
+          }
         }
       }
     }
