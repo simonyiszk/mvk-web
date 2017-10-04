@@ -52,7 +52,8 @@ class ResponsiveAppBar extends React.Component {
           disableInlineStyles
           {...css({
             '& #header-logo-container, & header': {
-              transition: 'all 0.4s 0.15s',
+              transitionDuration: '0.4s',
+              transitionProperty: 'background-color, box-shadow, opacity, transform, visibility',
             },
             '&.headroom--pinned.headroom--scrolled': {
               '& #header-logo-container': {
@@ -60,7 +61,7 @@ class ResponsiveAppBar extends React.Component {
                 visibility: 'visible',
               },
             },
-            '&.headroom--unfixed, &.headroom--unpinned': {
+            '&.headroom--unfixed': {
               '& header': {
                 backgroundColor: 'transparent',
                 boxShadow: 'none',
@@ -68,6 +69,7 @@ class ResponsiveAppBar extends React.Component {
             },
             '&.headroom--unpinned': {
               '& header': {
+                boxShadow: 'none',
                 transform: 'translateY(-100%)',
               },
             },
