@@ -85,7 +85,18 @@ const IndexLayout = ({ children, data, location }) => {
           })}
         >
           <Container>
-            <Grid container align="center" justify="space-between">
+            <Grid
+              container
+              align="center"
+              {...css({
+                [theme.breakpoints.down('md')]: {
+                  justifyContent: 'center',
+                },
+                [theme.breakpoints.up('md')]: {
+                  justifyContent: 'space-between',
+                },
+              })}
+            >
               <Grid item>
                 <MVKLogo
                   white
