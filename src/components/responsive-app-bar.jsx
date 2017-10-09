@@ -99,9 +99,11 @@ class ResponsiveAppBar extends React.Component {
                   visibility: hideLogoWhenUnfixed && 'hidden',
                 })}
               >
+                {/* eslint-disable jsx-a11y/anchor-is-valid */}
                 <Link to="/" exact>
                   <MVKLogo white {...css({ height: '2rem' })} />
                 </Link>
+                {/* eslint-enable jsx-a11y/anchor-is-valid */}
               </Typography>
 
               <Hidden mdDown implementation="css">

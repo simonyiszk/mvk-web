@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { ASPECT_RATIO_21_9_RELATIVE_HEIGHT, IMAGE_OVERLAY_TINT } from '../utils/presets';
 
-const CoverImage = ({ alt, sizes, src, srcSet, ...props }) => (
+const CoverImage = ({
+  alt, sizes, src, srcSet, ...props
+}) => (
   <div
     {...css({
       background: IMAGE_OVERLAY_TINT,
