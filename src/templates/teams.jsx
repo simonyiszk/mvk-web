@@ -66,14 +66,16 @@ const TeamsTemplate = ({ data }) => {
                               position: 'relative',
                             })}
                           >
-                            <CardMedia
-                              component="img"
-                              {...image}
-                              {...css({
-                                borderRadius: '50%',
-                                position: 'absolute',
-                              })}
-                            />
+                            {image && (
+                              <CardMedia
+                                component="img"
+                                {...image}
+                                {...css({
+                                  borderRadius: '50%',
+                                  position: 'absolute',
+                                })}
+                              />
+                            )}
                           </div>
                         </Grid>
                         <Grid item xs={12} md={8}>

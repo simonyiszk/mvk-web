@@ -57,15 +57,17 @@ const IndexPage = ({ data }) => {
                         position: 'relative',
                       })}
                     >
-                      <CardMedia
-                        component="img"
-                        {...image}
-                        {...css({
-                          height: '100%',
-                          objectFit: 'cover',
-                          position: 'absolute',
-                        })}
-                      />
+                      {image && (
+                        <CardMedia
+                          component="img"
+                          {...image}
+                          {...css({
+                            height: '100%',
+                            objectFit: 'cover',
+                            position: 'absolute',
+                          })}
+                        />
+                      )}
                     </div>
                     <CardContent>
                       <Typography type="title">{post.frontmatter.title}</Typography>
