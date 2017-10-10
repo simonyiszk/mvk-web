@@ -42,29 +42,41 @@ const IndexPage = ({ data }) => {
         </Typography>
 
         <Grid container>
-          {posts.edges.map(({ node: post }) => (
-            <Grid item xs={12} sm={6} md={4} key={post.fields.slug}>
-              <Link to={post.fields.slug} {...css({ textDecoration: 'none' })}>
-                <Card {...css({ height: '100%' })}>
-                  <CardMedia
-                    image={
-                      post.frontmatter.image
-                        ? post.frontmatter.image.childImageSharp.responsiveSizes.src
-                        : `), ${IMAGE_OVERLAY_TINT.slice(0, -1)}` // TODO: Substitute with a non-hacky solution as soon as possible
-                    } // TODO: Add support for responsive images
-                    {...css({
-                      ...ASPECT_RATIO_4_3,
-                    })}
-                  />
-                  <CardContent>
-                    <Typography type="title">{post.frontmatter.title}</Typography>
-                    <Typography color="secondary">{post.frontmatter.date}</Typography>
-                    <Typography>{post.excerpt}</Typography>
-                  </CardContent>
-                </Card>
-              </Link>
-            </Grid>
-          ))}
+          {posts.edges.map(({ node: post }) => {
+            const image =
+              post.frontmatter.image && post.frontmatter.image.childImageSharp.responsiveResolution;
+
+            return (
+              <Grid item xs={12} sm={6} md={4} key={post.fields.slug}>
+                <Link to={post.fields.slug} {...css({ textDecoration: 'none' })}>
+                  <Card {...css({ height: '100%' })}>
+                    <div
+                      {...css({
+                        ...ASPECT_RATIO_4_3,
+                        background: IMAGE_OVERLAY_TINT,
+                        position: 'relative',
+                      })}
+                    >
+                      <CardMedia
+                        component="img"
+                        {...image}
+                        {...css({
+                          height: '100%',
+                          objectFit: 'cover',
+                          position: 'absolute',
+                        })}
+                      />
+                    </div>
+                    <CardContent>
+                      <Typography type="title">{post.frontmatter.title}</Typography>
+                      <Typography color="secondary">{post.frontmatter.date}</Typography>
+                      <Typography>{post.excerpt}</Typography>
+                    </CardContent>
+                  </Card>
+                </Link>
+              </Grid>
+            );
+          })}
         </Grid>
       </Container>
     </div>
@@ -95,8 +107,9 @@ export const query = graphql`
             date(formatString: "YYYY-MM-DD")
             image {
               childImageSharp {
-                responsiveSizes(maxWidth: 400) {
+                responsiveResolution(width: 540) {
                   src
+                  srcSet
                 }
               }
             }

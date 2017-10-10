@@ -9,8 +9,6 @@ const CoverImage = ({
   <div
     {...css({
       background: IMAGE_OVERLAY_TINT,
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
       height: `${ASPECT_RATIO_21_9_RELATIVE_HEIGHT}vw`,
       marginBottom: '-10rem',
     })}

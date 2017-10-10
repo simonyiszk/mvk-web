@@ -35,56 +35,66 @@ const TeamsTemplate = ({ data }) => {
       <ArticleContainer title={title}>
         <MuiThemeProvider theme={theme} sheetsManager={new Map()}>
           <Grid container>
-            {data.allTeamsJson.edges.map(({ node: team }) => (
-              <Grid item xs={12} key={team.name}>
-                <Card
-                  {...css({
-                    borderLeft: `1rem solid ${team.color || theme.palette.primary[500]}`,
-                  })}
-                >
-                  <article>
-                    <Grid container align="center" spacing={24}>
-                      <Grid item xs={12} md={4}>
-                        <CardMedia
-                          image={
-                            team.image
-                              ? team.image.childImageSharp.responsiveResolution.src
-                              : `), ${IMAGE_OVERLAY_TINT.slice(0, -1)}` // TODO: Substitute with a non-hacky solution as soon as possible
-                          } // TODO: Add support for responsive images
-                          {...css({
-                            [theme.breakpoints.down('md')]: {
-                              height: '14rem',
-                              marginBottom: 0,
-                              marginLeft: 'auto',
-                              marginRight: 'auto',
-                              width: '14rem',
-                            },
-                            [theme.breakpoints.up('md')]: {
-                              ...ASPECT_RATIO_1_1,
-                            },
-                            borderRadius: '50%',
-                            margin: '1rem 0',
-                          })}
-                        />
-                      </Grid>
-                      <Grid item xs={12} md={8}>
-                        <CardContent>
-                          <Typography type="headline" component="h2" gutterBottom>
-                            {team.name}
-                          </Typography>
-                          <Typography paragraph>{team.description}</Typography>
-                          {team.email != null && (
-                            <Typography type="subheading" component="address">
-                              E-mail: <a href={`mailto:${team.email}`}>{team.email}</a>
+            {data.allTeamsJson.edges.map(({ node: team }) => {
+              const image = team.image && team.image.childImageSharp.responsiveResolution;
+
+              return (
+                <Grid item xs={12} key={team.name}>
+                  <Card
+                    {...css({
+                      borderLeft: `1rem solid ${team.color || theme.palette.primary[500]}`,
+                    })}
+                  >
+                    <article>
+                      <Grid container align="center" spacing={24}>
+                        <Grid item xs={12} md={4}>
+                          <div
+                            {...css({
+                              [theme.breakpoints.down('md')]: {
+                                height: '14rem',
+                                marginBottom: 0,
+                                marginLeft: 'auto',
+                                marginRight: 'auto',
+                                width: '14rem',
+                              },
+                              [theme.breakpoints.up('md')]: {
+                                ...ASPECT_RATIO_1_1,
+                              },
+                              background: IMAGE_OVERLAY_TINT,
+                              borderRadius: '50%',
+                              margin: '1rem 0',
+                              position: 'relative',
+                            })}
+                          >
+                            <CardMedia
+                              component="img"
+                              {...image}
+                              {...css({
+                                borderRadius: '50%',
+                                position: 'absolute',
+                              })}
+                            />
+                          </div>
+                        </Grid>
+                        <Grid item xs={12} md={8}>
+                          <CardContent>
+                            <Typography type="headline" component="h2" gutterBottom>
+                              {team.name}
                             </Typography>
-                          )}
-                        </CardContent>
+                            <Typography paragraph>{team.description}</Typography>
+                            {team.email != null && (
+                              <Typography type="subheading" component="address">
+                                E-mail: <a href={`mailto:${team.email}`}>{team.email}</a>
+                              </Typography>
+                            )}
+                          </CardContent>
+                        </Grid>
                       </Grid>
-                    </Grid>
-                  </article>
-                </Card>
-              </Grid>
-            ))}
+                    </article>
+                  </Card>
+                </Grid>
+              );
+            })}
           </Grid>
         </MuiThemeProvider>
       </ArticleContainer>

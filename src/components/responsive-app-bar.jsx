@@ -164,4 +164,4 @@ class ResponsiveAppBar extends React.Component {
   }
 }
 
-export default withTheme(ResponsiveAppBar);
+export default withTheme()(ResponsiveAppBar);
