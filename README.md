@@ -1,5 +1,8 @@
 # Műegyetemi Versenycsapat Közösség weboldal
 
+[![Build Status](https://img.shields.io/travis/simonyiszk/mvk-web/master.svg)](https://travis-ci.org/simonyiszk/mvk-web)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+
 ## Build
 
 A weboldal statikusan kiszolgálható változatának elkészítéséhez az alábbi fejlesztői eszközök szükségesek:
