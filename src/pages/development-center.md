@@ -1,5 +1,5 @@
 ---
-title: Műhely
+title: Fejlesztői Központ
 ---
 
 A csapattagok nem csak tervezői és építőimunkát végeznek, hanem a szükséges infrastruktúra megteremtését is el kell végezniük, mely sokszor féléveken át tart. Ezért a MVK egyik legfontosabb célja a nélkülözhetetlen innovatív környezet és fejlesztési alap biztosítása a műegyetemi csapatok számára.

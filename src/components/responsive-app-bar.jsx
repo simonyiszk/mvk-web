@@ -116,8 +116,8 @@ class ResponsiveAppBar extends React.Component {
                 <NavLink to="/events">
                   <Button color="contrast">Eseménynaptár</Button>
                 </NavLink>
-                <NavLink to="/workshop">
-                  <Button color="contrast">Műhely</Button>
+                <NavLink to="/development-center">
+                  <Button color="contrast">Fejlesztői Központ</Button>
                 </NavLink>
               </Hidden>
             </Toolbar>
@@ -152,9 +152,9 @@ class ResponsiveAppBar extends React.Component {
                 <ListItemText primary="Eseménynaptár" />
               </ListItem>
             </NavLink>
-            <NavLink to="/workshop">
+            <NavLink to="/development-center" onClick={this.handleDrawerClose}>
               <ListItem button>
-                <ListItemText primary="Műhely" />
+                <ListItemText primary="Fejlesztői Központ" />
               </ListItem>
             </NavLink>
           </List>
