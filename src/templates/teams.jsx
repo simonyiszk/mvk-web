@@ -46,7 +46,7 @@ const TeamsTemplate = ({ data }) => {
                     })}
                   >
                     <article>
-                      <Grid container align="center" spacing={24}>
+                      <Grid container alignItems="center" spacing={24}>
                         <Grid item xs={12} md={4}>
                           <div
                             {...css({

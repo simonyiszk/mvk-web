@@ -1,3 +1,4 @@
+import { withPrefix } from 'gatsby-link';
 import { css } from 'glamor';
 import { amber, blue } from 'material-ui/colors';
 import Grid from 'material-ui/Grid';
@@ -34,7 +35,7 @@ const theme = createMuiTheme({
 });
 
 const IndexLayout = ({ children, data, location }) => {
-  const isHomepage = location.pathname === '/';
+  const isHomepage = location.pathname === withPrefix('/');
 
   return (
     <MuiThemeProvider theme={theme} sheetsManager={new Map()}>
@@ -87,7 +88,7 @@ const IndexLayout = ({ children, data, location }) => {
           <Container>
             <Grid
               container
-              align="center"
+              alignItems="center"
               {...css({
                 [theme.breakpoints.down('md')]: {
                   justifyContent: 'center',
