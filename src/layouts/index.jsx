@@ -8,9 +8,8 @@ import 'normalize.css';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
-import InstagramIcon from 'react-icons/lib/fa/instagram';
 import FacebookIcon from 'react-icons/lib/fa/facebook-official';
-import TwitterIcon from 'react-icons/lib/fa/twitter';
+import GitHubIcon from 'react-icons/lib/fa/github';
 import Container from '../components/container';
 import MVKLogo from '../components/mvk-logo';
 import ResponsiveAppBar from '../components/responsive-app-bar';
@@ -111,12 +110,23 @@ const IndexLayout = ({ children, data, location }) => {
               <Grid item>
                 <small>
                   <address>
-                    <a href="//goo.gl/maps/BrBoFEiUsen" target="_blank" rel="noopener noreferrer">
-                      1111 Bp., Műegyetem rkp. 3. K. ép. I.61.
+                    <a
+                      href={data.site.siteMetadata.siteAddressURL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {data.site.siteMetadata.siteAddressPretty}
                     </a>
                     <br />
-                    Telefon: <a href="tel:+36XXXXXXXXX">+36 XX XXX XXXX</a> (TODO)<br />
-                    E-mail: <a href="mailto:mvk@bmeehk.hu">mvk@bmeehk.hu</a>
+                    Telefon:{' '}
+                    <a href={`tel:${data.site.siteMetadata.siteTelephoneURL}`}>
+                      {data.site.siteMetadata.siteTelephonePretty}
+                    </a>{' '}
+                    (Egyetemi Hallgatói Képviselet)<br />
+                    E-mail:{' '}
+                    <a href={`mailto:${data.site.siteMetadata.siteEmailURL}`}>
+                      {data.site.siteMetadata.siteEmailURL}
+                    </a>
                   </address>
                 </small>
               </Grid>
@@ -133,9 +143,20 @@ const IndexLayout = ({ children, data, location }) => {
                 textAlign: 'center',
               })}
             >
-              <FacebookIcon />
-              <TwitterIcon />
-              <InstagramIcon />
+              <a
+                href={data.site.siteMetadata.siteFacebookURL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FacebookIcon />
+              </a>
+              <a
+                href={data.site.siteMetadata.siteGitHubURL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GitHubIcon />
+              </a>
             </Container>
           </div>
         </footer>
@@ -157,6 +178,13 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        siteAddressURL
+        siteAddressPretty
+        siteTelephoneURL
+        siteTelephonePretty
+        siteEmailURL
+        siteFacebookURL
+        siteGitHubURL
       }
     }
   }
