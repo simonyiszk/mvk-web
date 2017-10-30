@@ -17,11 +17,6 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
 
-  createPage({
-    path: '/teams/',
-    component: path.resolve('./src/templates/teams.jsx'),
-  });
-
   return new Promise((resolve) => {
     graphql(`
       {
