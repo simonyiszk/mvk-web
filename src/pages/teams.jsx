@@ -1,7 +1,6 @@
 import Link from 'gatsby-link';
 import { css } from 'glamor';
-import Button from 'material-ui/Button';
-import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
+import Card, { CardContent, CardMedia } from 'material-ui/Card';
 import Grid from 'material-ui/Grid';
 import { createMuiTheme, MuiThemeProvider } from 'material-ui/styles';
 import Typography from 'material-ui/Typography';
@@ -45,7 +44,7 @@ const TeamsPage = ({ data }) => {
               return (
                 <Grid item xs={12} key={team.frontmatter.title}>
                   {/* eslint-disable jsx-a11y/anchor-is-valid */}
-                  <Link to={team.fields.slug} css={{ textDecoration: 'none' }}>
+                  <Link to={team.fields.slug} {...css({ textDecoration: 'none' })}>
                     {/* eslint-enable jsx-a11y/anchor-is-valid */}
                     <Card
                       {...css({
