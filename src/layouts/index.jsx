@@ -1,3 +1,6 @@
+import i18n from 'i18next';
+import Backend from 'i18next-xhr-backend';
+import LanguageDetector from 'i18next-browser-languagedetector';
 import { withPrefix } from 'gatsby-link';
 import { css } from 'glamor';
 import { amber, blue } from 'material-ui/colors';
@@ -8,6 +11,7 @@ import 'normalize.css';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
+import { reactI18nextModule } from 'react-i18next';
 import FacebookIcon from 'react-icons/lib/fa/facebook-official';
 import GitHubIcon from 'react-icons/lib/fa/github';
 import Container from '../components/container';
@@ -19,6 +23,22 @@ import {
   footerTextColor,
   mainBackground,
 } from '../utils/presets';
+
+i18n
+  .use(Backend)
+  .use(LanguageDetector)
+  .use(reactI18nextModule)
+  .init({
+    fallbackLng: 'hu',
+    ns: [],
+    debug: process.env.NODE_ENV === 'development',
+    interpolation: {
+      escapeValue: false,
+    },
+    react: {
+      wait: true,
+    },
+  });
 
 const theme = createMuiTheme({
   palette: {

@@ -9,6 +9,7 @@
     "format": "prettier-eslint --write \"src/**/*.{js,jsx}\" && yarn lint --fix"
   },
   "dependencies": {
+    "fs-extra": "^4.0.2",
     "gatsby": "^1.9.24",
     "gatsby-link": "^1.6.15",
     "gatsby-plugin-catch-links": "^1.0.8",
@@ -23,11 +24,15 @@
     "gatsby-transformer-json": "^1.0.6",
     "gatsby-transformer-remark": "^1.7.7",
     "gatsby-transformer-sharp": "^1.6.5",
+    "i18next": "^10.0.6",
+    "i18next-browser-languagedetector": "^2.0.0",
+    "i18next-xhr-backend": "^1.4.3",
     "material-ui": "^1.0.0-beta.16",
     "moment": "^2.18.1",
     "normalize.css": "^7.0.0",
     "react-big-calendar": "^0.16.1",
     "react-headroom": "^2.1.6",
+    "react-i18next": "^6.0.6",
     "react-icons": "^2.2.5"
   },
   "devDependencies": {
