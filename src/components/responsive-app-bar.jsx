@@ -19,6 +19,25 @@ import MVKLogo from '../components/mvk-logo';
 
 const drawerWidth = '17.5rem';
 
+const menuItems = [
+  {
+    url: '/about',
+    text: 'Bemutatkozás',
+  },
+  {
+    url: '/teams',
+    text: 'Csapatok',
+  },
+  {
+    url: '/events',
+    text: 'Eseménynaptár',
+  },
+  {
+    url: '/development-center',
+    text: 'Fejlesztői Központ',
+  },
+];
+
 const NavLink = ({ ...props }) => <Link activeClassName="active" {...props} />;
 
 class ResponsiveAppBar extends React.Component {
@@ -107,18 +126,11 @@ class ResponsiveAppBar extends React.Component {
               </Typography>
 
               <Hidden mdDown implementation="css">
-                <NavLink to="/about">
-                  <Button color="contrast">Bemutatkozás</Button>
-                </NavLink>
-                <NavLink to="/teams">
-                  <Button color="contrast">Csapatok</Button>
-                </NavLink>
-                <NavLink to="/events">
-                  <Button color="contrast">Eseménynaptár</Button>
-                </NavLink>
-                <NavLink to="/development-center">
-                  <Button color="contrast">Fejlesztői Központ</Button>
-                </NavLink>
+                {menuItems.map(menuItem => (
+                  <NavLink to={menuItem.url}>
+                    <Button color="contrast">{menuItem.text}</Button>
+                  </NavLink>
+                ))}
               </Hidden>
             </Toolbar>
           </AppBar>
@@ -137,26 +149,13 @@ class ResponsiveAppBar extends React.Component {
           <Divider />
 
           <List>
-            <NavLink to="/about" onClick={this.handleDrawerClose}>
-              <ListItem button>
-                <ListItemText primary="Bemutatkozás" />
-              </ListItem>
-            </NavLink>
-            <NavLink to="/teams" onClick={this.handleDrawerClose}>
-              <ListItem button>
-                <ListItemText primary="Csapatok" />
-              </ListItem>
-            </NavLink>
-            <NavLink to="/events" onClick={this.handleDrawerClose}>
-              <ListItem button>
-                <ListItemText primary="Eseménynaptár" />
-              </ListItem>
-            </NavLink>
-            <NavLink to="/development-center" onClick={this.handleDrawerClose}>
-              <ListItem button>
-                <ListItemText primary="Fejlesztői Központ" />
-              </ListItem>
-            </NavLink>
+            {menuItems.map(menuItem => (
+              <NavLink to={menuItem.url} onClick={this.handleDrawerClose}>
+                <ListItem button>
+                  <ListItemText primary={menuItem.text} />
+                </ListItem>
+              </NavLink>
+            ))}
           </List>
         </Drawer>
       </div>
