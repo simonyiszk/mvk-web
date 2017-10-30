@@ -69,6 +69,7 @@ class ResponsiveAppBar extends React.Component {
       <div>
         <Headroom
           disableInlineStyles
+          pinStart={64}
           {...css({
             '& #header-logo-container, & header': {
               transitionDuration: '0.4s',
@@ -82,8 +83,10 @@ class ResponsiveAppBar extends React.Component {
             },
             '&.headroom--unfixed': {
               '& header': {
-                backgroundColor: 'transparent',
-                boxShadow: 'none',
+                [theme.breakpoints.up('md')]: {
+                  backgroundColor: 'transparent',
+                  boxShadow: 'none',
+                },
               },
             },
             '&.headroom--unpinned': {
@@ -127,7 +130,7 @@ class ResponsiveAppBar extends React.Component {
 
               <Hidden mdDown implementation="css">
                 {menuItems.map(menuItem => (
-                  <NavLink to={menuItem.url}>
+                  <NavLink to={menuItem.url} key={menuItem.url}>
                     <Button color="contrast">{menuItem.text}</Button>
                   </NavLink>
                 ))}
@@ -135,6 +138,10 @@ class ResponsiveAppBar extends React.Component {
             </Toolbar>
           </AppBar>
         </Headroom>
+
+        <Hidden mdUp implementation="css">
+          <div {...css(theme.mixins.toolbar)} />
+        </Hidden>
 
         <Drawer
           open={this.state.isDrawerOpen}
@@ -150,7 +157,7 @@ class ResponsiveAppBar extends React.Component {
 
           <List>
             {menuItems.map(menuItem => (
-              <NavLink to={menuItem.url} onClick={this.handleDrawerClose}>
+              <NavLink to={menuItem.url} onClick={this.handleDrawerClose} key={menuItem.url}>
                 <ListItem button>
                   <ListItemText primary={menuItem.text} />
                 </ListItem>
