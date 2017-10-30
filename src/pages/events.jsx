@@ -10,7 +10,7 @@ import CoverImage from '../components/cover-image';
 
 BigCalendar.momentLocalizer(moment);
 
-const Events = () => {
+const EventsPage = () => {
   const title = 'Eseménynaptár';
 
   return (
@@ -32,8 +32,8 @@ const Events = () => {
             events={[
               {
                 title: 'III. MVK Versenycsapat Konferencia',
-                start: new Date(2017, 10, 9, 14),
-                end: new Date(2017, 10, 9, 18),
+                start: new Date('2017-11-15T14:00'),
+                end: new Date('2017-11-15T18:00'),
               },
             ]}
           />
@@ -43,4 +43,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default EventsPage;
