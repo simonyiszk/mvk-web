@@ -67,6 +67,10 @@ class ResponsiveAppBar extends React.Component {
             },
             '&.headroom--unfixed': {
               '& header': {
+                [theme.breakpoints.down('md')]: {
+                  backgroundColor: hideLogoWhenUnfixed && 'transparent',
+                  boxShadow: hideLogoWhenUnfixed && 'none',
+                },
                 [theme.breakpoints.up('md')]: {
                   backgroundColor: 'transparent',
                   boxShadow: 'none',
@@ -123,9 +127,11 @@ class ResponsiveAppBar extends React.Component {
           </AppBar>
         </Headroom>
 
-        <Hidden mdUp implementation="css">
-          <div {...css(theme.mixins.toolbar)} />
-        </Hidden>
+        {!hideLogoWhenUnfixed && (
+          <Hidden mdUp implementation="css">
+            <div {...css(theme.mixins.toolbar)} />
+          </Hidden>
+        )}
 
         <Drawer
           open={this.state.isDrawerOpen}
