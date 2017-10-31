@@ -38,8 +38,7 @@ const TeamsPage = ({ data }) => {
           <Grid container>
             {data.allMarkdownRemark.edges.map(({ node: team }) => {
               const image =
-                team.frontmatter.image &&
-                team.frontmatter.image.childImageSharp.responsiveResolution;
+                team.frontmatter.image && team.frontmatter.image.childImageSharp.resolutions;
 
               return (
                 <Grid item xs={12} key={team.frontmatter.title}>
@@ -144,7 +143,7 @@ export const query = graphql`
             excerpt
             image {
               childImageSharp {
-                responsiveResolution(width: 240, height: 240) {
+                resolutions(width: 240, height: 240) {
                   src
                   srcSet
                 }

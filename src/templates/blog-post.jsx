@@ -7,7 +7,7 @@ import CoverImage from '../components/cover-image';
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark;
-  const image = post.frontmatter.image && post.frontmatter.image.childImageSharp.responsiveSizes;
+  const image = post.frontmatter.image && post.frontmatter.image.childImageSharp.sizes;
 
   return (
     <div>
@@ -44,7 +44,7 @@ export const query = graphql`
         excerpt
         image {
           childImageSharp {
-            responsiveSizes {
+            sizes {
               src
               srcSet
             }

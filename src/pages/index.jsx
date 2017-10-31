@@ -44,7 +44,7 @@ const IndexPage = ({ data }) => {
         <Grid container>
           {posts.edges.map(({ node: post }) => {
             const image =
-              post.frontmatter.image && post.frontmatter.image.childImageSharp.responsiveResolution;
+              post.frontmatter.image && post.frontmatter.image.childImageSharp.resolutions;
 
             return (
               <Grid item xs={12} sm={6} md={4} key={post.fields.slug}>
@@ -112,7 +112,7 @@ export const query = graphql`
             excerpt
             image {
               childImageSharp {
-                responsiveResolution(width: 540) {
+                resolutions(width: 540, height: 405) {
                   src
                   srcSet
                 }
