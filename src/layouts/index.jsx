@@ -29,11 +29,14 @@ i18n
   .use(LanguageDetector)
   .use(reactI18nextModule)
   .init({
+    debug: process.env.NODE_ENV === 'development',
     fallbackLng: 'hu',
     ns: [],
-    debug: process.env.NODE_ENV === 'development',
     interpolation: {
       escapeValue: false,
+    },
+    backend: {
+      loadPath: withPrefix('/locales/{{lng}}/{{ns}}.json'),
     },
     react: {
       wait: true,
