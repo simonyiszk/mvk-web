@@ -15,7 +15,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   }
 };
 
-exports.onPostBootstrap = () => {
+exports.onPreBootstrap = () => {
   console.log('Copying locales'); // eslint-disable-line no-console
   fs.copySync(path.join(__dirname, '/src/locales'), path.join(__dirname, '/public/locales'));
 };
