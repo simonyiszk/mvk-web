@@ -90,7 +90,11 @@ const TeamsPage = ({ data }) => {
                               <Typography type="headline" component="h2" gutterBottom>
                                 {team.frontmatter.title}
                               </Typography>
-                              <Typography paragraph>{team.frontmatter.description}</Typography>
+                              <Typography paragraph>
+                                {team.frontmatter.excerpt != null
+                                  ? team.frontmatter.excerpt
+                                  : team.excerpt}
+                              </Typography>
                               {team.frontmatter.email != null && (
                                 <Typography type="subheading" component="address">
                                   E-mail:{' '}
@@ -132,11 +136,12 @@ export const query = graphql`
           fields {
             slug
           }
+          excerpt
           frontmatter {
             title
-            description
             email
             color
+            excerpt
             image {
               childImageSharp {
                 responsiveResolution(width: 240, height: 240) {

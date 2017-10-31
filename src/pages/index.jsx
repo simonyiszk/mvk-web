@@ -72,7 +72,9 @@ const IndexPage = ({ data }) => {
                     <CardContent>
                       <Typography type="title">{post.frontmatter.title}</Typography>
                       <Typography color="secondary">{post.frontmatter.date}</Typography>
-                      <Typography>{post.excerpt}</Typography>
+                      <Typography>
+                        {post.frontmatter.excerpt != null ? post.frontmatter.excerpt : post.excerpt}
+                      </Typography>
                     </CardContent>
                   </Card>
                 </Link>
@@ -100,13 +102,14 @@ export const query = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 80)
           fields {
             slug
           }
+          excerpt(pruneLength: 80)
           frontmatter {
             title
             date(formatString: "YYYY-MM-DD")
+            excerpt
             image {
               childImageSharp {
                 responsiveResolution(width: 540) {

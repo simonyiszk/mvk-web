@@ -38,8 +38,10 @@ export const query = graphql`
   query BlogPostTemplateQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      excerpt
       frontmatter {
         title
+        excerpt
         image {
           childImageSharp {
             responsiveSizes {
