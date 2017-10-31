@@ -4,7 +4,7 @@ import React from 'react';
 import { ASPECT_RATIO_21_9_RELATIVE_HEIGHT, IMAGE_OVERLAY_TINT } from '../utils/presets';
 
 const CoverImage = ({
-  alt, sizes, src, srcSet, ...props
+  sizes, src, srcSet, ...props
 }) => (
   <div
     {...css({
@@ -17,7 +17,7 @@ const CoverImage = ({
     {src != null && (
       <div {...css({ height: '100%', position: 'relative' })}>
         <img
-          alt={alt}
+          alt=""
           sizes={sizes}
           src={src}
           srcSet={srcSet}
@@ -42,14 +42,12 @@ const CoverImage = ({
 );
 
 CoverImage.propTypes = {
-  alt: PropTypes.string,
   sizes: PropTypes.string,
   src: PropTypes.string,
   srcSet: PropTypes.string,
 };
 
 CoverImage.defaultProps = {
-  alt: 'Borító',
   sizes: null,
   src: null,
   srcSet: null,
