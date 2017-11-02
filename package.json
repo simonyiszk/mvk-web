@@ -33,7 +33,9 @@
     "react-big-calendar": "^0.16.1",
     "react-headroom": "^2.1.6",
     "react-i18next": "^6.0.6",
-    "react-icons": "^2.2.5"
+    "react-icons": "^2.2.5",
+    "react-images": "^0.5.11",
+    "react-photo-gallery": "^6.0.15"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.0",

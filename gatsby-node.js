@@ -1,9 +1,5 @@
-const { copySync } = require('fs-extra');
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
-
-console.log('Copying locales'); // eslint-disable-line no-console
-copySync(path.resolve('./src/locales'), path.resolve('./public/locales'));
 
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators;
@@ -38,7 +34,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
           path: node.fields.slug,
-          component: path.resolve('./src/templates/blog-post.jsx'),
+          component: node.fields.slug.startsWith('/gallery/')
+            ? path.resolve('./src/templates/album.jsx')
+            : path.resolve('./src/templates/blog-post.jsx'),
           context: {
             // Data passed to context is available in page queries as GraphQL variables
             slug: node.fields.slug,
