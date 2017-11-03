@@ -2,7 +2,7 @@
 title: BME Műszakik Pneumobil Team
 email: noreply@todo.hu
 color: "#0d7a47"
-image: hero.jpg
+image: featured.jpg
 excerpt: TODO
 ---
 

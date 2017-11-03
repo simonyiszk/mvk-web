@@ -2,7 +2,7 @@
 title: BME Solar Boat Team
 email: noreply@todo.hu
 color: "#6cb446"
-image: hero.jpg
+image: featured.jpg
 excerpt: TODO
 ---
 
