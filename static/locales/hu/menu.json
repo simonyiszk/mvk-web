@@ -15,6 +15,10 @@
     {
       "url": "/development-center",
       "text": "Fejlesztői Központ"
+    },
+    {
+      "url": "/gallery",
+      "text": "Galéria"
     }
   ]
 }
