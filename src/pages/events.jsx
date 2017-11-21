@@ -8,7 +8,7 @@ import Helmet from 'react-helmet';
 import ArticleContainer from '../components/article-container';
 import CoverImage from '../components/cover-image';
 
-BigCalendar.momentLocalizer(moment);
+BigCalendar.setLocalizer(BigCalendar.momentLocalizer(moment));
 
 const EventsPage = () => {
   const title = 'Eseménynaptár';
