@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: simonyiszk/mvk-web
   branch: master
 media_folder: static/images/uploads
 public_folder: /images/uploads
@@ -14,4 +15,17 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - {label: "Excerpt", name: "excerpt", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: teams
+    label: Teams
+    folder: src/pages/teams
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean"}
+      - {label: "E-mail", name: "email", widget: "string", required: false}
+      - {label: "Color", name: "color", widget: "image", required: false}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - {label: "Excerpt", name: "excerpt", widget: "text", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
