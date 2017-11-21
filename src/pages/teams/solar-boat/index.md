@@ -2,7 +2,7 @@
 title: BME Solar Boat Team
 email: noreply@todo.hu
 color: "#6cb446"
-image: featured.jpg
+thumbnail: featured.jpg
 excerpt: 2014-ben alakult meg a BME Solar Boat Team, ami az addigi - mérnökhallgatókból álló - versenycsapatok projektjeitől teljesen eltérő feladatba kezdett. Egy kizárólag napenergiával működő, ember által vezetett, teljesen elektromos hajtású hajó tervezésére vállalkozott.
 ---
 

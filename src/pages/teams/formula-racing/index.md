@@ -2,7 +2,7 @@
 title: BME Formula Racing Team
 email: noreply@todo.hu
 color: "#c8102e"
-image: featured.jpg
+thumbnail: featured.jpg
 excerpt: A csapat 2007-ben alakult a Budapesti Műszaki és Gazdaságtudományi Egyetemen azzal a céllal, hogy megvalósítsa pár fiatal egyetemista álmát és részt vegyen a Formula Student sorozatban, hagyományt teremtve ezzel nemcsak az egyetemen, hanem Magyarországon is. A csapat fontosnak érzi a tevékenységét mindinkább integrálni, összehangolni az egyetemi képzés megfelelő tantárgyaival, sikeresen együttműködni a meghatározó tanszékekkel, elismertségre szert tenni az oktatók és kiemelkedő ipari vállalatok szemében, népszerűsíteni a szervezetet az egyetem hallgatói és a nagyközönség körében.
 ---
 

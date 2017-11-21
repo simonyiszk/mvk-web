@@ -2,7 +2,7 @@
 title: BME Műszakik Pneumobil Team
 email: noreply@todo.hu
 color: "#0d7a47"
-image: featured.jpg
+thumbnail: featured.jpg
 excerpt: A BME Műszakik Pneumobil Team egy több, mint 10 éves múltra visszatekintő családias hangulatú egyetemi versenycsapat. A Gépészmérnöki Kar Gép- és Terméktervezés Tanszékén működő közösség legfőbb feladata, hogy az Egerben évente megrendezésre kerülő nemzetközi Pneumobil megmérettetésen minél jobban szerepeljen. Emellett más futamokon, különböző kiállításokon is bemutatják, hogy a sűrített levegő erejével hogyan lehet egy járművet meghajtani - ráadásul 100%-ban környezetbarát módon. A hosszú évek alatt számtalan statikus és dinamikus versenyszámban diadalmaskodtak az aktuális csapatok, valamint több ízben nyerte el a konstrukció az Év pneumobilja díjat.
 ---
 

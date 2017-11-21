@@ -2,7 +2,7 @@
 title: BME Fuse
 email: noreply@todo.hu
 color: "#0c337a"
-image: featured.jpg
+thumbnail: featured.jpg
 excerpt: A BME Fuse csapata 2016 októbere óta dolgozik azon, hogy egy olyan energiahatékony elektromos autót tervezzen, amellyel sikeresen felveheti a versenyt a hazai és külföldi csapatokkal a nemzetközi Shell Eco-marathonon.
 ---
 

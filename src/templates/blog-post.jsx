@@ -7,7 +7,7 @@ import CoverImage from '../components/cover-image';
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark;
-  const image = post.frontmatter.image && post.frontmatter.image.childImageSharp.sizes;
+  const thumbnail = post.frontmatter.thumbnail && post.frontmatter.thumbnail.childImageSharp.sizes;
 
   return (
     <div>
@@ -19,7 +19,7 @@ const BlogPostTemplate = ({ data }) => {
         />
       </Helmet>
 
-      <CoverImage {...image} />
+      <CoverImage {...thumbnail} />
 
       <ArticleContainer title={post.frontmatter.title}>
         <Paper dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -42,7 +42,7 @@ export const query = graphql`
       frontmatter {
         title
         excerpt
-        image {
+        thumbnail {
           childImageSharp {
             sizes {
               src

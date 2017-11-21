@@ -44,8 +44,8 @@ const IndexPage = ({ data }) => {
 
         <Grid container>
           {posts.edges.map(({ node: post }) => {
-            const image =
-              post.frontmatter.image && post.frontmatter.image.childImageSharp.resolutions;
+            const thumbnail =
+              post.frontmatter.thumbnail && post.frontmatter.thumbnail.childImageSharp.resolutions;
 
             return (
               <Grid item xs={12} sm={6} md={4} key={post.fields.slug}>
@@ -58,10 +58,10 @@ const IndexPage = ({ data }) => {
                         position: 'relative',
                       })}
                     >
-                      {image && (
+                      {thumbnail && (
                         <CardMedia
                           component="img"
-                          {...image}
+                          {...thumbnail}
                           {...css({
                             height: '100%',
                             objectFit: 'cover',
@@ -111,7 +111,7 @@ export const query = graphql`
             title
             date(formatString: "YYYY-MM-DD")
             excerpt
-            image {
+            thumbnail {
               childImageSharp {
                 resolutions(width: 540, height: 405) {
                   src

@@ -9,7 +9,7 @@
 - `title`: A bejegyzés címe.
 - `date`: A bejegyzés közzétételének dátuma [ISO 8601][] formátumban megadva.
 - `draft`: Logikai érték, `true` esetén a bejegyzés nem jelenik meg a weboldalon. Alapértelmezés szerint `false`.
-- `image`: A bejegyzéshez tartozó borítókép.
+- `thumbnail`: A bejegyzéshez tartozó borítókép.
 - `team`: A bejegyzéshez kapcsolódó csapat neve.
 
 [Front matter]: https://jekyllrb.com/docs/frontmatter

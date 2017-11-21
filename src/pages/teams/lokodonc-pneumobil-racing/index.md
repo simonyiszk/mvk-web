@@ -2,7 +2,7 @@
 title: BME Löködönc Pneumobil Racing Team
 email: noreply@todo.hu
 color: "#ff6100"
-image: featured.jpg
+thumbnail: featured.jpg
 excerpt: A BME Löködönc Pneumobil Racing Team 2015-ben alakult. A csapat létszáma jellemzően 6--8 fő. Tagjai gépész-, villamos- és mechatronikai mérnök hallgatók, akik az Aventics Nemzetközi Pneumobil Versenyre terveznek és építenek olyan versenyautókat, melyek csak és kizárólag sűrített levegőt használnak fel üzemanyagként.
 ---
 
