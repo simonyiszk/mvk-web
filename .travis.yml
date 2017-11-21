@@ -6,12 +6,19 @@ cache:
   yarn: true
   directories:
   - node_modules
+addons:
+  apt:
+    packages:
+    - sshpass
 before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash
-  - export PATH=$HOME/.yarn/bin:$PATH
+- curl -o- -L https://yarnpkg.com/install.sh | bash
+- export PATH=$HOME/.yarn/bin:$PATH
 script:
 - yarn build -- --prefix-paths
 - yarn lint
+after_success:
+- tar -czf public.tgz public
+- "sshpass -e scp public.tgz $SSH_USER@$SSH_HOST:"
 deploy:
   provider: pages
   allow_failure: true
