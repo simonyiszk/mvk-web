@@ -1,0 +1,2 @@
+webpackJsonp([0x6e8019efaac5],{649:function(e,t){e.exports={data:{allMarkdownRemark:{edges:[{node:{fields:{slug:"/gallery/test/"},excerpt:"TODO: Additional description (optional)",frontmatter:{title:"Test album",date:null,excerpt:null,thumbnail:null}}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---gallery-a74f34d088cae0fe733b.js.map

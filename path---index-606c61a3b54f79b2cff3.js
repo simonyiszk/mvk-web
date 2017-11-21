@@ -1,0 +1,2 @@
+webpackJsonp([0x81b8806e4260],{650:function(e,t){e.exports={data:{allMarkdownRemark:{edges:[{node:{fields:{slug:"/news/2017-11-21-lorem-ipsum/"},excerpt:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt dolor…",frontmatter:{title:"Lorem ipsum",date:"2017-11-20",excerpt:null,thumbnail:null}}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---index-606c61a3b54f79b2cff3.js.map
