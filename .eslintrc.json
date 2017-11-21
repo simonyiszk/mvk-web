@@ -6,7 +6,7 @@
     "browser": true
   },
   "settings": {
-    "import/core-modules": ["glamor", "prop-types", "react", "react-helmet"]
+    "import/core-modules": ["glamor", "prop-types", "react"]
   },
   "globals": {
     "graphql": true

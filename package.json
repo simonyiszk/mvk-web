@@ -10,12 +10,12 @@
   },
   "dependencies": {
     "fs-extra": "^4.0.2",
-    "gatsby": "^1.9.24",
+    "gatsby": "^1.9.118",
     "gatsby-link": "^1.6.15",
     "gatsby-plugin-catch-links": "^1.0.8",
     "gatsby-plugin-glamor": "^1.6.7",
     "gatsby-plugin-jss": "^1.5.6",
-    "gatsby-plugin-react-helmet": "^1.0.5",
+    "gatsby-plugin-react-helmet": "^2.0.1",
     "gatsby-remark-copy-linked-files": "^1.5.7",
     "gatsby-remark-images": "^1.5.11",
     "gatsby-remark-responsive-iframe": "^1.4.7",
@@ -28,6 +28,7 @@
     "normalize.css": "^7.0.0",
     "react-big-calendar": "^0.17.0",
     "react-headroom": "^2.1.6",
+    "react-helmet": "^5.2.0",
     "react-icons": "^2.2.5",
     "react-images": "^0.5.11",
     "react-photo-gallery": "^6.0.15"

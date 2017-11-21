@@ -67,7 +67,7 @@ class ResponsiveAppBar extends React.Component {
   };
 
   render() {
-    const { hideLogoWhenUnfixed, t, theme } = this.props;
+    const { hideLogoWhenUnfixed, theme } = this.props;
 
     return (
       <div>

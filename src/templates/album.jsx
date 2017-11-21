@@ -8,11 +8,15 @@ import ArticleContainer from '../components/article-container';
 import CoverImage from '../components/cover-image';
 
 class Album extends React.Component {
-  propTypes = {
+  static propTypes = {
     images: PropTypes.arrayOf(PropTypes.shape({
       src: PropTypes.string.isRequired,
-      srcSet: PropTypes.string,
+      srcSet: PropTypes.arrayOf(PropTypes.string),
     })),
+  };
+
+  static defaultProps = {
+    images: [],
   };
 
   state = {
@@ -53,10 +57,7 @@ class Album extends React.Component {
       <div>
         <Gallery photos={images} onClick={this.handleGalleryClick} />
         <Lightbox
-          images={images.map(image => ({
-            src: image.src,
-            srcSet: image.srcSet.split('\n'),
-          }))}
+          images={images}
           onClose={this.handleLightboxClose}
           onClickPrev={this.handleLightboxClickPrev}
           onClickNext={this.handleLightboxClickNext}
@@ -94,7 +95,12 @@ const AlbumTemplate = ({ data }) => {
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           {/* eslint-enable react/no-danger */}
 
-          <Album images={images} />
+          <Album
+            images={images.map(({ srcSet, ...rest }) => ({
+              srcSet: srcSet.split('\n'),
+              ...rest,
+            }))}
+          />
         </Paper>
       </ArticleContainer>
     </div>
