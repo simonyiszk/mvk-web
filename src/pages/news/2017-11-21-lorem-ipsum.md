@@ -1,6 +1,6 @@
 ---
-title: Első hír
-date: 2017-09-02
+title: Lorem ipsum
+date: 2017-11-21
 draft: false
 thumbnail: ../../../assets/conference.jpg
 ---
