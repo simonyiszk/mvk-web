@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: simonyiszk/mvk-web
+media_folder: static/images/uploads
+public_folder: /images/uploads
+collections:
+  - name: news
+    label: News
+    folder: src/pages/news
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
