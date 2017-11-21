@@ -1,7 +1,6 @@
 backend:
-  name: github
-  repo: simonyiszk/mvk-web
-  site_domain: bme-mvk.netlify.com
+  name: git-gateway
+  branch: master
 media_folder: static/images/uploads
 public_folder: /images/uploads
 collections:
@@ -14,5 +13,5 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
