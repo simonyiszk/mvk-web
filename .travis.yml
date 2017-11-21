@@ -18,7 +18,7 @@ script:
 - yarn lint
 after_success:
 - tar -czf public.tgz public
-- "sshpass -e scp public.tgz $SSH_USER@$SSH_HOST:"
+- "sshpass -e scp -P SSH_PORT public.tgz $SSH_USER@$SSH_HOST:"
 deploy:
   provider: pages
   allow_failure: true
