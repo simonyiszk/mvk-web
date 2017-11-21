@@ -14,9 +14,31 @@ import 'normalize.css';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Headroom from 'react-headroom';
-import { translate } from 'react-i18next';
 import BarsIcon from 'react-icons/lib/fa/bars';
 import MVKLogo from '../components/mvk-logo';
+
+const menuItems = [
+  {
+    url: '/about',
+    text: 'Bemutatkozás',
+  },
+  {
+    url: '/teams',
+    text: 'Csapatok',
+  },
+  {
+    url: '/events',
+    text: 'Eseménynaptár',
+  },
+  {
+    url: '/development-center',
+    text: 'Fejlesztői Központ',
+  },
+  {
+    url: '/gallery',
+    text: 'Galéria',
+  },
+];
 
 const drawerWidth = '17.5rem';
 
@@ -25,7 +47,6 @@ const NavLink = ({ ...props }) => <Link activeClassName="active" {...props} />;
 class ResponsiveAppBar extends React.Component {
   static propTypes = {
     hideLogoWhenUnfixed: PropTypes.bool,
-    t: PropTypes.func.isRequired,
     theme: PropTypes.shape({}).isRequired,
   };
 
@@ -47,7 +68,6 @@ class ResponsiveAppBar extends React.Component {
 
   render() {
     const { hideLogoWhenUnfixed, t, theme } = this.props;
-    const menuItems = t('items', { returnObjects: true });
 
     return (
       <div>
@@ -160,4 +180,4 @@ class ResponsiveAppBar extends React.Component {
   }
 }
 
-export default withTheme()(translate('menu')(ResponsiveAppBar));
+export default withTheme()(ResponsiveAppBar);
