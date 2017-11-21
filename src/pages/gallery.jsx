@@ -6,7 +6,7 @@ import Typography from 'material-ui/Typography';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
-import ArticleContainer from '../components/article-container';
+import Container from '../components/container';
 import CoverImage from '../components/cover-image';
 import { ASPECT_RATIO_4_3, IMAGE_OVERLAY_TINT } from '../utils/presets';
 
@@ -22,7 +22,12 @@ const GalleryPage = ({ data }) => {
 
       <CoverImage />
 
-      <ArticleContainer title={title}>
+      {/* TODO: Handle CoverImage-related margins better */}
+      <Container {...css({ marginTop: '10rem !important' })}>
+        <Typography type="headline" align="center" gutterBottom>
+          {title}
+        </Typography>
+
         {/* TODO: Abstract the logic below into a new component */}
         <Grid container>
           {posts.edges.map(({ node: post }) => {
@@ -65,7 +70,7 @@ const GalleryPage = ({ data }) => {
             );
           })}
         </Grid>
-      </ArticleContainer>
+      </Container>
     </div>
   );
 };

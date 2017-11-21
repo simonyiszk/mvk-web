@@ -11,6 +11,7 @@ import MVKLogo from '../components/mvk-logo';
 import { ASPECT_RATIO_4_3, IMAGE_OVERLAY_TINT } from '../utils/presets';
 
 const IndexPage = ({ data }) => {
+  const title = 'Hírek';
   const posts = data.allMarkdownRemark;
 
   return (
@@ -38,7 +39,7 @@ const IndexPage = ({ data }) => {
 
       <Container>
         <Typography type="headline" align="center" gutterBottom>
-          Hírek
+          {title}
         </Typography>
 
         <Grid container>
