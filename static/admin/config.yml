@@ -2,8 +2,8 @@ backend:
   name: github
   repo: simonyiszk/mvk-web
   branch: master
-media_folder: src/assets/uploads
-public_folder: /assets/uploads
+media_folder: static/images/uploads
+public_folder: /images/uploads
 collections:
   - name: news
     label: News
