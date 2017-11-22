@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: '/mvk-web',
   siteMetadata: {
     title: 'Műegyetemi Versenycsapat Közösség',
     siteAddressURL: 'https://goo.gl/maps/BrBoFEiUsen',
