@@ -44,8 +44,7 @@ const IndexPage = ({ data }) => {
 
         <Grid container>
           {posts.edges.map(({ node: post }) => {
-            const thumbnail =
-              post.frontmatter.thumbnail && post.frontmatter.thumbnail.childImageSharp.resolutions;
+            const thumbnail = post.thumbnail && post.thumbnail.resolutions;
 
             return (
               <Grid item xs={12} sm={6} md={4} key={post.fields.slug}>
@@ -111,13 +110,11 @@ export const query = graphql`
             title
             date(formatString: "YYYY-MM-DD")
             excerpt
-            thumbnail {
-              childImageSharp {
-                resolutions(width: 540, height: 405) {
-                  src
-                  srcSet
-                }
-              }
+          }
+          thumbnail: childImageSharp {
+            resolutions(width: 540, height: 405) {
+              src
+              srcSet
             }
           }
         }

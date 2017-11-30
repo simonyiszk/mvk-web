@@ -71,7 +71,7 @@ class Album extends React.Component {
 
 const AlbumTemplate = ({ data }) => {
   const post = data.markdownRemark;
-  const thumbnail = post.frontmatter.thumbnail && post.frontmatter.thumbnail.childImageSharp.sizes;
+  const thumbnail = post.thumbnail && post.thumbnail.sizes;
   const images =
     data.allImageSharp != null
       ? data.allImageSharp.edges.map(({ node }) => ({ ...node.original, ...node.sizes }))
@@ -121,13 +121,11 @@ export const query = graphql`
       frontmatter {
         title
         excerpt
-        thumbnail {
-          childImageSharp {
-            sizes {
-              src
-              srcSet
-            }
-          }
+      }
+      thumbnail: childImageSharp {
+        sizes {
+          src
+          srcSet
         }
       }
     }

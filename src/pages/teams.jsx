@@ -37,9 +37,7 @@ const TeamsPage = ({ data }) => {
         <MuiThemeProvider theme={theme} sheetsManager={new Map()}>
           <Grid container>
             {data.allMarkdownRemark.edges.map(({ node: team }) => {
-              const thumbnail =
-                team.frontmatter.thumbnail &&
-                team.frontmatter.thumbnail.childImageSharp.resolutions;
+              const thumbnail = team.thumbnail && team.thumbnail.resolutions;
 
               return (
                 <Grid item xs={12} key={team.frontmatter.title}>
@@ -142,13 +140,11 @@ export const query = graphql`
             email
             color
             excerpt
-            thumbnail {
-              childImageSharp {
-                resolutions(width: 240, height: 240) {
-                  src
-                  srcSet
-                }
-              }
+          }
+          thumbnail: childImageSharp {
+            resolutions(width: 240, height: 240) {
+              src
+              srcSet
             }
           }
         }
