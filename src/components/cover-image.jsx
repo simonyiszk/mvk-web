@@ -1,6 +1,7 @@
 import { css } from 'glamor';
 import PropTypes from 'prop-types';
 import React from 'react';
+import ConferenceImage from '../assets/conference.jpg';
 import { ASPECT_RATIO_21_9_RELATIVE_HEIGHT, IMAGE_OVERLAY_TINT } from '../utils/presets';
 
 const CoverImage = ({
@@ -49,7 +50,7 @@ CoverImage.propTypes = {
 
 CoverImage.defaultProps = {
   sizes: null,
-  src: null,
+  src: ConferenceImage,
   srcSet: null,
 };
 
