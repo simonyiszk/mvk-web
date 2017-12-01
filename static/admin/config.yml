@@ -25,7 +25,14 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "E-mail", name: "email", widget: "string", required: false}
-      - {label: "Color", name: "color", widget: "image", required: false}
+      - {label: "Color", name: "color", widget: "string", required: false}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Excerpt", name: "excerpt", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: highlights
+    label: Highlights
+    folder: src/pages
+    create: false
+    delete: false
+    fields:
       - {label: "Body", name: "body", widget: "markdown"}
