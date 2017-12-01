@@ -1,14 +1,7 @@
+const { siteMetadata } = require('./site-settings.json');
+
 module.exports = {
-  siteMetadata: {
-    title: 'Műegyetemi Versenycsapat Közösség',
-    siteAddressURL: 'https://goo.gl/maps/BrBoFEiUsen',
-    siteAddressPretty: '1111 Bp., Műegyetem rkp. 3. K. ép. I.61.',
-    siteTelephoneURL: '+3614633836',
-    siteTelephonePretty: '+36\xa01\xa0463\xa03836',
-    siteEmailURL: 'mvk@ehk.bme.hu',
-    siteFacebookURL: 'https://fb.com/bmemvk',
-    siteGitHubURL: 'https://github.com/simonyiszk/mvk-web',
-  },
+  siteMetadata,
   plugins: [
     'gatsby-plugin-catch-links',
     'gatsby-plugin-glamor',
