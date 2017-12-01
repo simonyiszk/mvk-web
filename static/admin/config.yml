@@ -35,4 +35,5 @@ collections:
     create: false
     delete: false
     fields:
+      - {label: "Title", name: "title", widget: "hidden"}
       - {label: "Body", name: "body", widget: "markdown"}

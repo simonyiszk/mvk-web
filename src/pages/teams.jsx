@@ -93,14 +93,15 @@ const TeamsPage = ({ data }) => {
                                   ? team.frontmatter.excerpt
                                   : team.excerpt}
                               </Typography>
-                              {team.frontmatter.email != null && (
-                                <Typography type="subheading" component="address">
-                                  E-mail:{' '}
-                                  <a href={`mailto:${team.frontmatter.email}`}>
-                                    {team.frontmatter.email}
-                                  </a>
-                                </Typography>
-                              )}
+                              {typeof team.frontmatter.email === 'string' &&
+                                team.frontmatter.email.length > 0 && (
+                                  <Typography type="subheading" component="address">
+                                    E-mail:{' '}
+                                    <a href={`mailto:${team.frontmatter.email}`}>
+                                      {team.frontmatter.email}
+                                    </a>
+                                  </Typography>
+                                )}
                             </CardContent>
                           </Grid>
                         </Grid>
