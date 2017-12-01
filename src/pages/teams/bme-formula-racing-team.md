@@ -1,6 +1,7 @@
 ---
 title: BME Formula Racing Team
 draft: false
+email: ''
 color: '#c8102e'
 thumbnail: /assets/uploads/bme-formula-racing-team.jpg
 excerpt:
