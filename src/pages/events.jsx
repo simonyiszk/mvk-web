@@ -5,6 +5,7 @@ import React from 'react';
 import BigCalendar from 'react-big-calendar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import Helmet from 'react-helmet';
+import events from './events/hu.json';
 import ArticleContainer from '../components/article-container';
 import CoverImage from '../components/cover-image';
 
@@ -29,13 +30,11 @@ const EventsPage = () => {
         >
           <BigCalendar
             culture="hu"
-            events={[
-              {
-                title: 'III. MVK Versenycsapat Konferencia',
-                start: new Date('2017-11-15T14:00'),
-                end: new Date('2017-11-15T18:00'),
-              },
-            ]}
+            events={events.map(({ start, end, ...rest }) => ({
+              start: new Date(start),
+              end: new Date(end),
+              ...rest,
+            }))}
           />
         </Paper>
       </ArticleContainer>

@@ -38,3 +38,21 @@ collections:
       - {label: "Title", name: "title", widget: "hidden"}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: events
+    label: Events
+    create: false
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: events
+        label: Events
+        file: src/pages/events/hu.json
+        fields:
+          - name: events
+            label: Events
+            widget: list
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Start Date", name: "start", widget: "datetime"}
+              - {label: "End Date", name: "end", widget: "datetime"}
