@@ -38,6 +38,10 @@ const menuItems = [
     url: '/gallery',
     text: 'Galéria',
   },
+  {
+    url: '/sponsors',
+    text: 'Szponzorok',
+  },
 ];
 
 const drawerWidth = '17.5rem';
