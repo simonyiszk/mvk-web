@@ -65,10 +65,3 @@ collections:
             widget: list
             fields:
               - {label: "Title", name: "title", widget: "string"}
-              - {label: "Address (URL)", name: "siteAddressURL", widget: "string"}
-              - {label: "Address (pretty)", name: "siteAddressPretty", widget: "string"}
-              - {label: "Telephone (URL)", name: "siteTelephoneURL", widget: "string"}
-              - {label: "Telephone (pretty)", name: "siteTelephonePretty", widget: "string"}
-              - {label: "E-mail", name: "siteEmailURL", widget: "string"}
-              - {label: "Facebook (URL)", name: "siteFacebookURL", widget: "string"}
-              - {label: "GitHub (URL)", name: "siteGitHubURL", widget: "string"}
