@@ -56,12 +56,19 @@ collections:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Start date", name: "start", widget: "datetime"}
               - {label: "End date", name: "end", widget: "datetime"}
-      - name: site-settings
-        label: Site settings
-        file: site-settings.json
+      - name: "site-settings"
+        label: "Site settings"
+        file: "site-settings.json"
         fields:
           - name: siteMetadata
-            label: Site metadata
+            label: "Site metadata"
             widget: list
             fields:
               - {label: "Title", name: "title", widget: "string"}
+              - {label: "Address (URL)", name: "siteAddressURL", widget: "string"}
+              - {label: "Address (pretty)", name: "siteAddressPretty", widget: "string"}
+              - {label: "Telephone (URL)", name: "siteTelephoneURL", widget: "string"}
+              - {label: "Telephone (pretty)", name: "siteTelephonePretty", widget: "string"}
+              - {label: "E-mail", name: "siteEmailURL", widget: "string"}
+              - {label: "Facebook (URL)", name: "siteFacebookURL", widget: "string"}
+              - {label: "GitHub (URL)", name: "siteGitHubURL", widget: "string"}
