@@ -23,7 +23,14 @@ const SponsorsPage = () => {
           <div
             {...css({
               display: 'flex',
-              justifyContent: 'space-between',
+              flexWrap: 'wrap',
+              justifyContent: 'center',
+              margin: '-1rem',
+
+              '& > *': {
+                height: '6rem',
+                padding: '1rem',
+              },
             })}
           >
             <img src={BMELogoImage} alt="Műegyetem 1782" />
