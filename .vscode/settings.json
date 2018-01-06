@@ -1,6 +1,4 @@
 {
-  "prettier.eslintIntegration": true,
   "editor.formatOnSave": true,
-  "javascript.validate.enable": false,
-  "flow.enabled": false
+  "prettier.eslintIntegration": true
 }
