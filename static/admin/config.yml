@@ -49,8 +49,8 @@ collections:
         label: Menu
         file: src/components/menu.json
         fields:
-          - name: menu
-            label: Menu
+          - name: items
+            label: Items
             widget: list
             fields:
               - {label: "URL", name: "url", widget: "string"}
