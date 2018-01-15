@@ -66,6 +66,18 @@ collections:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Start date", name: "start", widget: "datetime"}
               - {label: "End date", name: "end", widget: "datetime"}
+      - name: sponsors
+        label: Sponsors
+        file: src/data/sponsors.json
+        fields:
+          - name: sponsors
+            label: Sponsors
+            widget: list
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Website", name: "website", widget: "string"}
+              - {label: "Logo", name: "logo", widget: "image"}
+              - {label: "Importance", name: "importance", widget: "number", default: 6, valueType: "int", min: 1, max: 12}
       - name: site-settings
         label: Site settings
         file: site-settings.json
