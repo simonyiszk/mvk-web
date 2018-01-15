@@ -91,13 +91,12 @@ class ResponsiveAppBar extends React.Component {
             },
             '&.headroom--unfixed': {
               '& header': {
-                [theme.breakpoints.down('md')]: {
-                  backgroundColor: hideLogoWhenUnfixed && 'transparent',
-                  boxShadow: hideLogoWhenUnfixed && 'none',
-                },
+                backgroundColor: hideLogoWhenUnfixed && 'transparent',
+                boxShadow: hideLogoWhenUnfixed && 'none',
+
                 [theme.breakpoints.up('md')]: {
-                  backgroundColor: 'transparent',
-                  boxShadow: 'none',
+                  backgroundColor: !hideLogoWhenUnfixed && 'rgba(38, 50, 56, 0.62)',
+                  boxShadow: !hideLogoWhenUnfixed && 'none',
                 },
               },
             },
@@ -111,7 +110,7 @@ class ResponsiveAppBar extends React.Component {
         >
           <AppBar>
             <Toolbar {...css({ '& a': { textDecoration: 'none' } })}>
-              <Hidden mdUp implementation="css">
+              <Hidden lgUp implementation="css">
                 <IconButton
                   color="contrast"
                   aria-label="open drawer"
