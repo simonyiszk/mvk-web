@@ -8,66 +8,97 @@ import ArticleContainer from '../components/article-container';
 import CoverImage from '../components/cover-image';
 
 class Album extends React.Component {
-  static propTypes = {
-    images: PropTypes.arrayOf(PropTypes.shape({
-      src: PropTypes.string.isRequired,
-      srcSet: PropTypes.arrayOf(PropTypes.string),
-    })),
-  };
+  constructor() {
+    super();
 
-  static defaultProps = {
-    images: [],
-  };
+    this.state = {
+      isLightboxOpen: false,
+      currentImage: 0,
+    };
 
-  state = {
-    currentImage: 0,
-    isLightboxOpen: false,
-  };
+    this.handleGalleryClick = this.handleGalleryClick.bind(this);
+    this.closeLightbox = this.closeLightbox.bind(this);
+    this.lightboxGoToPrev = this.lightboxGoToPrev.bind(this);
+    this.lightboxGoToNext = this.lightboxGoToNext.bind(this);
+    this.lightboxGoToIndex = this.lightboxGoToIndex.bind(this);
+    this.handleClickThumbnail = this.handleClickThumbnail.bind(this);
+    this.handleLightboxClickImage = this.handleLightboxClickImage.bind(this);
+  }
 
-  handleGalleryClick = (event, obj) => {
+  handleGalleryClick(event, obj) {
     this.setState({
       currentImage: obj.index,
       isLightboxOpen: true,
     });
-  };
+  }
 
-  handleLightboxClose = () => {
+  closeLightbox() {
     this.setState({
       currentImage: 0,
       isLightboxOpen: false,
     });
-  };
+  }
 
-  handleLightboxClickPrev = () => {
+  lightboxGoToPrev() {
     this.setState({
       currentImage: this.state.currentImage - 1,
     });
-  };
+  }
 
-  handleLightboxClickNext = () => {
+  lightboxGoToNext() {
     this.setState({
       currentImage: this.state.currentImage + 1,
     });
-  };
+  }
+
+  lightboxGoToIndex(index) {
+    this.setState({
+      currentImage: index,
+    });
+  }
+
+  handleClickThumbnail(event) {
+    event.preventDefault();
+    this.setState({
+      isLightboxOpen: true,
+    });
+  }
+
+  handleLightboxClickImage() {
+    if (this.state.currentImage < this.props.images.length - 1) {
+      this.lightboxGoToNext();
+    }
+  }
 
   render() {
     const { images } = this.props;
+    const { isLightboxOpen, currentImage } = this.state;
 
     return (
       <div>
         <Gallery photos={images} onClick={this.handleGalleryClick} />
         <Lightbox
           images={images}
-          onClose={this.handleLightboxClose}
-          onClickPrev={this.handleLightboxClickPrev}
-          onClickNext={this.handleLightboxClickNext}
-          currentImage={this.state.currentImage}
-          isOpen={this.state.isLightboxOpen}
+          isOpen={isLightboxOpen}
+          currentImage={currentImage}
+          backdropClosesModal
+          showImageCount={false}
+          closeButtonTitle="Bezárás (Esc)"
+          leftArrowTitle="Előző (Balra nyíl)"
+          rightArrowTitle="Következő (Jobbra nyíl)"
+          onClose={this.closeLightbox}
+          onClickPrev={this.lightboxGoToPrev}
+          onClickNext={this.lightboxGoToNext}
+          onClickImage={this.handleLightboxClickImage}
         />
       </div>
     );
   }
 }
+
+Album.propTypes = {
+  images: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+};
 
 const AlbumTemplate = ({ data }) => {
   const post = data.markdownRemark;
