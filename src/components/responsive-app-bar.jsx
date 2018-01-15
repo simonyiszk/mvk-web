@@ -16,33 +16,7 @@ import React from 'react';
 import Headroom from 'react-headroom';
 import BarsIcon from 'react-icons/lib/fa/bars';
 import MVKLogo from '../components/mvk-logo';
-
-const menuItems = [
-  {
-    url: '/about',
-    text: 'Bemutatkozás',
-  },
-  {
-    url: '/teams',
-    text: 'Csapatok',
-  },
-  {
-    url: '/events',
-    text: 'Eseménynaptár',
-  },
-  {
-    url: '/development-center',
-    text: 'Fejlesztői Központ',
-  },
-  {
-    url: '/gallery',
-    text: 'Galéria',
-  },
-  {
-    url: '/sponsors',
-    text: 'Szponzorok',
-  },
-];
+import { items as menuItems } from './menu.json';
 
 const drawerWidth = '17.5rem';
 

@@ -45,6 +45,16 @@ collections:
     editor:
       preview: false
     files:
+      - name: menu
+        label: Menu
+        file: src/components/menu.json
+        fields:
+          - name: menu
+            label: Menu
+            widget: list
+            fields:
+              - {label: "URL", name: "url", widget: "string"}
+              - {label: "Text", name: "text", widget: "string"}
       - name: events
         label: Events
         file: src/pages/events/hu.json

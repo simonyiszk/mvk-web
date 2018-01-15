@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "url": "/about",
+      "text": "Bemutatkozás"
+    },
+    {
+      "url": "/teams",
+      "text": "Csapatok"
+    },
+    {
+      "url": "/events",
+      "text": "Eseménynaptár"
+    },
+    {
+      "url": "/development-center",
+      "text": "Fejlesztői Központ"
+    },
+    {
+      "url": "/gallery",
+      "text": "Galéria"
+    },
+    {
+      "url": "/sponsors",
+      "text": "Szponzorok"
+    }
+  ]
+}
