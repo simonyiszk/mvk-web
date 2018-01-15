@@ -32,7 +32,12 @@ const SponsorsPage = () => {
             })}
           >
             {sponsors.map(sponsor => (
-              <a href={sponsor.website} target="_blank" rel="noopener noreferrer">
+              <a
+                key={sponsor.name}
+                href={sponsor.website}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src={sponsor.logo}
                   alt={sponsor.name}
