@@ -5,7 +5,7 @@ import React from 'react';
 import BigCalendar from 'react-big-calendar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import Helmet from 'react-helmet';
-import { events } from './events/hu.json';
+import { events } from '../data/events.json';
 import ArticleContainer from '../components/article-container';
 import CoverImage from '../components/cover-image';
 

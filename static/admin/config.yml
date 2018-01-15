@@ -47,7 +47,7 @@ collections:
     files:
       - name: menu
         label: Menu
-        file: src/components/menu.json
+        file: src/data/menu.json
         fields:
           - name: items
             label: Items
@@ -57,7 +57,7 @@ collections:
               - {label: "Text", name: "text", widget: "string"}
       - name: events
         label: Events
-        file: src/pages/events/hu.json
+        file: src/data/events.json
         fields:
           - name: events
             label: Events

@@ -16,7 +16,7 @@ import React from 'react';
 import Headroom from 'react-headroom';
 import BarsIcon from 'react-icons/lib/fa/bars';
 import MVKLogo from '../components/mvk-logo';
-import { items as menuItems } from './menu.json';
+import { items as menuItems } from '../data/menu.json';
 
 const drawerWidth = '17.5rem';
 
