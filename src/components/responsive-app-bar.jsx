@@ -68,7 +68,7 @@ class ResponsiveAppBar extends React.Component {
                 backgroundColor: hideLogoWhenUnfixed && 'transparent',
                 boxShadow: hideLogoWhenUnfixed && 'none',
 
-                [theme.breakpoints.up('md')]: {
+                [theme.breakpoints.up('lg')]: {
                   backgroundColor: !hideLogoWhenUnfixed && 'rgba(38, 50, 56, 0.62)',
                   boxShadow: !hideLogoWhenUnfixed && 'none',
                 },
@@ -125,7 +125,7 @@ class ResponsiveAppBar extends React.Component {
         </Headroom>
 
         {!hideLogoWhenUnfixed && (
-          <Hidden mdUp implementation="css">
+          <Hidden lgUp implementation="css">
             <div {...css(theme.mixins.toolbar)} />
           </Hidden>
         )}
