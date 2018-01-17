@@ -1,5 +1,6 @@
 ---
 title: Elindult az MVK hivatalos oldala
+slug: elindult-az-mvk-hivatalos-oldala
 draft: false
 date: 2017-11-21T00:00:00.000Z
 thumbnail: /assets/uploads/iii_mvk_konf_kep.jpg
