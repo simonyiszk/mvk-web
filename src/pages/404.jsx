@@ -3,6 +3,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import ArticleContainer from '../components/article-container';
 import CoverImage from '../components/cover-image';
+import { notFoundPageImage as PageCoverImageSrc } from '../data/cover-images.json';
 
 const NotFoundPage = () => {
   const title = 'Hiba';
@@ -13,7 +14,7 @@ const NotFoundPage = () => {
         <title>{title}</title>
       </Helmet>
 
-      <CoverImage />
+      <CoverImage src={PageCoverImageSrc} />
 
       <ArticleContainer title={title}>
         <Paper>

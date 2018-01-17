@@ -55,6 +55,17 @@ collections:
             fields:
               - {label: "URL", name: "url", widget: "string"}
               - {label: "Text", name: "text", widget: "string"}
+      - name: cover-images
+        label: Cover images
+        file: src/data/cover-images.json
+        fields:
+          - {label: "Default", name: "defaultImage", widget: "image"}
+          - {label: "Home page", name: "homePageImage", widget: "image"}
+          - {label: "Not found page", name: "notFoundPageImage", widget: "image"}
+          - {label: "Teams page", name: "teamsPageImage", widget: "image"}
+          - {label: "Events page", name: "eventsPageImage", widget: "image"}
+          - {label: "Gallery page", name: "galleryPageImage", widget: "image"}
+          - {label: "Sponsors page", name: "sponsorsPageImage", widget: "image"}
       - name: events
         label: Events
         file: src/data/events.json

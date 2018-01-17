@@ -1,12 +1,10 @@
 {
   "private": true,
-  "name": "mvk-web",
-  "version": "1.0.0",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "lint": "eslint \"src/**/*.{js,jsx}\"",
-    "format": "prettier-eslint --write \"src/**/*.{js,jsx}\" && yarn lint --fix"
+    "format": "prettier-eslint --write \"src/**/*.{js,jsx}\""
   },
   "dependencies": {
     "fs-extra": "^4.0.2",

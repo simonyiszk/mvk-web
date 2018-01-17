@@ -9,6 +9,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import ArticleContainer from '../components/article-container';
 import CoverImage from '../components/cover-image';
+import { teamsPageImage as PageCoverImageSrc } from '../data/cover-images.json';
 import { ASPECT_RATIO_1_1, IMAGE_OVERLAY_TINT } from '../utils/presets';
 
 const theme = createMuiTheme({
@@ -30,8 +31,7 @@ const TeamsPage = ({ data }) => {
         <title>{title}</title>
       </Helmet>
 
-      {/* TODO: Add a cover image */}
-      <CoverImage />
+      <CoverImage src={PageCoverImageSrc} />
 
       <ArticleContainer title={title}>
         <MuiThemeProvider theme={theme} sheetsManager={new Map()}>

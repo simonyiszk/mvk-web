@@ -1,0 +1,9 @@
+{
+  "defaultImage": "/assets/uploads/conference.jpg",
+  "homePageImage": "/assets/uploads/conference.jpg",
+  "notFoundPageImage": "/assets/uploads/conference.jpg",
+  "teamsPageImage": "/assets/uploads/conference.jpg",
+  "eventsPageImage": "/assets/uploads/conference.jpg",
+  "galleryPageImage": "/assets/uploads/conference.jpg",
+  "sponsorsPageImage": "/assets/uploads/conference.jpg"
+}

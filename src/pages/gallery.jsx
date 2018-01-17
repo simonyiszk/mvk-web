@@ -8,6 +8,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Container from '../components/container';
 import CoverImage from '../components/cover-image';
+import { galleryPageImage as PageCoverImageSrc } from '../data/cover-images.json';
 import { ASPECT_RATIO_4_3, IMAGE_OVERLAY_TINT } from '../utils/presets';
 
 const GalleryPage = ({ data }) => {
@@ -20,7 +21,7 @@ const GalleryPage = ({ data }) => {
         <title>{title}</title>
       </Helmet>
 
-      <CoverImage />
+      <CoverImage src={PageCoverImageSrc} />
 
       {/* TODO: Handle CoverImage-related margins better */}
       <Container {...css({ marginTop: '10rem !important' })}>

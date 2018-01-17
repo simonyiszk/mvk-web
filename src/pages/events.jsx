@@ -8,6 +8,7 @@ import Helmet from 'react-helmet';
 import { events } from '../data/events.json';
 import ArticleContainer from '../components/article-container';
 import CoverImage from '../components/cover-image';
+import { eventsPageImage as PageCoverImageSrc } from '../data/cover-images.json';
 
 BigCalendar.setLocalizer(BigCalendar.momentLocalizer(moment));
 
@@ -20,7 +21,7 @@ const EventsPage = () => {
         <title>{title}</title>
       </Helmet>
 
-      <CoverImage />
+      <CoverImage src={PageCoverImageSrc} />
 
       <ArticleContainer title={title}>
         <Paper

@@ -5,9 +5,9 @@ import Grid from 'material-ui/Grid';
 import Typography from 'material-ui/Typography';
 import PropTypes from 'prop-types';
 import React from 'react';
-import ConferenceImage from '../assets/conference.jpg';
 import Container from '../components/container';
 import MVKLogo from '../components/mvk-logo';
+import { homePageImage as PageCoverImageSrc } from '../data/cover-images.json';
 import { ASPECT_RATIO_4_3, IMAGE_OVERLAY_TINT } from '../utils/presets';
 
 const IndexPage = ({ data }) => {
@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => {
       <div
         {...css({
           alignItems: 'center',
-          backgroundImage: `${IMAGE_OVERLAY_TINT}, url(${ConferenceImage})`,
+          backgroundImage: `${IMAGE_OVERLAY_TINT}, url(${PageCoverImageSrc})`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           display: 'flex',

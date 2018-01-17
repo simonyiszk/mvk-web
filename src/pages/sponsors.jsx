@@ -2,9 +2,10 @@ import { css } from 'glamor';
 import Paper from 'material-ui/Paper';
 import React from 'react';
 import Helmet from 'react-helmet';
-import { sponsors } from '../data/sponsors.json';
 import ArticleContainer from '../components/article-container';
 import CoverImage from '../components/cover-image';
+import { sponsors } from '../data/sponsors.json';
+import { sponsorsPageImage as PageCoverImageSrc } from '../data/cover-images.json';
 
 const SponsorsPage = () => {
   const title = 'Szponzorok';
@@ -15,7 +16,7 @@ const SponsorsPage = () => {
         <title>{title}</title>
       </Helmet>
 
-      <CoverImage />
+      <CoverImage src={PageCoverImageSrc} />
 
       <ArticleContainer title={title}>
         <Paper>
