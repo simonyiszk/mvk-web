@@ -1,6 +1,6 @@
 ---
 title: BME MotoRacing Team
-thumbnail: /assets/uploads/bme_motoracing_cover.jpg
+thumbnail: /assets/uploads/motoracing_cover.jpg
 excerpt: >-
   A csapat 2015-ben alakult a LeVisonta névre keresztelt 24 órás robogóversenyen
   való részvétel céljából. Már az első versenyen sikereket ért el a csapat, egy
