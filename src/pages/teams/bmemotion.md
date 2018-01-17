@@ -1,7 +1,15 @@
 ---
 title: BMEmotion
-color: "#3d0938"
-excerpt: A BMEmotion hallgatói projekt célja egy kerékagymotoros együléses versenyautó kifejlesztése. A feladaton a Gépészmérnöki Kar, a Villamosmérnöki és Informatikai Kar és a Közlekedésmérnöki és Járműmérnöki Kar hallgatói egyaránt dolgoznak. A projekt hajtómotorja az innováció, vagyis a csapattagok törekednek arra, hogy minél több alkatrészt házon belül, saját maguk tervezzenek. Ez igaz az autó szinte összes gépészeti egységére. A váz, a felfüggesztés és a tengelycsonk állványok mellett a kormánymű is egyedi.
+color: '#3d0938'
+thumbnail: /assets/uploads/bmemotion_cover.jpg
+excerpt: >-
+  A BMEmotion hallgatói projekt célja egy kerékagymotoros együléses versenyautó
+  kifejlesztése. A feladaton a Gépészmérnöki Kar, a Villamosmérnöki és
+  Informatikai Kar és a Közlekedésmérnöki és Járműmérnöki Kar hallgatói egyaránt
+  dolgoznak. A projekt hajtómotorja az innováció, vagyis a csapattagok
+  törekednek arra, hogy minél több alkatrészt házon belül, saját maguk
+  tervezzenek. Ez igaz az autó szinte összes gépészeti egységére. A váz, a
+  felfüggesztés és a tengelycsonk állványok mellett a kormánymű is egyedi.
 ---
 
 A BMEmotion hallgatói projekt célja egy kerékagymotoros együléses versenyautó
