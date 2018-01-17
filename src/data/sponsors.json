@@ -1,16 +1,1 @@
-{
-  "sponsors": [
-    {
-      "name": "Budapesti Műszaki és Gazdaságtudományi Egyetem",
-      "website": "https://www.bme.hu",
-      "logo": "/assets/uploads/bme-logo.svg",
-      "importance": 6
-    },
-    {
-      "name": "BME Egyetemi Hallgatói Képviselet",
-      "website": "http://ehk.bme.hu",
-      "logo": "/assets/uploads/ehk-logo.svg",
-      "importance": 6
-    }
-  ]
-}
+{"sponsors":[{"name":"Budapesti Műszaki és Gazdaságtudományi Egyetem","website":"https://www.bme.hu","logo":"/assets/uploads/bme-logo.svg","importance":3},{"name":"BME Egyetemi Hallgatói Képviselet","website":"http://ehk.bme.hu","logo":"/assets/uploads/ehk-logo.svg","importance":6}]}
