@@ -1,6 +1,10 @@
 ---
 title: BME MotoRacing Team
-excerpt: A csapat 2015-ben alakult a LeVisonta névre keresztelt 24 órás robogóversenyen való részvétel céljából. Már az első versenyen sikereket ért el a csapat, egy Yamaha Joggal a 14. helyezést érték el.
+thumbnail: /assets/uploads/bme_motoracing_cover.jpg
+excerpt: >-
+  A csapat 2015-ben alakult a LeVisonta névre keresztelt 24 órás robogóversenyen
+  való részvétel céljából. Már az első versenyen sikereket ért el a csapat, egy
+  Yamaha Joggal a 14. helyezést érték el.
 ---
 
 A csapat 2015-ben alakult a LeVisonta névre keresztelt 24 órás robogóversenyen
