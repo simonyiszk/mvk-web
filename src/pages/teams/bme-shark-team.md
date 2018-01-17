@@ -1,8 +1,15 @@
 ---
 title: BME Shark Team
-color: "#ffd500"
-thumbnail: /assets/uploads/bme-shark-team.jpg
-excerpt: A BME Shark Team 2014-ben alapult azzal a céllal, hogy folyamatos résztvevője legyen a nemzetközi Shell Eco-marathonnak. A verseny célja, hogy a lehető legkevesebb energia felhasználásával a lehető leghosszabb távot tegyék meg az eseményen induló járművek. 2015-ben elkészült első járművük, a Budapesti Műszaki Egyetem Gépészmérnöki karának első Diesel üzemű energiatakarékos járműve - Mr. Shark -, amellyel első megmérettetésükön teljesítették a technikai átvételt.
+color: '#ffd500'
+thumbnail: /assets/uploads/sharkteam_cover.jpg
+excerpt: >-
+  A BME Shark Team 2014-ben alapult azzal a céllal, hogy folyamatos résztvevője
+  legyen a nemzetközi Shell Eco-marathonnak. A verseny célja, hogy a lehető
+  legkevesebb energia felhasználásával a lehető leghosszabb távot tegyék meg az
+  eseményen induló járművek. 2015-ben elkészült első járművük, a Budapesti
+  Műszaki Egyetem Gépészmérnöki karának első Diesel üzemű energiatakarékos
+  járműve - Mr. Shark -, amellyel első megmérettetésükön teljesítették a
+  technikai átvételt.
 ---
 
 A BME Shark Team 2014-ben alapult azzal a céllal, hogy folyamatos résztvevője

@@ -1,7 +1,14 @@
 ---
 title: BME-SHOX MotoStudent Team
-color: "#000000"
-excerpt: A Budapesti Műszaki és Gazdaságtudományi Egyetem hallgatóiból álló BME-SHOX MotoStudent csapat 2013 októberében alakult. A csapat elsődleges célja, hogy részt vegyen a MotoStudent versenyen, amelyet a Moto Engineering Foundation nevű spanyol szervezet hirdet meg két évente. Erre a versenyre a világ minden tájáról érkeznek egyetemi csapatok, akik összemérhetik tudásukat és rátermettségüket.
+color: '#000000'
+thumbnail: /assets/uploads/shox_motostudent_cover.jpg
+excerpt: >-
+  A Budapesti Műszaki és Gazdaságtudományi Egyetem hallgatóiból álló BME-SHOX
+  MotoStudent csapat 2013 októberében alakult. A csapat elsődleges célja, hogy
+  részt vegyen a MotoStudent versenyen, amelyet a Moto Engineering Foundation
+  nevű spanyol szervezet hirdet meg két évente. Erre a versenyre a világ minden
+  tájáról érkeznek egyetemi csapatok, akik összemérhetik tudásukat és
+  rátermettségüket.
 ---
 
 A Budapesti Műszaki és Gazdaságtudományi Egyetem hallgatóiból álló BME-SHOX
