@@ -1,6 +1,7 @@
 ---
-title: III. III. MVK Versenycsapat Konferencia
+title: III. MVK Versenycsapat Konferencia
 date: 2018-01-17T19:01:44.973Z
+thumbnail: /assets/uploads/konf_2017.jpg
 excerpt: >-
   2017 novemberében III. alkalommal került megrendezésre az MVK Versenycsapat
   Konferencia rendezvénysorozat.
