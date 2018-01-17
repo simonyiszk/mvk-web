@@ -1,8 +1,11 @@
 ---
 title: BME Fuse
-color: "#0c337a"
-thumbnail: /assets/uploads/bme-fuse.jpg
-excerpt: A BME Fuse csapata 2016 októbere óta dolgozik azon, hogy egy olyan energiahatékony elektromos autót tervezzen, amellyel sikeresen felveheti a versenyt a hazai és külföldi csapatokkal a nemzetközi Shell Eco-marathonon.
+color: '#0c337a'
+thumbnail: /assets/uploads/bme_fuse_cover.jpg
+excerpt: >-
+  A BME Fuse csapata 2016 októbere óta dolgozik azon, hogy egy olyan
+  energiahatékony elektromos autót tervezzen, amellyel sikeresen felveheti a
+  versenyt a hazai és külföldi csapatokkal a nemzetközi Shell Eco-marathonon.
 ---
 
 A BME Fuse csapata 2016 októbere óta dolgozik azon, hogy egy olyan
