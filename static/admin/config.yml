@@ -12,7 +12,6 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "URL", name: "slug", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean", required: false}
       - {label: "Publish date", name: "date", widget: "datetime"}
       - {label: "Featured image", name: "thumbnail", widget: "image", required: false}
