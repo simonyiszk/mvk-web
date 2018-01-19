@@ -3304,7 +3304,7 @@ eslint-visitor-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
 
-eslint@^4.15.0, eslint@^4.5.0, eslint@^4.6.0:
+eslint@^4.0.0, eslint@^4.15.0, eslint@^4.5.0, eslint@^4.6.0:
   version "4.15.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.15.0.tgz#89ab38c12713eec3d13afac14e4a89e75ef08145"
   dependencies:
@@ -4191,8 +4191,8 @@ gatsby-transformer-sharp@^1.6.5:
     image-size "^0.6.0"
 
 gatsby@^1.9.118:
-  version "1.9.157"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.157.tgz#b9fee3bc27bffe606a325f4086c4370b04dbc26f"
+  version "1.9.160"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.160.tgz#66ba2564c5b8bcbffde87a593a1ebb5340c61af7"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
@@ -5583,8 +5583,8 @@ isemail@2.x.x:
   resolved "https://registry.yarnpkg.com/isemail/-/isemail-2.2.1.tgz#0353d3d9a62951080c262c2aa0a42b8ea8e9e2a6"
 
 isemail@3.x.x:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/isemail/-/isemail-3.0.0.tgz#c89a46bb7a3361e1759f8028f9082488ecce3dff"
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/isemail/-/isemail-3.1.0.tgz#d15156d67529d48241bc0e644df28281e21dd458"
   dependencies:
     punycode "2.x.x"
 
@@ -8195,7 +8195,24 @@ prettier-eslint-cli@^4.3.0:
     rxjs "^5.3.0"
     yargs "10.0.3"
 
-prettier-eslint@^8.1.0, prettier-eslint@^8.5.0:
+prettier-eslint@^8.1.0:
+  version "8.8.0"
+  resolved "https://registry.yarnpkg.com/prettier-eslint/-/prettier-eslint-8.8.0.tgz#09ded651ac190bd357a00140b96d5b1fb20a2418"
+  dependencies:
+    babel-runtime "^6.26.0"
+    common-tags "^1.4.0"
+    dlv "^1.1.0"
+    eslint "^4.0.0"
+    indent-string "^3.2.0"
+    lodash.merge "^4.6.0"
+    loglevel-colored-level-prefix "^1.0.0"
+    prettier "^1.7.0"
+    pretty-format "^22.0.3"
+    require-relative "^0.8.7"
+    typescript "^2.5.1"
+    typescript-eslint-parser "^11.0.0"
+
+prettier-eslint@^8.5.0:
   version "8.7.5"
   resolved "https://registry.yarnpkg.com/prettier-eslint/-/prettier-eslint-8.7.5.tgz#81897ab696ac6ed19bbe2fb1626ea12a9204a239"
   dependencies:

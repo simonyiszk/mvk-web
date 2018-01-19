@@ -1,3 +1,4 @@
+import { css } from 'glamor';
 import Paper from 'material-ui/Paper';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -22,7 +23,14 @@ const BlogPostTemplate = ({ data }) => {
       <CoverImage {...thumbnail} />
 
       <ArticleContainer title={post.frontmatter.title}>
-        <Paper dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Paper
+          dangerouslySetInnerHTML={{ __html: post.html }}
+          {...css({
+            '& img': {
+              maxWidth: '100%',
+            },
+          })}
+        />
       </ArticleContainer>
     </div>
   );

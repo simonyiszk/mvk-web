@@ -25,13 +25,17 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          'gatsby-remark-copy-linked-files',
+          // TODO: Uncomment the code below once https://github.com/gatsbyjs/gatsby/issues/3608 gets fixed
+          /*
+          'gatsby-plugin-sharp',
           {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 640,
             },
           },
+          */
+          'gatsby-remark-copy-linked-files',
           'gatsby-remark-responsive-iframe',
           {
             resolve: 'gatsby-remark-smartypants',
