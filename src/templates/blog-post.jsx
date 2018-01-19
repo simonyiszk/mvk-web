@@ -26,8 +26,11 @@ const BlogPostTemplate = ({ data }) => {
         <Paper
           dangerouslySetInnerHTML={{ __html: post.html }}
           {...css({
+            // TODO: Remove the code below once https://github.com/gatsbyjs/gatsby/issues/3608 gets fixed
             '& img': {
+              display: 'block',
               maxWidth: '100%',
+              margin: '0 auto',
             },
           })}
         />
