@@ -7,6 +7,8 @@ import Typography from 'material-ui/Typography';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
+import FaEnvelope from 'react-icons/lib/fa/envelope';
+import FaFacebookOfficial from 'react-icons/lib/fa/facebook-official';
 import ArticleContainer from '../components/article-container';
 import CoverImage from '../components/cover-image';
 import { teamsPageImage as PageCoverImageSrc } from '../data/cover-images.json';
@@ -41,37 +43,35 @@ const TeamsPage = ({ data }) => {
 
               return (
                 <Grid item xs={12} key={team.frontmatter.title}>
-                  {/* eslint-disable jsx-a11y/anchor-is-valid */}
-                  <Link to={team.fields.slug} {...css({ textDecoration: 'none' })}>
-                    {/* eslint-enable jsx-a11y/anchor-is-valid */}
-                    <Card
-                      {...css({
-                        borderLeft: `1rem solid ${team.frontmatter.color ||
-                          theme.palette.primary[500]}`,
-                      })}
-                    >
-                      <article>
-                        <Grid container alignItems="center" spacing={24}>
-                          <Grid item xs={12} md={4}>
-                            <div
-                              {...css({
-                                [theme.breakpoints.down('md')]: {
-                                  height: '14rem',
-                                  marginBottom: 0,
-                                  marginLeft: 'auto',
-                                  marginRight: 'auto',
-                                  width: '14rem',
-                                },
-                                [theme.breakpoints.up('md')]: {
-                                  ...ASPECT_RATIO_1_1,
-                                },
-                                background: IMAGE_OVERLAY_TINT,
-                                borderRadius: '50%',
-                                margin: '1rem 0',
-                                position: 'relative',
-                              })}
-                            >
-                              {thumbnail && (
+                  <Card
+                    {...css({
+                      borderLeft: `1rem solid ${team.frontmatter.color ||
+                        theme.palette.primary[500]}`,
+                    })}
+                  >
+                    <article>
+                      <Grid container alignItems="center" spacing={24}>
+                        <Grid item xs={12} md={4}>
+                          <div
+                            {...css({
+                              [theme.breakpoints.down('md')]: {
+                                height: '14rem',
+                                marginBottom: 0,
+                                marginLeft: 'auto',
+                                marginRight: 'auto',
+                                width: '14rem',
+                              },
+                              [theme.breakpoints.up('md')]: {
+                                ...ASPECT_RATIO_1_1,
+                              },
+                              background: IMAGE_OVERLAY_TINT,
+                              borderRadius: '50%',
+                              margin: '1rem 0',
+                              position: 'relative',
+                            })}
+                          >
+                            {thumbnail && (
+                              <Link to={team.fields.slug} {...css({ textDecoration: 'none' })}>
                                 <CardMedia
                                   component="img"
                                   {...thumbnail}
@@ -80,11 +80,13 @@ const TeamsPage = ({ data }) => {
                                     position: 'absolute',
                                   })}
                                 />
-                              )}
-                            </div>
-                          </Grid>
-                          <Grid item xs={12} md={8}>
-                            <CardContent>
+                              </Link>
+                            )}
+                          </div>
+                        </Grid>
+                        <Grid item xs={12} md={8}>
+                          <CardContent>
+                            <Link to={team.fields.slug} {...css({ textDecoration: 'none' })}>
                               <Typography type="headline" component="h2" gutterBottom>
                                 {team.frontmatter.title}
                               </Typography>
@@ -93,21 +95,35 @@ const TeamsPage = ({ data }) => {
                                   ? team.frontmatter.excerpt
                                   : team.excerpt}
                               </Typography>
-                              {typeof team.frontmatter.email === 'string' &&
-                                team.frontmatter.email.length > 0 && (
-                                  <Typography type="subheading" component="address">
-                                    E-mail:{' '}
-                                    <a href={`mailto:${team.frontmatter.email}`}>
-                                      {team.frontmatter.email}
-                                    </a>
-                                  </Typography>
-                                )}
-                            </CardContent>
-                          </Grid>
+                            </Link>
+
+                            {typeof team.frontmatter.email === 'string' &&
+                              team.frontmatter.email.length > 0 && (
+                                <Typography type="subheading">
+                                  <FaEnvelope />{' '}
+                                  <a href={`mailto:${team.frontmatter.email}`}>
+                                    {team.frontmatter.email}
+                                  </a>
+                                </Typography>
+                              )}
+                            {typeof team.frontmatter.facebookHandle === 'string' &&
+                              team.frontmatter.facebookHandle.length > 0 && (
+                                <Typography type="subheading">
+                                  <FaFacebookOfficial />{' '}
+                                  <a
+                                    href={`https://facebook.com/${team.frontmatter.facebookHandle}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    {team.frontmatter.facebookHandle}
+                                  </a>
+                                </Typography>
+                              )}
+                          </CardContent>
                         </Grid>
-                      </article>
-                    </Card>
-                  </Link>
+                      </Grid>
+                    </article>
+                  </Card>
                 </Grid>
               );
             })}
@@ -139,6 +155,7 @@ export const query = graphql`
           frontmatter {
             title
             email
+            facebookHandle
             color
             excerpt
           }
