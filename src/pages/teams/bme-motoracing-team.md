@@ -1,7 +1,7 @@
 ---
 title: BME MotoRacing Team
 email: marci.andras@gmail.com
-facebookHandle: 'https://www.facebook.com/bmemotoracing/'
+facebookHandle: bmemotoracing
 thumbnail: /assets/uploads/motoracing_cover.jpg
 excerpt: >-
   A csapat 2015-ben alakult a LeVisonta névre keresztelt 24 órás robogóversenyen
