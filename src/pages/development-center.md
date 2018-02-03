@@ -53,7 +53,7 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
     <td><a href="https://epito.bme.hu/lubloy-eva"><img src="/assets/uploads/lubloy_eva2.jpg" style="width:100%" alt="Lublóy Éva"></a></td>
   </tr>
   <tr>
-    <td><p style="text-align: center;">Dr. habil Stocker György</p></td>
-    <td><p style="text-align: center;">Dr. Lublóy Éva</p></td>
+    <td><b><p style="text-align: center;">Dr. habil Stocker György</b> <br>építészeti főtervező</br></p></td>
+    <td><b><p style="text-align: center;">Dr. Lublóy Éva </b><br>Tűzvédelmi tervező</br></p></td>
   </tr>
 </table> 
