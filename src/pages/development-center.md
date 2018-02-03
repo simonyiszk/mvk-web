@@ -31,23 +31,16 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
 # Tervezői csapat
 
 
-
-
-
  <table style="width:100%">
+
   <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Age</th>
+    <td><img src="/assets/uploads/stocker_gyorgy.jpg" alt="W3Schools.com"></td>
+    <td><img src="/assets/uploads/stocker_gyorgy.jpg" alt="W3Schools.com"></td>
+    <td><img src="/assets/uploads/stocker_gyorgy.jpg" alt="W3Schools.com"></td>
   </tr>
   <tr>
     <td><p style="text-align: center;">Dr. habil Stocker György</p></td>
-    <td> ![Dr. habil. Stocker György](/assets/uploads/stocker_gyorgy.jpg) </td>
-    <td>sf</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
+    <td><p style="text-align: center;">Dr. habil Stocker György</p></td>
+    <td><p style="text-align: center;">Dr. habil Stocker György</p></td>
   </tr>
 </table> 
