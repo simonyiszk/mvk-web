@@ -1,7 +1,7 @@
 ---
 title: BME Shark Team
 email: shell.eco.bme@gmail.com
-facebookHandle: 'https://www.facebook.com/bmesharkteam/'
+facebookHandle: bmesharkteam
 color: '#ffd500'
 thumbnail: /assets/uploads/sharkteam_cover.jpg
 excerpt: >-
