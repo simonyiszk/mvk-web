@@ -32,6 +32,4 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
 
 
 
-
-
 ![Dr. habil. Stocker György](/assets/uploads/stocker_gyorgy.jpg)
