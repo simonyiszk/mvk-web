@@ -52,7 +52,7 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
     <td width="50%"><a href="https://epget.bme.hu/19-tanszek/munkatarsak/30-goda-robert"><img src="/assets/uploads/silu2.jpg" width="100%" alt="Goda Róbert"></a></td>
   </tr>
   <tr>
-    <td><b><p style="text-align: center;">Dr. habil Stocker György</b> <br>építészeti főtervező</br></p></td>
+    <td><b><p style="text-align: center;">Dr. habil Stocker György</b> <br>Építészeti főtervező</br></p></td>
     <td><b><p style="text-align: center;">Dr. Goda Róbert</b><br>Épületgépészeti tervező</br></p></td>
   </tr>
 <tr>
