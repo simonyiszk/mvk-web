@@ -1,7 +1,7 @@
 ---
 title: BME Solar Boat Team
 email: info@solarboatteam.hu
-facebookHandle: 'https://www.facebook.com/BMEsolar/'
+facebookHandle: BMEsolar
 color: '#6cb446'
 thumbnail: /assets/uploads/bme-solar-boat-team.jpg
 excerpt: >-
