@@ -1,7 +1,7 @@
 ---
 title: BME Löködönc Pneumobil Racing Team
 email: info@lokodonc.hu
-facebookHandle: 'https://www.facebook.com/LokodoncTeam/'
+facebookHandle: LokodoncTeam
 color: '#ff6100'
 thumbnail: /assets/uploads/bme-lokodonc-pneumobil-racing-team.jpg
 excerpt: >-
