@@ -79,4 +79,14 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
 <td width="33.3%"><p style="text-align: center;">Takács Gábor</p></td>
 <td width="33.3%"><p style="text-align: center;">Turányi Botond</p></td>
 </tr>
+<tr>
+<td width="33.3%"><img src="/assets/uploads/" width="100%" alt=""></td>
+<td width="33.3%"><img src="/assets/uploads/vatai_andras.jpg" width="100%" alt="Vatai András"></td>
+<td width="33.3%"><img src="/assets/uploads/" width="100%" alt=""></td>
+</tr>
+<tr>
+<td width="33.3%"><p style="text-align: center;"></p></td>
+<td width="33.3%"><p style="text-align: center;">Vatai András</p></td>
+<td width="33.3%"><p style="text-align: center;"></p></td>
+</tr>
 </table> 
