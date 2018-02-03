@@ -32,7 +32,7 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
  <table style="width:100%">
 
   <tr>
-    <td><img src="/assets/uploads/horicsanyi_krisztina.jpg" style="width:100%" alt="Horicsányi Krisztina"></td>
+    <td><img src="/assets/uploads/silu.png" style="width:100%" alt="Horicsányi Krisztina"></td>
     <td><img src="/assets/uploads/kun_levente.jpg" style="width:100%" alt="Kun Levente Alex"></td>
     <td><img src="/assets/uploads/nagy_peter.png" style="width:100%" alt="Nagy Péter"></td>
   </tr>
