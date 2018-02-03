@@ -27,6 +27,7 @@ Kialakítandó helyiségek:
 A V2 épület említett részét olyan alapossággal és műszaki színvonalon kívánjuk felújítani, hogy az méltó legyen Egyetemen belüli elhelyezkedéséhez, továbbá tükrözze a és inspirálja a kutató-fejlesztői munkát. Törekszünk a környezettudatos gondolkodásra is; a Fejlesztői Központ többek között a lehető legjobb energiahatékonysággal és megújulók alkalmazásával működő rendszerek, és egyéb zöld megoldások úttörő alkalmazója lehet.
 
 ![A V2. épület madártávlatból](/assets/uploads/00_helyszín.jpg)
+
 # Projektvezetés
  <table style="width:100%">
 
