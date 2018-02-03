@@ -32,9 +32,9 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
 
 <table style="width:100%">
 <tr>
-<td><img src="/assets/uploads/silu.jpg" style="width:94%" alt="Horicsányi Krisztina"></td>
+<td><img src="/assets/uploads/silu.jpg" style="width:100%" alt="Horicsányi Krisztina"></td>
 <td><img src="/assets/uploads/kun_levente.jpg" style="width:100%" alt="Kun Levente Alex"></td>
-<td><img src="/assets/uploads/nagy_peter.jpg" style="width:110%" alt="Nagy Péter"></td>
+<td><img src="/assets/uploads/nagy_peter.jpg" style="width:100%" alt="Nagy Péter"></td>
 </tr>
 <tr>
 <td><p style="text-align: center;">Horicsányi Krisztina</p></td>
@@ -43,8 +43,7 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
 </tr>
 </table> 
 
-# Tervezői csapat
-
+# Oktatói tervező csapat
 
  <table style="width:100%">
 
@@ -64,5 +63,20 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
     <td><b><p style="text-align: center;">Dr. Barbarics Tamás</b> <br>Elektromos tervező</br></p></td>
     <td><b><p style="text-align: center;">Dr. Lublóy Éva </b><br>Tűzvédelmi tervező</br></p></td>
   </tr>
+</tr>
+</table> 
+
+# Hallgatói tervező csapat
+
+<table style="width:100%">
+<tr>
+<td><img src="/assets/uploads/csapo_daniel.jpg" style="width:94%" alt="Csapó Dániel"></td>
+<td><img src="/assets/uploads/takacs_gabor.jpg" style="width:100%" alt="Takács Gábor"></td>
+<td><img src="/assets/uploads/turanyi_botond.jpg" style="width:110%" alt="Turányi Botond"></td>
+</tr>
+<tr>
+<td><p style="text-align: center;">Csapó Dániel</p></td>
+<td><p style="text-align: center;">Takács Gábor</p></td>
+<td><p style="text-align: center;">Turányi Botond</p></td>
 </tr>
 </table> 
