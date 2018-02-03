@@ -2,7 +2,7 @@
 title: BME Formula Racing Team
 draft: false
 email: info.bme.frt@gmail.com
-facebookHandle: 'https://www.facebook.com/FormulaRacingTeam/'
+facebookHandle: FormulaRacingTeam
 color: '#c8102e'
 thumbnail: /assets/uploads/bme-formula-racing-team.jpg
 excerpt: >-
