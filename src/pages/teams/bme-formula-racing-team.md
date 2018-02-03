@@ -1,11 +1,11 @@
 ---
 title: BME Formula Racing Team
 draft: false
-email: ''
-facebookHandle: ''
+email: info.bme.frt@gmail.com
+facebookHandle: 'https://www.facebook.com/FormulaRacingTeam/'
 color: '#c8102e'
 thumbnail: /assets/uploads/bme-formula-racing-team.jpg
-excerpt:
+excerpt: >-
   A csapat 2007-ben alakult a Budapesti Műszaki és Gazdaságtudományi Egyetemen
   azzal a céllal, hogy megvalósítsa pár fiatal egyetemista álmát és részt vegyen
   a Formula Student sorozatban, hagyományt teremtve ezzel nemcsak az egyetemen,
