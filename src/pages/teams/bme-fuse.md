@@ -1,7 +1,7 @@
 ---
 title: BME Fuse
 email: fuseracingteam@gmail.com
-facebookHandle: 'https://www.facebook.com/bmefuse/'
+facebookHandle: bmefuse
 color: '#0c337a'
 thumbnail: /assets/uploads/bme_fuse_cover.jpg
 excerpt: >-
