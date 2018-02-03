@@ -39,6 +39,6 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
   </tr>
   <tr>
     <td><p style="text-align: center;">Dr. habil Stocker György</p></td>
-    <td><p style="text-align: center;">Dr. habil Stocker György</p></td>
+    <td><p style="text-align: center;">Dr. Lublóy Éva</p></td>
   </tr>
 </table> 
