@@ -29,11 +29,12 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
 ![A V2. épület madártávlatból](/assets/uploads/00_helyszín.jpg)
 
 # Projektvezetés
- <table style="width:100%">
+
+<table style="width:100%">
 <tr>
-<td><img src="/assets/uploads/silu.jpg" style="width:94%" alt="Horicsányi"></td>
-<td><img src="/assets/uploads/kun_levente.jpg" style="width:100%"alt="Kun Levente Alex"></td>
-<td><img src="/assets/uploads/nagy_peter.jpg" style="width:106%" alt="Nagy Péter"></td>
+<td><img src="/assets/uploads/silu.jpg" style="width:94%" alt="Horicsányi Krisztina"></td>
+<td><img src="/assets/uploads/kun_levente.jpg" style="width:100%" alt="Kun Levente Alex"></td>
+<td><img src="/assets/uploads/nagy_peter.jpg" style="width:110%" alt="Nagy Péter"></td>
 </tr>
 <tr>
 <td><p style="text-align: center;">Horicsányi Krisztina</p></td>
