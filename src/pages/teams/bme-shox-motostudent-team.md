@@ -1,7 +1,7 @@
 ---
 title: BME-SHOX MotoStudent Team
 email: ' marcell.szucs@mst.bme.hu'
-facebookHandle: 'https://www.facebook.com/BmeMotostudent/'
+facebookHandle: BmeMotostudent
 color: '#000000'
 thumbnail: /assets/uploads/shox_motostudent_cover.jpg
 excerpt: >-
