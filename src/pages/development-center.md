@@ -34,8 +34,8 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
  <table style="width:100%">
 
   <tr>
-    <td><img src="/assets/uploads/stocker_gyorgy.jpg" alt="Stocker György"></td>
-    <td><img src="/assets/uploads/lubloy_eva2.jpg" alt="Lublóy Éva"></td>
+    <td><a href="https://epito.bme.hu/stocker-gyorgy"><img src="/assets/uploads/stocker_gyorgy.jpg" alt="Stocker György"></a></td>
+    <td><a href="https://epito.bme.hu/lubloy-eva"><img src="/assets/uploads/lubloy_eva2.jpg" alt="Lublóy Éva"></a></td>
   </tr>
   <tr>
     <td><p style="text-align: center;">Dr. habil Stocker György</p></td>
