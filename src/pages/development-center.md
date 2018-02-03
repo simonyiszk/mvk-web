@@ -30,11 +30,11 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
 
 # Projektvezetés
 
-<table style="width:100%">
+<table cellpadding="0" cellspacing="5" width="100%" border="0">
 <tr>
-<td><img src="/assets/uploads/silu.jpg" style="width:100%" alt="Horicsányi Krisztina"></td>
-<td><img src="/assets/uploads/kun_levente.jpg" style="width:100%" alt="Kun Levente Alex"></td>
-<td><img src="/assets/uploads/nagy_peter.jpg" style="width:100%" alt="Nagy Péter"></td>
+<td width="33.3%"><img src="/assets/uploads/silu.jpg" width="100%" alt="Horicsányi Krisztina"></td>
+<td width="33.3%"><img src="/assets/uploads/kun_levente.jpg" width="100%" alt="Kun Levente Alex"></td>
+<td width="33.3%"><img src="/assets/uploads/nagy_peter.jpg" width="100%" alt="Nagy Péter"></td>
 </tr>
 <tr>
 <td><p style="text-align: center;">Horicsányi Krisztina</p></td>
@@ -48,16 +48,16 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
  <table style="width:100%">
 
   <tr>
-    <td><a href="https://epito.bme.hu/stocker-gyorgy"><img src="/assets/uploads/stocker_gyorgy.jpg" style="width:100%" alt="Stocker György"></a></td>
-    <td><a href="https://epget.bme.hu/19-tanszek/munkatarsak/30-goda-robert"><img src="/assets/uploads/silu2.jpg" style="width:100%" alt="Goda Róbert"></a></td>
+    <td width="50%"><a href="https://epito.bme.hu/stocker-gyorgy"><img src="/assets/uploads/stocker_gyorgy.jpg" width="100%" alt="Stocker György"></a></td>
+    <td width="50%"><a href="https://epget.bme.hu/19-tanszek/munkatarsak/30-goda-robert"><img src="/assets/uploads/silu2.jpg" width="100%" alt="Goda Róbert"></a></td>
   </tr>
   <tr>
     <td><b><p style="text-align: center;">Dr. habil Stocker György</b> <br>építészeti főtervező</br></p></td>
     <td><b><p style="text-align: center;">Dr. Goda Róbert</b><br>Épületgépészeti tervező</br></p></td>
   </tr>
 <tr>
-<td><a href="http://www.mht.bme.hu/munkatarsak/oktatok/19-barbarics-tamas"><img src="/assets/uploads/silu2.jpg" style="width:100%" alt="Barbarics Tamás"></a></td>
-    <td><a href="https://epito.bme.hu/lubloy-eva"><img src="/assets/uploads/lubloy_eva2.jpg" style="width:100%" alt="Lublóy Éva"></a></td>
+<td width="50%"><a href="http://www.mht.bme.hu/munkatarsak/oktatok/19-barbarics-tamas"><img src="/assets/uploads/silu2.jpg" width="100%" alt="Barbarics Tamás"></a></td>
+    <td width="50%"><a href="https://epito.bme.hu/lubloy-eva"><img src="/assets/uploads/lubloy_eva2.jpg" width="100%" alt="Lublóy Éva"></a></td>
   </tr>
   <tr>
     <td><b><p style="text-align: center;">Dr. Barbarics Tamás</b> <br>Elektromos tervező</br></p></td>
@@ -70,13 +70,13 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
 
 <table style="width:100%">
 <tr>
-<td><img src="/assets/uploads/csapo_daniel.jpg" style="width:94%" alt="Csapó Dániel"></td>
-<td><img src="/assets/uploads/takacs_gabor.jpg" style="width:100%" alt="Takács Gábor"></td>
-<td><img src="/assets/uploads/turanyi_botond.jpg" style="width:110%" alt="Turányi Botond"></td>
+<td width="33.3%"><img src="/assets/uploads/csapo_daniel.jpg" width="100%" alt="Csapó Dániel"></td>
+<td width="33.3%"><img src="/assets/uploads/takacs_gabor.jpg" width="100%" alt="Takács Gábor"></td>
+<td width="33.3%"><img src="/assets/uploads/turanyi_botond.jpg" width="100%" alt="Turányi Botond"></td>
 </tr>
 <tr>
-<td><p style="text-align: center;">Csapó Dániel</p></td>
-<td><p style="text-align: center;">Takács Gábor</p></td>
-<td><p style="text-align: center;">Turányi Botond</p></td>
+<td width="33.3%"><p style="text-align: center;">Csapó Dániel</p></td>
+<td width="33.3%"><p style="text-align: center;">Takács Gábor</p></td>
+<td width="33.3%"><p style="text-align: center;">Turányi Botond</p></td>
 </tr>
 </table> 
