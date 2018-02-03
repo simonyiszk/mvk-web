@@ -34,9 +34,9 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
  <table style="width:100%">
 
   <tr>
-    <td><img src="/assets/uploads/stocker_gyorgy.jpg" alt="W3Schools.com"></td>
-    <td><img src="/assets/uploads/lubloy_eva.jpg" alt="W3Schools.com"></td>
-    <td><img src="/assets/uploads/lubloy_eva.jpg" alt="W3Schools.com"></td>
+    <td><img src="/assets/uploads/stocker_gyorgy.jpg" style="width:450px;height:300px;alt="Stocker György"></td>
+    <td><img src="/assets/uploads/lubloy_eva.jpg" style="width:450px;height:300px;alt="Lublóy Éva"></td>
+    <td><img src="/assets/uploads/lubloy_eva.jpg" style="width:450px;height:300px;alt="Lublóy Éva"></td>
   </tr>
   <tr>
     <td><p style="text-align: center;">Dr. habil Stocker György</p></td>
