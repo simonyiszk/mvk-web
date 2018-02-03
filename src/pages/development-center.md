@@ -50,10 +50,19 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
 
   <tr>
     <td><a href="https://epito.bme.hu/stocker-gyorgy"><img src="/assets/uploads/stocker_gyorgy.jpg" style="width:100%" alt="Stocker György"></a></td>
-    <td><a href="https://epito.bme.hu/lubloy-eva"><img src="/assets/uploads/lubloy_eva2.jpg" style="width:100%" alt="Lublóy Éva"></a></td>
+    <td><a href="https://epget.bme.hu/19-tanszek/munkatarsak/30-goda-robert"><img src="/assets/uploads/silu2.jpg" style="width:100%" alt="Goda Róbert"></a></td>
   </tr>
   <tr>
     <td><b><p style="text-align: center;">Dr. habil Stocker György</b> <br>építészeti főtervező</br></p></td>
+    <td><b><p style="text-align: center;">Dr. Goda Róbert</b><br>Épületgépészeti tervező</br></p></td>
+  </tr>
+<tr>
+<td><a href="http://www.mht.bme.hu/munkatarsak/oktatok/19-barbarics-tamas"><img src="/assets/uploads/silu2.jpg" style="width:100%" alt="Barbarics Tamás"></a></td>
+    <td><a href="https://epito.bme.hu/lubloy-eva"><img src="/assets/uploads/lubloy_eva2.jpg" style="width:100%" alt="Lublóy Éva"></a></td>
+  </tr>
+  <tr>
+    <td><b><p style="text-align: center;">Dr. Barbarics Tamás</b> <br>Elektromos tervező</br></p></td>
     <td><b><p style="text-align: center;">Dr. Lublóy Éva </b><br>Tűzvédelmi tervező</br></p></td>
   </tr>
+</tr>
 </table> 
