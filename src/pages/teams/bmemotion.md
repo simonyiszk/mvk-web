@@ -1,7 +1,7 @@
 ---
 title: BMEmotion
 email: info@emotion.bme.hu
-facebookHandle: 'https://www.facebook.com/BME.motion/'
+facebookHandle: BME.motion
 color: '#3d0938'
 thumbnail: /assets/uploads/bmemotion_cover.jpg
 excerpt: >-
