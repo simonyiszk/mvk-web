@@ -60,8 +60,8 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
     <td style="width:50%"><a href="https://epito.bme.hu/lubloy-eva"><img src="/assets/uploads/lubloy_eva2.jpg" style="width:100%" alt="Lublóy Éva"></a></td>
   </tr>
   <tr>
-    <td><b><p style="text-align: center;">Dr. Barbarics Tamás</b> <br>Elektromos tervező</br></p></td>
-    <td><b><p style="text-align: center;">Dr. Lublóy Éva </b><br>Tűzvédelmi tervező</br></p></td>
+    <td><b><p style="text-align: center;">Dr. Barbarics Tamás</b> <br>Épületvillamossági tervező</br></p></td>
+    <td><b><p style="text-align: center;">Dr. Lublóy Éva </b><br> Tartószerkezeti és Tűzvédelmi tervező</br></p></td>
   </tr>
 </tr>
 </table> 
