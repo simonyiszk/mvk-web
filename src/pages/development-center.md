@@ -12,7 +12,7 @@ Alapvető követelmény az épülettel szemben, hogy a jelenlegi és a jövőbel
 
 ![Közösségi műhely látványterve](/assets/uploads/2_látvány_workshop.jpg)
 
-A létesítmény a jelenleg üresen álló V2 épület földszintjén, mintegy 1000 nm-es területen kerül kialakításra, a Kancellária Beruházás-előkészítési Osztályának felügyeletével. Munkánknak köszönhetően sikeresen vontuk be az Építőanyagok és Magasépítés Tanszék, illetve a Épületgépészeti és Gépészeti Eljárástechnika Tanszék oktatóit és hallgatóit a felújítási projekt terveztetésébe, ami 2017 októberében meg is kezdődött.
+A létesítmény a jelenleg üresen álló V2 épület földszintjén, mintegy 1000 nm-es területen kerül kialakításra, a Kancellária Beruházás-előkészítési Osztályának felügyeletével. Munkánknak köszönhetően sikeresen vontuk be az Építőanyagok és Magasépítés Tanszék, a Szélessávú Hírközlés és Villamosságtan Tanszék, illetve a Épületgépészeti és Gépészeti Eljárástechnika Tanszék oktatóit és hallgatóit a felújítási projekt terveztetésébe, ami 2017 októberében meg is kezdődött.
 
 Ezzel párhuzamosan szintén hallgatói közreműködéssel valósult meg az épület látványtervének és a projektet bemutató kiadvány tervének az elkészülte is. Az előbbi Mester Petra építész, az utóbbi pedig Nagy László végzett építész hallgatóknak köszönhető.
 
