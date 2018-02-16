@@ -89,6 +89,7 @@ collections:
               - {label: "Name", name: "name", widget: "string"}
               - {label: "Website", name: "website", widget: "string"}
               - {label: "Logo", name: "logo", widget: "image"}
+              - {label: "Category", name: "category", widget: "string"}
               - {label: "Importance", name: "importance", widget: "number", default: 6, valueType: "int", min: 1, max: 12}
       - name: site-settings
         label: Site settings
