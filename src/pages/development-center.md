@@ -33,7 +33,7 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
 <table style="width:100%; border-collapse: separate; border-spacing: 5px;">
 <tr>
 <td style="width:33.3%"><img src="/assets/uploads/horicsanyi_krisztina.jpg" style="width:100%" alt="Horicsányi Krisztina"></td>
-<td style="width:33.3%"><img src="/assets/uploads/kun_levente.jpg" style="width:100%" alt="Kun Levente Alex"></td>
+<td style="width:33.3%"><a href="www.linkedin.com/in/leventekun"><img src="/assets/uploads/kun_levente.jpg" style="width:100%" alt="Kun Levente Alex"></a></td>
 <td style="width:33.3%"><img src="/assets/uploads/nagy_peter.jpg" style="width:100%" alt="Nagy Péter"></td>
 </tr>
 <tr>
@@ -89,4 +89,4 @@ A V2 épület említett részét olyan alapossággal és műszaki színvonalon k
 <td style="width:33.3%"><p style="text-align: center;">Vatai András</p></td>
 <td style="width:33.3%"><p style="text-align: center;"></p></td>
 </tr>
-</table> 
+</table>
