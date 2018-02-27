@@ -1,6 +1,6 @@
 ---
 title: BME-SHOX MotoStudent Team
-email: ' marcell.szucs@mst.bme.hu'
+email: donat.santa@mst.bme.hu
 facebookHandle: BmeMotostudent
 color: '#000000'
 thumbnail: /assets/uploads/shox_motostudent_cover.jpg
