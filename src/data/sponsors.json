@@ -11,7 +11,7 @@
       "name": "BME Egyetemi Hallgatói Képviselet",
       "website": "http://ehk.bme.hu",
       "logo": "/assets/uploads/ehk-logo.svg",
-      "category": "Kiemelt támogatónk",
+      "category": "Főtámogatók",
       "importance": 6
     },
     {
@@ -23,10 +23,10 @@
     },
     {
       "name": "Leier Hungária Kft.",
-      "website": "https://www.leier.hu/kezdolap",
+      "website": "Főtámogatók",
       "logo": "/assets/uploads/leier_logo_vektor.png",
       "category": "Kiemelt támogatónk",
-      "importance": 6
+      "importance": 5
     }
   ]
 }
