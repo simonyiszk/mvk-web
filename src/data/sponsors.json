@@ -4,29 +4,29 @@
       "name": "Budapesti Műszaki és Gazdaságtudományi Egyetem",
       "website": "https://www.bme.hu",
       "logo": "/assets/uploads/bme-logo.svg",
-      "category": "Főtámogatók",
+      "category": "Támogatók",
       "importance": 6
     },
     {
       "name": "BME Egyetemi Hallgatói Képviselet",
       "website": "http://ehk.bme.hu",
       "logo": "/assets/uploads/ehk-logo.svg",
-      "category": "Főtámogatók",
+      "category": "Támogatók",
       "importance": 6
     },
     {
       "name": "Daikin Hungary Kft.",
       "website": "https://www.daikin.hu/hu_hu/customers.html",
       "logo": "/assets/uploads/corporate_horizontal_logo_-_3_colours.png",
-      "category": "Főtámogatók",
+      "category": "Támogatók",
       "importance": 6
     },
     {
       "name": "Leier Hungária Kft.",
-      "website": "Főtámogatók",
+      "website": "https://www.leier.hu/kezdolap",
       "logo": "/assets/uploads/leier_logo_vektor.png",
-      "category": "Főtámogatók",
-      "importance": 5
+      "category": "Támogatók",
+      "importance": 6
     }
   ]
 }
