@@ -11,7 +11,21 @@
       "name": "BME Egyetemi Hallgatói Képviselet",
       "website": "http://ehk.bme.hu",
       "logo": "/assets/uploads/ehk-logo.svg",
-      "category": "További támogatók",
+      "category": "Kiemelt támogatónk",
+      "importance": 6
+    },
+    {
+      "name": "Daikin Hungary Kft.",
+      "website": "https://www.daikin.hu/hu_hu/customers.html",
+      "logo": "/assets/uploads/corporate_horizontal_logo_-_3_colours.png",
+      "category": "Főtámogató",
+      "importance": 6
+    },
+    {
+      "name": "Leier Hungária Kft.",
+      "website": "https://www.leier.hu/kezdolap",
+      "logo": "/assets/uploads/leier_logo_vektor.png",
+      "category": "Támogatónk",
       "importance": 6
     }
   ]
