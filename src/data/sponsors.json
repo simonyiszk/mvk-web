@@ -22,16 +22,16 @@
       "importance": 6
     },
     {
-      "name": "Leier Hungária Kft.",
-      "website": "https://www.leier.hu/kezdolap",
-      "logo": "/assets/uploads/leier_logo_vektor.png",
+      "name": "Philips Lighting Hungary Kft.",
+      "website": "http://www.lighting.philips.hu/kezdolap",
+      "logo": "/assets/uploads/philips_lighting.png",
       "category": "Támogatók",
       "importance": 6
     },
     {
-      "name": "Philips Lighting Hungary Kft.",
-      "website": "http://www.lighting.philips.hu/kezdolap",
-      "logo": "/assets/uploads/philips_lighting.png",
+      "name": "Leier Hungária Kft.",
+      "website": "https://www.leier.hu/kezdolap",
+      "logo": "/assets/uploads/leier_logo_vektor.png",
       "category": "Támogatók",
       "importance": 6
     }
