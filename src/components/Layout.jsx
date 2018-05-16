@@ -23,67 +23,69 @@ const theme = createMuiTheme({
 });
 
 const Layout = ({ children }) => (
-  <MuiThemeProvider theme={theme}>
+  <div className={styles.root}>
     <CssBaseline />
 
-    <header>
-      <StaticQuery
-        query={graphql`
-          query LayoutQuery {
-            site {
-              siteMetadata {
-                title
-                language
+    <MuiThemeProvider theme={theme}>
+      <header>
+        <StaticQuery
+          query={graphql`
+            query LayoutQuery {
+              site {
+                siteMetadata {
+                  title
+                  language
+                }
               }
             }
-          }
-        `}
-        render={staticData => (
-          <Helmet
-            titleTemplate={`%s | ${staticData.site.siteMetadata.title}`}
-            defaultTitle={staticData.site.siteMetadata.title}
-          >
-            <html lang={staticData.site.siteMetadata.language} />
+          `}
+          render={staticData => (
+            <Helmet
+              titleTemplate={`%s | ${staticData.site.siteMetadata.title}`}
+              defaultTitle={staticData.site.siteMetadata.title}
+            >
+              <html lang={staticData.site.siteMetadata.language} />
 
-            <link
-              rel="stylesheet"
-              href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
-            />
-          </Helmet>
-        )}
-      />
-
-      <NavBar />
-    </header>
-
-    <main>{children}</main>
-
-    <footer>
-      <div className={styles.contactSection}>
-        <Container>
-          <Grid container justify="space-between" spacing={32}>
-            <Grid item>
-              <img
-                src={MVKLogoWhiteURL}
-                alt=""
-                className={styles.contactSectionBrandLogo}
+              <link
+                rel="stylesheet"
+                href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
               />
-            </Grid>
+            </Helmet>
+          )}
+        />
 
-            <Grid item>
-              <ContactInfo />
-            </Grid>
-          </Grid>
-        </Container>
-      </div>
+        <NavBar />
+      </header>
 
-      <div className={styles.socialMediaButtonsSection}>
-        <Container className={styles.socialMediaButtonsSectionBody}>
-          <SocialMediaButtons justify="center" spacing={40} />
-        </Container>
-      </div>
-    </footer>
-  </MuiThemeProvider>
+      <main className={styles.main}>{children}</main>
+
+      <footer>
+        <div className={styles.contactSection}>
+          <Container>
+            <Grid container justify="space-between" spacing={32}>
+              <Grid item>
+                <img
+                  src={MVKLogoWhiteURL}
+                  alt=""
+                  className={styles.contactSectionBrandLogo}
+                />
+              </Grid>
+
+              <Grid item>
+                <ContactInfo />
+              </Grid>
+            </Grid>
+          </Container>
+        </div>
+
+        <div className={styles.socialMediaButtonsSection}>
+          <Container className={styles.socialMediaButtonsSectionBody}>
+            <SocialMediaButtons justify="center" spacing={40} />
+          </Container>
+        </div>
+      </footer>
+    </MuiThemeProvider>
+  </div>
 );
 
 Layout.propTypes = {
