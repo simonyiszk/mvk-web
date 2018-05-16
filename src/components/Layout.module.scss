@@ -1,0 +1,31 @@
+a {
+  color: #2196f3;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.contactSection {
+  background: #455a64;
+}
+
+.contactSectionBrandLogo {
+  height: 3em;
+}
+
+.socialMediaButtonsSection {
+  background: #263238;
+  font-size: 2em;
+}
+
+.contactSection,
+.socialMediaButtonsSection {
+  padding: 2rem 0;
+  color: white;
+
+  a {
+    color: inherit;
+  }
+}

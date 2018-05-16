@@ -1,0 +1,15 @@
+.hero {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  margin-bottom: 1em;
+  background: linear-gradient(137.5deg, #29b6f6aa, #ffd60088),
+    url('../data/assets/conference.jpg');
+  background-size: cover;
+}
+
+.logo {
+  height: 10em;
+  padding: 2em;
+  background: white;
+}
