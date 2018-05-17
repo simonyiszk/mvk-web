@@ -15,7 +15,7 @@ const BlogPostTemplate = ({ data }) => {
       <img src={post.frontmatter.thumbnail} alt="" className={styles.cover} />
 
       <Container>
-        <Paper className={styles.contentContainer}>
+        <Paper className={styles.contentBody}>
           <Typography variant="headline" gutterBottom>
             {post.frontmatter.title}
           </Typography>

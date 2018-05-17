@@ -1,9 +1,16 @@
 .cover {
+  position: relative;
+  z-index: -1;
   width: 100%;
-  height: 20em;
+  height: 30em;
+  margin-bottom: -4em;
   object-fit: cover;
 }
 
-.contentContainer {
+.contentBody {
   padding: 5em;
+
+  img {
+    width: 100%;
+  }
 }
