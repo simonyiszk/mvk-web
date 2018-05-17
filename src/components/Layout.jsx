@@ -24,35 +24,33 @@ const Layout = ({ children }) => (
     <CssBaseline />
 
     <MuiThemeProvider theme={theme}>
-      <header>
-        <StaticQuery
-          query={graphql`
-            query LayoutQuery {
-              site {
-                siteMetadata {
-                  title
-                  language
-                }
+      <StaticQuery
+        query={graphql`
+          query LayoutQuery {
+            site {
+              siteMetadata {
+                title
+                language
               }
             }
-          `}
-          render={staticData => (
-            <Helmet
-              titleTemplate={`%s | ${staticData.site.siteMetadata.title}`}
-              defaultTitle={staticData.site.siteMetadata.title}
-            >
-              <html lang={staticData.site.siteMetadata.language} />
+          }
+        `}
+        render={staticData => (
+          <Helmet
+            titleTemplate={`%s | ${staticData.site.siteMetadata.title}`}
+            defaultTitle={staticData.site.siteMetadata.title}
+          >
+            <html lang={staticData.site.siteMetadata.language} />
 
-              <link
-                rel="stylesheet"
-                href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
-              />
-            </Helmet>
-          )}
-        />
+            <link
+              rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+            />
+          </Helmet>
+        )}
+      />
 
-        <NavBar />
-      </header>
+      <NavBar />
 
       <main className={styles.main}>{children}</main>
 
