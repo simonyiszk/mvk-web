@@ -19,8 +19,6 @@ const muiTheme = createMuiTheme({
   },
 
   typography: {
-    fontSize: 16,
-
     title: { fontWeight: 400 },
     button: { fontWeight: 400 },
   },
