@@ -12,14 +12,23 @@ const BlogPostTemplate = ({ data }) => {
   return (
     <Layout>
       {/* TODO: Query default cover image from GraphQL */}
-      <img src={post.frontmatter.thumbnail} alt="" className={styles.cover} />
+      <div
+        className={styles.cover}
+        style={{
+          background: `
+            linear-gradient(to bottom, transparent 61.8%, rgba(0, 0, 0, 0.618)),
+            url(${post.frontmatter.thumbnail})
+          `,
+          backgroundSize: 'cover',
+        }}
+      />
 
       <Container>
-        <Paper className={styles.contentBody}>
-          <Typography variant="headline" gutterBottom>
-            {post.frontmatter.title}
-          </Typography>
+        <Typography variant="headline" gutterBottom className={styles.title}>
+          {post.frontmatter.title}
+        </Typography>
 
+        <Paper className={styles.contentBody}>
           <Typography
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{ __html: post.html }}

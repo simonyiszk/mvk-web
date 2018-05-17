@@ -19,6 +19,7 @@ const muiTheme = createMuiTheme({
   },
 
   typography: {
+    headline: { textTransform: 'uppercase', fontWeight: 500 },
     title: { fontWeight: 400 },
     button: { fontWeight: 400 },
   },
