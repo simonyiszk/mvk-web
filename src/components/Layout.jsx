@@ -13,7 +13,7 @@ import NavBar from './NavBar';
 import SocialMediaButtons from './SocialMediaButtons';
 import styles from './Layout.module.scss';
 
-const theme = createMuiTheme({
+const muiTheme = createMuiTheme({
   palette: {
     primary: { main: blue[500] },
   },
@@ -23,7 +23,7 @@ const Layout = ({ children }) => (
   <div className={styles.root}>
     <CssBaseline />
 
-    <MuiThemeProvider theme={theme}>
+    <MuiThemeProvider theme={muiTheme}>
       <StaticQuery
         query={graphql`
           query LayoutQuery {
