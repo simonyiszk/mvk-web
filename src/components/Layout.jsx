@@ -16,9 +16,6 @@ import styles from './Layout.module.scss';
 const theme = createMuiTheme({
   palette: {
     primary: { main: blue[500] },
-    text: {
-      secondary: 'white',
-    },
   },
 });
 
