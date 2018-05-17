@@ -25,6 +25,7 @@ const IndexPage = () => (
         query={graphql`
           query IndexPageQuery {
             allMarkdownRemark(
+              filter: { fileAbsolutePath: { regex: "/news/" } }
               sort: { fields: [frontmatter___date], order: DESC }
             ) {
               edges {
