@@ -31,10 +31,22 @@ module.exports = {
     'gatsby-plugin-sass',
     /*
     TODO:
-    'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     */
-    'gatsby-transformer-remark',
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 608,
+            },
+          },
+        ],
+      },
+    },
     'gatsby-transformer-yaml',
   ],
 };
