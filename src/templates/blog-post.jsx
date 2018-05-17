@@ -1,18 +1,31 @@
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
 import PropTypes from 'prop-types';
 import React from 'react';
+import Container from '../components/Container';
 import Layout from '../components/Layout';
+import styles from './blog-post.module.scss';
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark;
 
   return (
     <Layout>
-      <h1>{post.frontmatter.title}</h1>
+      {/* TODO: Query default cover image from GraphQL */}
+      <img src={post.frontmatter.thumbnail} alt="" className={styles.cover} />
 
-      <div
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{ __html: post.html }}
-      />
+      <Container>
+        <Paper className={styles.contentContainer}>
+          <Typography variant="headline" gutterBottom>
+            {post.frontmatter.title}
+          </Typography>
+
+          <Typography
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+        </Paper>
+      </Container>
     </Layout>
   );
 };
@@ -29,6 +42,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        thumbnail
       }
     }
   }
