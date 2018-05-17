@@ -17,6 +17,13 @@ const muiTheme = createMuiTheme({
   palette: {
     primary: { main: blue[500] },
   },
+
+  typography: {
+    fontSize: 16,
+
+    title: { fontWeight: 400 },
+    button: { fontWeight: 400 },
+  },
 });
 
 const Layout = ({ children }) => (

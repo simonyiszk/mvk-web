@@ -55,7 +55,7 @@ const IndexPage = () => (
                 />
 
                 <CardContent>
-                  <Typography variant="headline" component="h2">
+                  <Typography variant="title">
                     {node.frontmatter.title}
                   </Typography>
 
