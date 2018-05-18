@@ -19,7 +19,7 @@ const CoverImage = ({ src, className, style, ...props }) => (
 CoverImage.propTypes = {
   src: PropTypes.string.isRequired,
   className: PropTypes.string,
-  style: PropTypes.shape,
+  style: PropTypes.shape(),
 };
 
 CoverImage.defaultProps = {
