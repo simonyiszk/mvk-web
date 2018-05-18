@@ -34,14 +34,18 @@ export default class NavBar extends React.Component {
   }
 
   render() {
-    const { style, ...props } = this.props;
+    const {
+      brandLogoDisplayWindowScollYThreshold,
+      style,
+      ...props
+    } = this.props;
     const { windowScrollY } = this.state;
 
     return (
       <AppBar
         elevation={windowScrollY === 0 ? 0 : undefined}
+        className={styles.appBar}
         style={{
-          transition: 'all 0.5s ease-out',
           ...(windowScrollY === 0
             ? {
                 background: 'transparent',
@@ -54,11 +58,23 @@ export default class NavBar extends React.Component {
       >
         <Toolbar>
           <div className={styles.brandContainer}>
-            <Link to="/">
+            <Link
+              to="/"
+              style={
+                windowScrollY <= brandLogoDisplayWindowScollYThreshold
+                  ? { visibility: 'hidden' }
+                  : {}
+              }
+            >
               <img
                 src={MVKLogoWhiteURL}
                 alt="Kezdőlap"
                 className={styles.brandLogo}
+                style={
+                  windowScrollY <= brandLogoDisplayWindowScollYThreshold
+                    ? { opacity: 0 }
+                    : {}
+                }
               />
             </Link>
           </div>
@@ -96,9 +112,11 @@ export default class NavBar extends React.Component {
 }
 
 NavBar.propTypes = {
+  brandLogoDisplayWindowScollYThreshold: PropTypes.number,
   style: PropTypes.shape(),
 };
 
 NavBar.defaultProps = {
+  brandLogoDisplayWindowScollYThreshold: -1,
   style: {},
 };

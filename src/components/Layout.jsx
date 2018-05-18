@@ -25,7 +25,7 @@ const muiTheme = createMuiTheme({
   },
 });
 
-const Layout = ({ children }) => (
+const Layout = ({ children, ...props }) => (
   <div className={styles.root}>
     <CssBaseline />
 
@@ -56,7 +56,7 @@ const Layout = ({ children }) => (
         )}
       />
 
-      <NavBar />
+      <NavBar {...props} />
 
       <main className={styles.main}>{children}</main>
 

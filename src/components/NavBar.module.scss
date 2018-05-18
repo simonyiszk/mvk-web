@@ -1,7 +1,17 @@
+%smoothTransitions {
+  transition: all 0.5s ease-out;
+}
+
+.appBar {
+  @extend %smoothTransitions;
+}
+
 .brandContainer {
   flex: 1;
 }
 
 .brandLogo {
+  @extend %smoothTransitions;
+
   height: 2em;
 }

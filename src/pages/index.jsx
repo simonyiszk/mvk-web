@@ -11,7 +11,7 @@ import MVKLogoURL from '../data/assets/mvk-logo.svg';
 import styles from './index.module.scss';
 
 const IndexPage = () => (
-  <Layout>
+  <Layout brandLogoDisplayWindowScollYThreshold={0}>
     {/* TODO: Query hero image from GraphQL */}
     <div className={styles.hero}>
       <img src={MVKLogoURL} alt="" className={styles.logo} />
