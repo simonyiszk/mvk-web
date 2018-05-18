@@ -1,6 +1,14 @@
+$paper-cover-fade-height: 4em;
+
 .cover {
+  display: flex;
   height: 30em;
-  margin-bottom: -6em;
+  align-items: flex-end;
+  margin-bottom: -$paper-cover-fade-height;
+}
+
+.titleContainer {
+  margin-bottom: $paper-cover-fade-height;
 }
 
 .title {

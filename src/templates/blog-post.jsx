@@ -21,13 +21,15 @@ const BlogPostTemplate = ({ data }) => {
           `,
           backgroundSize: 'cover',
         }}
-      />
+      >
+        <Container className={styles.titleContainer}>
+          <Typography variant="headline" gutterBottom className={styles.title}>
+            {post.frontmatter.title}
+          </Typography>
+        </Container>
+      </div>
 
       <Container>
-        <Typography variant="headline" gutterBottom className={styles.title}>
-          {post.frontmatter.title}
-        </Typography>
-
         <Paper className={styles.contentBody}>
           <Typography
             // eslint-disable-next-line react/no-danger
