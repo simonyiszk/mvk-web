@@ -1,25 +1,7 @@
-$paper-cover-fade-height: 4em;
-
-.cover {
-  display: flex;
-  height: 30em;
-  align-items: flex-end;
-  margin-bottom: -$paper-cover-fade-height;
-}
-
-.titleContainer {
-  margin-bottom: $paper-cover-fade-height;
-}
-
-.title {
-  color: white !important;
-  text-shadow: 0 0 0.125em rgba(0, 0, 0, 0.8);
-}
-
 .contentBody {
   padding: 3em 5em;
 
   img {
-    width: 100%;
+    max-width: 100%;
   }
 }

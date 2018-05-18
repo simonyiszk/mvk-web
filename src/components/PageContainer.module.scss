@@ -1,0 +1,16 @@
+$paper-cover-fade-height: 4em;
+
+.cover {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: -$paper-cover-fade-height;
+}
+
+.titleContainer {
+  margin-bottom: $paper-cover-fade-height;
+}
+
+.title {
+  color: white !important;
+  text-shadow: 0 0 0.125em rgba(0, 0, 0, 0.8);
+}
