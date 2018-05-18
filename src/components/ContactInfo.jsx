@@ -20,17 +20,22 @@ const ContactInfo = ({ ...props }) => (
     `}
     render={staticData => (
       <address {...props}>
-        <Typography variant="caption" gutterBottom color="inherit">
+        <Typography variant="caption" paragraph color="inherit">
           <ExternalLink to={staticData.site.siteMetadata.siteAddressURL}>
             {staticData.site.siteMetadata.siteAddressPretty}
           </ExternalLink>
         </Typography>
 
-        <Typography variant="caption" gutterBottom color="inherit">
+        <Typography
+          variant="caption"
+          component="p"
+          gutterBottom
+          color="inherit"
+        >
           Telefon: {staticData.site.siteMetadata.telephone}
         </Typography>
 
-        <Typography variant="caption" color="inherit">
+        <Typography variant="caption" component="p" color="inherit">
           E-mail:{' '}
           <ExternalLink to={staticData.site.siteMetadata.siteEmailURL}>
             {staticData.site.siteMetadata.siteEmailPretty}

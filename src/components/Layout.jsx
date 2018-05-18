@@ -63,7 +63,12 @@ const Layout = ({ children, ...props }) => (
       <footer>
         <div className={styles.contactSection}>
           <Container>
-            <Grid container justify="space-between" spacing={32}>
+            <Grid
+              container
+              alignItems="center"
+              justify="space-between"
+              spacing={32}
+            >
               <Grid item>
                 <img
                   src={MVKLogoWhiteURL}
