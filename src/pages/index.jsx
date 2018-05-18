@@ -1,6 +1,7 @@
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
+import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { Link, StaticQuery } from 'gatsby';
 import React from 'react';
@@ -21,59 +22,63 @@ const IndexPage = () => (
         Hírek
       </Typography>
 
-      <StaticQuery
-        query={graphql`
-          query IndexPageQuery {
-            allMarkdownRemark(
-              filter: { fileAbsolutePath: { regex: "/news/" } }
-              sort: { fields: [frontmatter___date], order: DESC }
-            ) {
-              edges {
-                node {
-                  id
-                  frontmatter {
-                    title
-                    date(formatString: "LL", locale: "hu")
-                    thumbnail
+      <Grid container spacing={24}>
+        <StaticQuery
+          query={graphql`
+            query IndexPageQuery {
+              allMarkdownRemark(
+                filter: { fileAbsolutePath: { regex: "/news/" } }
+                sort: { fields: [frontmatter___date], order: DESC }
+              ) {
+                edges {
+                  node {
+                    id
+                    frontmatter {
+                      title
+                      date(formatString: "LL", locale: "hu")
+                      thumbnail
+                    }
+                    fields {
+                      slug
+                    }
+                    excerpt
                   }
-                  fields {
-                    slug
-                  }
-                  excerpt
                 }
               }
             }
+          `}
+          render={staticData =>
+            staticData.allMarkdownRemark.edges.map(({ node }) => (
+              <Grid item key={node.id} xs={12} sm={6}>
+                <Link to={node.fields.slug} className={styles.newsItemLink}>
+                  <Card className={styles.newsItemCard}>
+                    <CardMedia
+                      image={node.frontmatter.thumbnail}
+                      className={styles.newsItemMedia}
+                    />
+
+                    <CardContent>
+                      <Typography variant="title">
+                        {node.frontmatter.title}
+                      </Typography>
+
+                      <Typography
+                        variant="subheading"
+                        gutterBottom
+                        color="textSecondary"
+                      >
+                        {node.frontmatter.date}
+                      </Typography>
+
+                      <Typography>{node.excerpt}</Typography>
+                    </CardContent>
+                  </Card>
+                </Link>
+              </Grid>
+            ))
           }
-        `}
-        render={staticData =>
-          staticData.allMarkdownRemark.edges.map(({ node }) => (
-            <Link to={node.fields.slug} className={styles.newsItemLink}>
-              <Card key={node.id}>
-                <CardMedia
-                  image={node.frontmatter.thumbnail}
-                  className={styles.newsItemMedia}
-                />
-
-                <CardContent>
-                  <Typography variant="title">
-                    {node.frontmatter.title}
-                  </Typography>
-
-                  <Typography
-                    variant="subheading"
-                    gutterBottom
-                    color="textSecondary"
-                  >
-                    {node.frontmatter.date}
-                  </Typography>
-
-                  <Typography>{node.excerpt}</Typography>
-                </CardContent>
-              </Card>
-            </Link>
-          ))
-        }
-      />
+        />
+      </Grid>
     </Container>
   </Layout>
 );
