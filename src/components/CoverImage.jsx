@@ -8,9 +8,8 @@ const CoverImage = ({ src, className, style, ...props }) => (
     style={{
       background: `
         linear-gradient(to bottom, transparent 61.8%, rgba(0, 0, 0, 0.618)),
-        url(${src})
+        url(${src}) center / cover
       `,
-      backgroundSize: 'cover',
       ...style,
     }}
     {...props}
