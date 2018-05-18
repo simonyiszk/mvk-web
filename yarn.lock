@@ -695,8 +695,8 @@
     to-fast-properties "^2.0.0"
 
 "@material-ui/core@^1.0.0-rc.0":
-  version "1.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-1.0.0-rc.1.tgz#71a0b98c5698a4631114678eaec2d28b7d04c369"
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-1.0.0.tgz#857b871038bb300f2d25594ce0cd250be944e71b"
   dependencies:
     "@babel/runtime" "^7.0.0-beta.42"
     "@types/jss" "^9.5.3"
@@ -781,8 +781,8 @@
   resolved "https://registry.yarnpkg.com/@types/mkdirp/-/mkdirp-0.3.29.tgz#7f2ad7ec55f914482fc9b1ec4bb1ae6028d46066"
 
 "@types/node@*":
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.1.0.tgz#2783ee1b6c47cbd4044f4a233976c1ac5fa9e942"
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.1.1.tgz#ca39d8607fa1fcb146b0530420b93f1dd4802f6c"
 
 "@types/node@^7.0.11":
   version "7.0.64"
@@ -1836,7 +1836,7 @@ better-queue-memory@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/better-queue-memory/-/better-queue-memory-1.0.2.tgz#aa6d169aa1d0cc77409185cb9cb5c7dc251bcd41"
 
-better-queue@^3.8.6:
+better-queue@^3.8.6, better-queue@^3.8.7:
   version "3.8.7"
   resolved "https://registry.yarnpkg.com/better-queue/-/better-queue-3.8.7.tgz#de39b82b05f55d92ba065c9066958dad80789ab3"
   dependencies:
@@ -2283,12 +2283,12 @@ caniuse-api@^1.5.2:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000187, caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000841"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000841.tgz#dba400895990348e2de3b71795a50e837f13b3f6"
+  version "1.0.30000843"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000843.tgz#4f7e8501f557dc9bcd37dd33ac85905c765efec2"
 
 caniuse-lite@^1.0.30000792, caniuse-lite@^1.0.30000805, caniuse-lite@^1.0.30000835, caniuse-lite@^1.0.30000839:
-  version "1.0.30000841"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000841.tgz#200079f853ca2839cb80852348d09a551f92f70a"
+  version "1.0.30000843"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000843.tgz#4fdec258dc641c385744cdd49d23c5459c3d4411"
 
 capture-stack-trace@^1.0.0:
   version "1.0.0"
@@ -3912,24 +3912,9 @@ eslint-plugin-graphql@^2.0.0:
     graphql-config "^2.0.1"
     lodash "^4.11.1"
 
-eslint-plugin-import@^2.11.0:
+eslint-plugin-import@^2.11.0, eslint-plugin-import@^2.9.0:
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.12.0.tgz#dad31781292d6664b25317fd049d2e2b2f02205d"
-  dependencies:
-    contains-path "^0.1.0"
-    debug "^2.6.8"
-    doctrine "1.5.0"
-    eslint-import-resolver-node "^0.3.1"
-    eslint-module-utils "^2.2.0"
-    has "^1.0.1"
-    lodash "^4.17.4"
-    minimatch "^3.0.3"
-    read-pkg-up "^2.0.0"
-    resolve "^1.6.0"
-
-eslint-plugin-import@^2.9.0:
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.11.0.tgz#15aeea37a67499d848e8e981806d4627b5503816"
   dependencies:
     contains-path "^0.1.0"
     debug "^2.6.8"
@@ -4723,7 +4708,7 @@ gather-stream@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/gather-stream/-/gather-stream-1.0.0.tgz#b33994af457a8115700d410f317733cbe7a0904b"
 
-gatsby-cli@^1.1.41-7:
+gatsby-cli@^1.1.41-8:
   version "1.1.52"
   resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-1.1.52.tgz#1bb09671b774a49202ea5bb90aa49bfeebaa2fc3"
   dependencies:
@@ -4745,7 +4730,7 @@ gatsby-cli@^1.1.41-7:
     yargs "^11.1.0"
     yurnalist "^0.2.1"
 
-gatsby-link@^1.6.38-9:
+gatsby-link@^1.6.38-10:
   version "1.6.44"
   resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-1.6.44.tgz#31912e66d3b21632ce27e5b7310ec88d9a75eac3"
   dependencies:
@@ -4770,8 +4755,8 @@ gatsby-plugin-sass@next:
     sass-loader "^6.0.7"
 
 gatsby-plugin-sharp@next:
-  version "2.0.0-alpha.15"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.0.0-alpha.15.tgz#4098f9afdcf0347c4b62afcf8b6a16337b89b650"
+  version "2.0.0-alpha.16"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.0.0-alpha.16.tgz#5fc54b11479c2fa4761cddb953b9e578292a00f7"
   dependencies:
     "@babel/runtime" "7.0.0-beta.47"
     async "^2.1.2"
@@ -4780,13 +4765,14 @@ gatsby-plugin-sharp@next:
     imagemin-pngquant "^5.1.0"
     imagemin-webp "^4.0.0"
     lodash "^4.17.4"
+    mini-svg-data-uri "^1.0.0"
     potrace "^2.1.1"
     probe-image-size "^4.0.0"
     progress "^1.1.8"
     sharp "^0.20.2"
     svgo "^0.7.2"
 
-gatsby-react-router-scroll@^1.0.12-7:
+gatsby-react-router-scroll@^1.0.12-8:
   version "1.0.17"
   resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-1.0.17.tgz#16b9c67da7f4a997ebb8c784f4feba2b23af4f98"
   dependencies:
@@ -4807,10 +4793,11 @@ gatsby-remark-images@next:
     unist-util-select "^1.5.0"
 
 gatsby-source-filesystem@next:
-  version "2.0.0-alpha.12"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.0.0-alpha.12.tgz#1938920cb865b3f3ac3bd2a521df62d28c7dae3d"
+  version "2.0.0-alpha.13"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.0.0-alpha.13.tgz#eb02fff437271a44afb7a9434ea931f5135300bf"
   dependencies:
     "@babel/runtime" "7.0.0-beta.47"
+    better-queue "^3.8.7"
     bluebird "^3.5.0"
     chokidar "^1.7.0"
     fs-extra "^5.0.0"
@@ -4823,8 +4810,8 @@ gatsby-source-filesystem@next:
     xstate "^3.1.0"
 
 gatsby-transformer-remark@next:
-  version "2.0.1-10"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.0.1-10.tgz#177b5e3f2faa7c691b45a84fd8933a5db7f712de"
+  version "2.0.1-11"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.0.1-11.tgz#b016f299d52be3cb6251f0db26ff72ae599f17ac"
   dependencies:
     "@babel/runtime" "7.0.0-beta.47"
     bluebird "^3.5.0"
@@ -4848,8 +4835,8 @@ gatsby-transformer-remark@next:
     unist-util-visit "^1.3.0"
 
 gatsby-transformer-yaml@next:
-  version "2.0.1-8"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-yaml/-/gatsby-transformer-yaml-2.0.1-8.tgz#2525809eecc46369f5d7cc64d85e3638533ea19d"
+  version "2.0.1-9"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-yaml/-/gatsby-transformer-yaml-2.0.1-9.tgz#c816b58d2fd7aa0c5d504a229dcf16fb14500fb9"
   dependencies:
     "@babel/runtime" "7.0.0-beta.47"
     js-yaml "3.11.0"
@@ -4857,8 +4844,8 @@ gatsby-transformer-yaml@next:
     unist-util-select "^1.5.0"
 
 gatsby@next:
-  version "2.0.0-alpha.38"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.0-alpha.38.tgz#7067e5e4ad0979b6c1fb4b9559bdc0ef07e4664e"
+  version "2.0.0-alpha.39"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.0-alpha.39.tgz#b0851f5affb51bf7fe1c054823f0b385e345f98b"
   dependencies:
     "@babel/code-frame" "7.0.0-beta.47"
     "@babel/core" "7.0.0-beta.47"
@@ -4911,9 +4898,9 @@ gatsby@next:
     friendly-errors-webpack-plugin "^1.6.1"
     front-matter "^2.1.0"
     fs-extra "^5.0.0"
-    gatsby-cli "^1.1.41-7"
-    gatsby-link "^1.6.38-9"
-    gatsby-react-router-scroll "^1.0.12-7"
+    gatsby-cli "^1.1.41-8"
+    gatsby-link "^1.6.38-10"
+    gatsby-react-router-scroll "^1.0.12-8"
     glob "^7.1.1"
     graphql "^0.13.2"
     graphql-relay "^0.5.5"
@@ -4966,7 +4953,7 @@ gatsby@next:
     style-loader "^0.19.1"
     type-of "^2.0.1"
     uglifyjs-webpack-plugin "^1.2.4"
-    url-loader "^0.5.7"
+    url-loader "^0.6.2"
     uuid "^3.1.0"
     v8-compile-cache "^1.1.0"
     webpack "^4.4.1"
@@ -6496,8 +6483,8 @@ jpeg-js@^0.2.0:
   resolved "https://registry.yarnpkg.com/jpeg-js/-/jpeg-js-0.2.0.tgz#53e448ec9d263e683266467e9442d2c5a2ef5482"
 
 js-base64@^2.1.8, js-base64@^2.1.9:
-  version "2.4.3"
-  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.3.tgz#2e545ec2b0f2957f41356510205214e98fad6582"
+  version "2.4.5"
+  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.5.tgz#e293cd3c7c82f070d700fc7a1ca0a2e69f101f92"
 
 js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
@@ -7342,15 +7329,11 @@ mime-types@2.1.18, mime-types@^2.1.12, mime-types@~2.1.17, mime-types@~2.1.18, m
   dependencies:
     mime-db "~1.33.0"
 
-mime@1.3.x:
-  version "1.3.6"
-  resolved "https://registry.yarnpkg.com/mime/-/mime-1.3.6.tgz#591d84d3653a6b0b4a3b9df8de5aa8108e72e5e0"
-
 mime@1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.4.1.tgz#121f9ebc49e3766f311a76e1fa1c8003c4b03aa6"
 
-mime@^1.3.4:
+mime@^1.3.4, mime@^1.4.1:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
 
@@ -7378,6 +7361,10 @@ mini-css-extract-plugin@^0.4.0:
   dependencies:
     loader-utils "^1.1.0"
     webpack-sources "^1.1.0"
+
+mini-svg-data-uri@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/mini-svg-data-uri/-/mini-svg-data-uri-1.0.0.tgz#a9c09bbc7e1908b89534cf1d918c4c0766855769"
 
 minimalistic-assert@^1.0.0:
   version "1.0.1"
@@ -8446,8 +8433,8 @@ postcss-flexbugs-fixes@^3.0.0:
     postcss "^6.0.1"
 
 postcss-html@^0.23.6:
-  version "0.23.6"
-  resolved "https://registry.yarnpkg.com/postcss-html/-/postcss-html-0.23.6.tgz#ac97c792257cff04f7fde54578bec7221a79b809"
+  version "0.23.7"
+  resolved "https://registry.yarnpkg.com/postcss-html/-/postcss-html-0.23.7.tgz#47146c15e21b9c00746c40115dcff8270c439f32"
   dependencies:
     htmlparser2 "^3.9.2"
 
@@ -8496,8 +8483,8 @@ postcss-loader@^2.1.3:
     schema-utils "^0.4.0"
 
 postcss-markdown@^0.23.6:
-  version "0.23.6"
-  resolved "https://registry.yarnpkg.com/postcss-markdown/-/postcss-markdown-0.23.6.tgz#6baa603ae52c44a537862c9fcc36afb7ec9ff01d"
+  version "0.23.7"
+  resolved "https://registry.yarnpkg.com/postcss-markdown/-/postcss-markdown-0.23.7.tgz#7e3a398794295c425e51e4f0abdee6d13ad3d134"
   dependencies:
     remark "^9.0.0"
     unist-util-find-all-after "^1.0.2"
@@ -8734,8 +8721,8 @@ postcss-svgo@^2.1.1:
     svgo "^0.7.0"
 
 postcss-syntax@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/postcss-syntax/-/postcss-syntax-0.9.0.tgz#671a82b110edf56170fe2309dc8c2a5eaf9d2d0e"
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/postcss-syntax/-/postcss-syntax-0.9.1.tgz#5dbd90af1631ab8805b8f594bef2c2e8002d3758"
 
 postcss-unique-selectors@^2.0.2:
   version "2.0.2"
@@ -10206,9 +10193,9 @@ socket.io-adapter@~1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/socket.io-adapter/-/socket.io-adapter-1.1.1.tgz#2a805e8a14d6372124dd9159ad4502f8cb07f06b"
 
-socket.io-client@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/socket.io-client/-/socket.io-client-2.1.0.tgz#0d0b21d460dc4ed36e57085136f2be0137ff20ff"
+socket.io-client@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/socket.io-client/-/socket.io-client-2.1.1.tgz#dcb38103436ab4578ddb026638ae2f21b623671f"
   dependencies:
     backo2 "1.0.2"
     base64-arraybuffer "0.1.5"
@@ -10234,14 +10221,14 @@ socket.io-parser@~3.2.0:
     isarray "2.0.1"
 
 socket.io@^2.0.3:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/socket.io/-/socket.io-2.1.0.tgz#de77161795b6303e7aefc982ea04acb0cec17395"
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/socket.io/-/socket.io-2.1.1.tgz#a069c5feabee3e6b214a75b40ce0652e1cfb9980"
   dependencies:
     debug "~3.1.0"
     engine.io "~3.2.0"
     has-binary2 "~1.0.2"
     socket.io-adapter "~1.1.0"
-    socket.io-client "2.1.0"
+    socket.io-client "2.1.1"
     socket.io-parser "~3.2.0"
 
 socketcluster-client@^5.3.1:
@@ -10584,8 +10571,8 @@ stringify-entities@^1.0.1:
     is-hexadecimal "^1.0.0"
 
 stringstream@~0.0.4:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/stringstream/-/stringstream-0.0.5.tgz#4e484cd4de5a0bbbee18e46307710a8a81621878"
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/stringstream/-/stringstream-0.0.6.tgz#7880225b0d4ad10e30927d167a1d6f2fd3b33a72"
 
 strip-ansi@3.0.1, strip-ansi@^3.0.0, strip-ansi@^3.0.1:
   version "3.0.1"
@@ -11466,12 +11453,13 @@ url-join@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/url-join/-/url-join-4.0.0.tgz#4d3340e807d3773bda9991f8305acdcc2a665d2a"
 
-url-loader@^0.5.7:
-  version "0.5.9"
-  resolved "https://registry.yarnpkg.com/url-loader/-/url-loader-0.5.9.tgz#cc8fea82c7b906e7777019250869e569e995c295"
+url-loader@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/url-loader/-/url-loader-0.6.2.tgz#a007a7109620e9d988d14bce677a1decb9a993f7"
   dependencies:
     loader-utils "^1.0.2"
-    mime "1.3.x"
+    mime "^1.4.1"
+    schema-utils "^0.3.0"
 
 url-parse-lax@^1.0.0:
   version "1.0.0"
@@ -11950,8 +11938,8 @@ xdg-basedir@^3.0.0:
   resolved "https://registry.yarnpkg.com/xdg-basedir/-/xdg-basedir-3.0.0.tgz#496b2cc109eca8dbacfe2dc72b603c17c5870ad4"
 
 xhr@^2.0.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/xhr/-/xhr-2.4.1.tgz#ba982cced205ae5eec387169ac9dc77ca4853d38"
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/xhr/-/xhr-2.5.0.tgz#bed8d1676d5ca36108667692b74b316c496e49dd"
   dependencies:
     global "~4.3.0"
     is-function "^1.0.1"
