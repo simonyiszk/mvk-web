@@ -3,7 +3,6 @@ import { StaticQuery } from 'gatsby';
 import React from 'react';
 import FaFacebookOfficial from 'react-icons/lib/fa/facebook-official';
 import FaGitHub from 'react-icons/lib/fa/github';
-import ExternalLink from './ExternalLink';
 
 const SocialMediaButtons = ({ ...props }) => (
   <StaticQuery
@@ -20,15 +19,15 @@ const SocialMediaButtons = ({ ...props }) => (
     render={staticData => (
       <Grid container {...props}>
         <Grid item>
-          <ExternalLink to={staticData.site.siteMetadata.siteFacebookURL}>
+          <a href={staticData.site.siteMetadata.siteFacebookURL}>
             <FaFacebookOfficial />
-          </ExternalLink>
+          </a>
         </Grid>
 
         <Grid item>
-          <ExternalLink to={staticData.site.siteMetadata.siteGitHubURL}>
+          <a href={staticData.site.siteMetadata.siteGitHubURL}>
             <FaGitHub />
-          </ExternalLink>
+          </a>
         </Grid>
       </Grid>
     )}

@@ -1,7 +1,6 @@
 import Typography from '@material-ui/core/Typography';
 import { StaticQuery } from 'gatsby';
 import React from 'react';
-import ExternalLink from './ExternalLink';
 
 const ContactInfo = ({ ...props }) => (
   <StaticQuery
@@ -21,9 +20,9 @@ const ContactInfo = ({ ...props }) => (
     render={staticData => (
       <address {...props}>
         <Typography variant="caption" paragraph color="inherit">
-          <ExternalLink to={staticData.site.siteMetadata.siteAddressURL}>
+          <a href={staticData.site.siteMetadata.siteAddressURL}>
             {staticData.site.siteMetadata.siteAddressPretty}
-          </ExternalLink>
+          </a>
         </Typography>
 
         <Typography
@@ -37,9 +36,9 @@ const ContactInfo = ({ ...props }) => (
 
         <Typography variant="caption" component="p" color="inherit">
           E-mail:{' '}
-          <ExternalLink to={staticData.site.siteMetadata.siteEmailURL}>
+          <a href={staticData.site.siteMetadata.siteEmailURL}>
             {staticData.site.siteMetadata.siteEmailPretty}
-          </ExternalLink>
+          </a>
         </Typography>
       </address>
     )}
