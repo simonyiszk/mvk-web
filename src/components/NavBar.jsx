@@ -35,6 +35,7 @@ export default class NavBar extends React.Component {
 
   render() {
     const {
+      backgroundOverlayAlphaOnWindowScrolledToTop,
       brandLogoDisplayWindowScollYThreshold,
       style,
       ...props
@@ -43,12 +44,17 @@ export default class NavBar extends React.Component {
 
     return (
       <AppBar
-        elevation={windowScrollY === 0 ? 0 : undefined}
+        elevation={
+          backgroundOverlayAlphaOnWindowScrolledToTop === 0 &&
+          windowScrollY === 0
+            ? 0
+            : undefined
+        }
         className={styles.appBar}
         style={{
           ...(windowScrollY === 0
             ? {
-                background: 'transparent',
+                background: `rgba(0, 0, 0, ${backgroundOverlayAlphaOnWindowScrolledToTop})`,
                 textShadow: '0 0 0.75em rgba(0, 0, 0, 0.8)',
               }
             : {}),
@@ -112,11 +118,13 @@ export default class NavBar extends React.Component {
 }
 
 NavBar.propTypes = {
+  backgroundOverlayAlphaOnWindowScrolledToTop: PropTypes.number,
   brandLogoDisplayWindowScollYThreshold: PropTypes.number,
   style: PropTypes.shape(),
 };
 
 NavBar.defaultProps = {
+  backgroundOverlayAlphaOnWindowScrolledToTop: 0.5,
   brandLogoDisplayWindowScollYThreshold: -1,
   style: {},
 };
