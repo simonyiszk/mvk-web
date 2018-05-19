@@ -88,7 +88,7 @@ export default class NavBar extends React.Component {
           <StaticQuery
             query={graphql`
               query NavBarQuery {
-                allNavbarItemsYaml {
+                allNavBarItemsYaml {
                   edges {
                     node {
                       label
@@ -99,7 +99,7 @@ export default class NavBar extends React.Component {
               }
             `}
             render={staticData =>
-              staticData.allNavbarItemsYaml.edges.map(({ node }) => (
+              staticData.allNavBarItemsYaml.edges.map(({ node }) => (
                 <Button
                   key={node.url}
                   component={Link}
